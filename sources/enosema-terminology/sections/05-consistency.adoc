@@ -1,0 +1,155 @@
+== Terminology consistency
+
+=== General
+
+Terminology consistency refers to the uniform and coherent use of terminology
+across all content within an organization or specific domain. Consistency in
+terminology is essential for effective communication, clear documentation,
+efficient translation, and improved user experience.
+
+This section outlines approaches and strategies for achieving and maintaining
+terminology consistency, in accordance with the principles described in ISO 704
+and the requirements for terminological entries in ISO 10241-1.
+
+=== Importance of terminology consistency
+
+==== Improved communication clarity
+
+Consistent terminology reduces ambiguity and confusion in communication.
+When the same concept is consistently represented by the same term, readers can
+focus on understanding the information rather than deciphering terminology.
+
+==== Enhanced content quality
+
+Content with consistent terminology appears more professional and authoritative.
+Inconsistent terminology can undermine reader confidence and diminish the
+perceived quality of the content.
+
+==== Reduced translation costs and improved translation quality
+
+Consistent source terminology significantly improves translation efficiency and
+quality. When terms are used consistently, translation memory systems can
+achieve higher match rates, reducing costs and increasing consistency across
+languages.
+
+==== Improved searchability and information retrieval
+
+Consistent terminology makes it easier to find and retrieve information in
+documentation, knowledge bases, and other content repositories. Users can search
+for specific terms with confidence that all relevant information will be found.
+
+==== Legal and safety compliance
+
+In regulated industries, consistent terminology is often a requirement for
+compliance. Inconsistent terminology in safety-critical documentation can lead
+to misunderstandings with potentially serious consequences.
+
+=== Strategies for achieving terminology consistency
+
+==== Establishing a single source of truth
+
+Organizations shall establish an authoritative terminology resource that serves
+as the single source of truth for approved terminology. This resource may take
+the form of:
+
+* A terminology database (termbase) following the TBX standard (<<ISO30042>>)
+* A terminology management system
+* A controlled vocabulary or glossary
+
+All content creators and translators should have access to this resource and be
+required to use it as the authoritative reference.
+
+==== Implementing terminology workflows
+
+Organizations shall establish formal workflows for terminology management,
+including:
+
+. Term identification and extraction
+. Term research and definition
+. Term approval and validation
+. Term dissemination and implementation
+. Term maintenance and updating
+
+[example]
+====
+An effective terminology workflow:
+
+* Content authors flag potential new terms during content creation
+* Terminologists research the terms and propose definitions
+* Subject matter experts validate the terms and definitions
+* The approved terms are added to the terminology database
+* Content authors are notified of new approved terms
+* Translation teams are informed of terminology updates
+====
+
+==== Integration with content creation processes
+
+Terminology consistency shall be integrated into the content creation process
+through:
+
+. Terminology validation during content authoring
+. Terminology checks in content review processes
+. Automated terminology verification tools
+. Style guides with clear terminology guidelines
+
+==== Regular terminology audits
+
+Organizations shall conduct regular terminology audits to:
+
+. Identify inconsistencies in terminology usage
+. Detect unauthorized terms or definitions
+. Evaluate compliance with terminology guidelines
+. Prioritize areas for terminology improvement
+
+=== Measuring terminology consistency
+
+==== Quantitative measures
+
+Terminology consistency can be measured quantitatively through:
+
+* Term compliance rate: percentage of terminology usage that complies with
+approved terminology
+* Term coverage: percentage of concepts in a domain that have approved terms
+* Term usage frequency: how often approved terms are used correctly compared to
+unapproved variants
+
+==== Qualitative assessment
+
+Qualitative assessment of terminology consistency may include:
+
+* User feedback on terminology clarity and consistency
+* Subject matter expert evaluation of terminology appropriateness
+* Translator assessment of terminology translatability
+* Content reviewer reports on terminology issues
+
+=== Maintaining terminology consistency over time
+
+==== Continuous improvement processes
+
+Terminology consistency requires ongoing attention through:
+
+. Regular review and updating of terminology resources
+. Soliciting and incorporating user feedback
+. Monitoring term usage patterns
+. Adapting to evolving subject field knowledge
+
+==== Change management for terminology
+
+When terminology changes are necessary, organizations shall implement change
+management processes that include:
+
+. Documentation of the rationale for terminology changes
+. Communication of changes to all stakeholders
+. Version control of terminology resources
+. Guidance on transitioning to new terminology
+. Update of existing content to reflect terminology changes
+
+==== Training and awareness
+
+Organizations shall provide appropriate training and awareness programs to
+promote terminology consistency, including:
+
+. Introductory training on terminology principles and practices
+. Regular updates on terminology changes and additions
+. Guidance on using terminology tools and resources
+. Recognition of good terminology practices

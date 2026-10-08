@@ -1,0 +1,308 @@
+== Domain contexts
+
+=== General
+
+Concept relationships do not exist in isolation but are embedded within specific
+domain contexts that influence their meaning, validity, and application. This
+section addresses the management of concept relationships within and across
+domain boundaries, focusing on the challenges and approaches for establishing
+semantic connections in different contextual environments.
+
+The domain context of a relationship affects its interpretation, properties, and
+constraints. Understanding and properly documenting these contextual factors is
+essential for ensuring semantic precision and facilitating knowledge exchange
+across domains.
+
+=== Same-domain relationships
+
+==== Characteristics of same-domain relationships
+
+Same-domain relationships connect concepts within a single subject field or
+domain of knowledge. They are characterized by:
+
+. Shared conceptual framework: Concepts exist within the same system of knowledge
+. Common terminology: Concepts are typically expressed using domain-specific terms
+. Established relationship patterns: The domain often has conventional ways of
+relating concepts
+. Domain-specific relationship types: Specialized relationship types may exist
+for the domain
+. Consistent interpretation: Relationships are understood similarly by domain
+experts
+
+Same-domain relationships benefit from the shared understanding and conventions
+of the domain, making them generally easier to establish and validate than
+cross-domain relationships.
+
+NOTE: Even within a single domain, sub-domains or schools of thought may have
+different conceptual frameworks that affect how relationships are understood and
+applied. These differences should be documented as part of the relationship
+context.
+
+==== Domain-specific relationship patterns
+
+Each domain tends to develop characteristic patterns of relationships that
+reflect its conceptual structure and knowledge organization. Examples include:
+
+. Healthcare: Emphasis on causal relationships (disease-symptom, treatment-outcome)
+and hierarchical classifications (taxonomies of diseases, procedures)
+. Engineering: Focus on functional relationships (component-function,
+material-property) and structural relationships (system-component)
+. Law: Prominence of authority relationships (statute-regulation), temporal
+relationships (precedent-subsequent ruling), and definitional relationships
+(term-legal definition)
+. Chemistry: Structured around compositional relationships (compound-element) and
+transformational relationships (reactant-product)
+
+[example]
+====
+In the domain of medicine, the relationship between "bacteria" and "infection"
+is typically causal, while the relationship between "antibiotic" and "bacteria"
+is functional (treatment-target). These relationship patterns are characteristic
+of medical knowledge organization and would be understood by domain experts
+without extensive explanation.
+====
+
+==== Domain-specific relationship types
+
+Domains often develop specialized relationship types that capture domain-specific
+connections between concepts. These relationship types extend the general
+classification presented in Section 5 with domain-specific semantics.
+
+[example]
+====
+In pharmacology, specialized relationship types might include:
+
+* "has-mechanism-of-action": Connects a drug to its biochemical mechanism
+* "has-contraindication": Links a medication to conditions where it should not
+be used
+* "has-adverse-effect": Associates a drug with potential negative outcomes
+
+These relationship types have specific meaning within pharmacology and may not
+be directly applicable to other domains.
+====
+
+When documenting domain-specific relationship types, it is important to:
+
+. Provide clear definitions that capture the domain-specific semantics
+. Map to the general relationship classification where possible
+. Document any special properties or constraints
+. Include domain-specific usage examples
+. Reference authoritative domain sources
+
+=== Cross-domain relationships
+
+==== Challenges of cross-domain relationships
+
+Cross-domain relationships connect concepts from different subject fields or
+domains of knowledge. They present several challenges:
+
+. Conceptual framework differences: Domains may have different ways of
+organizing knowledge
+. Terminological variations: The same term may have different meanings across
+domains
+. Relationship interpretation differences: The same relationship type may be
+understood differently
+. Validation complexity: Expertise from multiple domains is needed for validation
+. Documentation requirements: More extensive context information is needed
+
+Despite these challenges, cross-domain relationships are essential for
+interdisciplinary work, knowledge integration, and comprehensive information
+retrieval.
+
+NOTE: Cross-domain relationships often reveal interesting connections and
+insights that might not be apparent within a single domain. They can stimulate
+innovation and new perspectives by bridging different knowledge areas.
+
+==== Approaches for establishing cross-domain relationships
+
+Several approaches can be used to establish meaningful cross-domain
+relationships:
+
+. Interface concepts: Identifying concepts that naturally span domain boundaries
+. Bridging vocabularies: Creating intermediate vocabularies that connect domain
+terminologies
+. Upper ontologies: Using high-level conceptual frameworks that transcend
+specific domains
+. Mapping patterns: Developing standard patterns for relating concepts across
+domains
+. Expert collaboration: Bringing together experts from different domains to
+establish relationships
+
+[example]
+====
+The concept "temperature" exists in multiple domains including meteorology,
+medicine, and physics. It can serve as an interface concept for establishing
+cross-domain relationships:
+
+* In meteorology: "temperature" has-effect-on "weather patterns"
+* In medicine: "body temperature" indicates "health status"
+* In physics: "temperature" is-measure-of "molecular kinetic energy"
+
+By using "temperature" as an interface concept, relationships can be established
+between these domains, such as how "weather patterns" affect "health status."
+====
+
+==== Cross-domain relationship documentation
+
+Cross-domain relationships require more extensive documentation than same-domain
+relationships to ensure proper interpretation. Documentation should include:
+
+. Clear identification of the source and target domains
+. Domain-specific definitions of the concepts involved
+. Explanation of how the relationship bridges the domains
+. Any constraints or conditions on the cross-domain application
+. Validation method and authority
+. Potential interpretation issues or ambiguities
+
+[example]
+====
+A cross-domain relationship between the medical concept "inflammation" and the
+economic concept "inflation" might be documented as:
+
+* Source concept: "inflammation" (Medicine: A localized physical condition in
+which part of the body becomes reddened, swollen, hot, and often painful)
+* Target concept: "inflation" (Economics: A general increase in prices and fall
+in the purchasing value of money)
+* Relationship type: metaphorical-similarity
+* Explanation: Both concepts involve expansion or increase (physical tissues vs.
+prices) and are often described as harmful when excessive
+* Constraints: This is an analogical relationship for explanatory purposes, not
+a causal or definitional relationship
+* Validation: Linguistic analysis of economic literature showing the metaphorical
+use of medical terminology
+====
+
+=== Context-sensitive relationship semantics
+
+==== Contextual variation in relationship meaning
+
+The same relationship type may have different semantic nuances depending on the
+context. These variations should be documented to ensure proper interpretation.
+
+[example]
+====
+The "part-of" relationship has different implications in different contexts:
+
+* Physical objects: A wheel is part-of a car (physical component that can be
+separated)
+* Organizations: A department is part-of a company (administrative division with
+functional independence)
+* Processes: Payment is part-of a purchase transaction (temporal phase that
+cannot exist independently)
+* Abstract entities: A chapter is part-of a book (content division that has
+meaning in relation to the whole)
+
+While all these are partitive relationships, their specific semantics vary with
+the nature of the related concepts.
+====
+
+==== Context parameters
+
+To fully specify the context of a relationship, several parameters should be
+documented:
+
+. Domain context: The subject field(s) in which the relationship is valid
+. Temporal context: Time period during which the relationship holds
+. Cultural context: Cultural factors affecting interpretation
+. Application context: Specific use case or purpose
+. Authority context: Source of the relationship assertion
+. Certainty context: Degree of confidence in the relationship
+
+These parameters help users understand the conditions under which the
+relationship is valid and applicable.
+
+NOTE: Context parameters should be documented at an appropriate level of detail
+for the intended application. Not all parameters are equally relevant for all
+relationships, and the documentation should focus on those that significantly
+affect interpretation.
+
+==== Context-based relationship constraints
+
+Relationship constraints may vary based on context. These context-dependent
+constraints should be explicitly documented:
+
+. Domain-specific cardinality constraints
+. Context-dependent property variations
+. Conditional validity rules
+. Contextual relationship strength
+
+[example]
+====
+The relationship "treats" between "medication" and "disease" might have
+different constraints in different contexts:
+
+* Clinical practice context: Many-to-many cardinality (multiple medications may
+treat multiple diseases)
+* Regulatory approval context: One-to-many cardinality (a medication is approved
+for specific diseases only)
+* Research context: Probabilistic strength (degree of evidence for efficacy)
+* Historical context: Temporal validity (treatments considered effective change
+over time)
+====
+
+=== Managing domain boundaries
+
+==== Domain boundary identification
+
+Clearly identifying domain boundaries is essential for proper relationship
+management. Approaches include:
+
+. Subject field classification: Using established classification systems to
+delineate domains
+. Concept clustering: Identifying natural groupings of closely related concepts
+. Terminology analysis: Examining term usage patterns to identify domain
+vocabularies
+. Expert consensus: Relying on expert judgment to define domain boundaries
+. Hybrid approaches: Combining multiple methods for more robust boundary
+identification
+
+Domain boundaries should be documented in a way that supports relationship
+management while recognizing that boundaries may be fluid and overlapping.
+
+==== Boundary-spanning concepts
+
+Some concepts naturally span domain boundaries and can serve as anchors for
+cross-domain relationships. Characteristics of boundary-spanning concepts
+include:
+
+. Relevance to multiple domains
+. Consistent core meaning across domains
+. Recognition by experts from different fields
+. Frequent appearance in interdisciplinary contexts
+. Potential for different specializations in each domain
+
+[example]
+====
+The concept "risk" spans multiple domains including finance, healthcare,
+engineering, and environmental science. While its core meaning of "potential for
+unwanted outcome" remains consistent, each domain has developed specialized
+aspects:
+
+* Finance: Quantified as volatility or probability of loss
+* Healthcare: Associated with factors that increase disease likelihood
+* Engineering: Analyzed through failure modes and effects
+* Environmental science: Assessed through impact and probability matrices
+
+"Risk" can serve as a boundary-spanning concept to establish relationships
+between these domains, such as how financial risks relate to environmental risks.
+====
+
+==== Domain relationship mapping
+
+Systematic mapping of relationships between domains can facilitate cross-domain
+knowledge integration. Approaches include:
+
+. Domain interface analysis: Identifying areas where domains naturally overlap
+. Relationship pattern mapping: Documenting how relationship types translate
+across domains
+. Concept alignment: Establishing correspondences between domain-specific concepts
+. Relationship transformation rules: Defining how relationships change when
+crossing domain boundaries
+
+Domain relationship mapping provides a foundation for more sophisticated
+cross-domain knowledge integration and semantic interoperability.
+
+NOTE: Domain relationship mapping is not merely about connecting individual
+concepts but about understanding how entire conceptual structures relate across
+domains. This higher-level mapping can reveal structural similarities and
+differences that affect how relationships should be interpreted.

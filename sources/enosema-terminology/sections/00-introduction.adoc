@@ -1,0 +1,52 @@
+== Introduction
+
+Terminology, the collection of terms and their definitions within a specific
+domain, forms the foundation of effective communication in specialized fields.
+Terminology management refers to the systematic handling of terminology,
+including the creation, collection, recording, processing, and dissemination
+of terminological information across organizations and domains.
+
+In our increasingly globalized and specialized world, the consistent use of
+terminology has become essential for clear communication, accurate knowledge
+transfer, and effective content management. Poorly managed terminology leads to
+misunderstandings, inconsistencies in documentation, increased translation costs,
+and potential safety and compliance issues in regulated industries.
+
+Several international standards provide the foundation for terminology work,
+including ISO 704 (Terminology work — Principles and methods), which establishes
+the basic principles and methods for terminology work; ISO 30042 (Management of
+terminology resources — TermBase eXchange (TBX)), which specifies a framework
+for representing terminological data; and ISO 10241-1 and ISO 10241-2, which
+provide guidelines for terminological entries in standards and the adoption of
+standardized terminological entries.
+
+Despite the existence of these standards, organizations often struggle with
+implementing effective terminology management practices due to a lack of
+practical guidance, organizational commitment, and understanding of the
+principles and methods involved. Inconsistent terminology usage continues to
+be a significant challenge across industries, leading to confusion,
+inefficiencies, and increased costs.
+
+This document addresses this gap by providing comprehensive guidelines for
+terminology management based on established international standards and best
+practices. It outlines the core principles, consistency approaches, requirements,
+and presentation rules necessary for effective terminology management.
+
+The guidelines presented in this document are designed to help organizations:
+
+* Establish consistent terminology across all content and communications
+* Implement efficient terminology management processes
+* Build and maintain terminology resources that meet international standards
+* Improve the clarity and quality of content
+* Reduce translation and localization costs
+* Facilitate knowledge transfer and communication across boundaries
+
+By following these guidelines, organizations can improve the clarity and
+consistency of their communications, enhance their content quality, reduce
+costs, and better serve their global audiences.
+
+This standard builds upon the significant contributions of terminology experts
+worldwide and the foundational work established in ISO standards. The Enosema
+Foundation recognizes the critical importance of terminology management in
+today's knowledge-based economy and is committed to advancing terminology
+standardization and related processes.

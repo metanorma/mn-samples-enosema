@@ -1,0 +1,242 @@
+== Authority and status of language versions
+
+=== General
+
+In multilingual terminology management, determining which language versions are
+authoritative and which are informative is a critical aspect of ensuring
+terminology quality and consistency. This section outlines approaches for
+establishing, documenting, and managing the authoritative status of language
+versions in multilingual terminology resources.
+
+The guidelines in this section are designed to ensure transparency, clarity, and
+appropriate governance of multilingual terminology resources while respecting
+the principles of language equality and cultural sensitivity described in
+previous sections.
+
+=== Establishing authoritative language versions
+
+==== Criteria for determining authoritative status
+
+The determination of which language versions are authoritative should be based
+on clear criteria:
+
+. Origin of the concept (language in which the concept was originally developed)
+. Expertise availability (languages with available subject matter experts)
+. Legal or regulatory requirements (legally mandated authoritative languages)
+. Organizational policy (officially designated corporate languages)
+. User base (languages of primary user communities)
+. Quality assurance capabilities (languages with robust review processes)
+
+Organizations shall document the criteria used for determining authoritative
+status and apply them consistently across their terminology resources.
+
+[example]
+====
+An international standards organization might establish these criteria for
+authoritative language versions:
+
+* The language in which the standard was originally developed is authoritative
+* Languages that are official languages of the organization are authoritative
+* Languages for which there are dedicated technical committees with subject
+matter experts are authoritative
+* All other language versions are informative
+====
+
+==== Multiple authoritative languages
+
+In some cases, multiple language versions may be designated as authoritative.
+This approach is appropriate when:
+
+. The concept was developed collaboratively in multiple languages
+. The organization has multiple official languages
+. Legal requirements mandate multiple authoritative languages
+. Equal expertise is available in multiple languages
+
+When multiple authoritative languages exist, organizations shall:
+
+. Clearly document all authoritative languages
+. Establish processes for resolving conflicts between authoritative versions
+. Ensure synchronization of updates across all authoritative versions
+. Maintain equal quality standards for all authoritative versions
+
+==== Changing authoritative status
+
+The authoritative status of language versions may change over time due to:
+
+. Organizational changes
+. Expertise availability changes
+. Quality improvements in previously informative versions
+. Legal or regulatory changes
+. Strategic business decisions
+
+When changing the authoritative status of language versions, organizations shall:
+
+. Document the rationale for the change
+. Establish a transition plan
+. Communicate the change to all stakeholders
+. Update all relevant documentation
+. Review and validate the newly authoritative versions
+
+=== Documentation of authoritativeness
+
+==== Explicit marking of status
+
+The status of each language version shall be explicitly marked in the
+terminology resource:
+
+. Use consistent markers for authoritative and informative status
+. Include status information in metadata
+. Make status visible to users
+. Include status in exported terminology data
+. Document the meaning of status markers
+
+[example]
+====
+Example of explicit status marking:
+
+concept ID: TM-0042
+en: cloud computing [AUTHORITATIVE]
+definition: model for enabling ubiquitous, convenient, on-demand network access
+to a shared pool of configurable computing resources
+
+fr: informatique en nuage [INFORMATIVE]
+definition: modèle permettant un accès omniprésent, pratique et à la demande par
+le réseau à un pool partagé de ressources informatiques configurables
+====
+
+==== Documentation of authority criteria
+
+For each terminological entry with authoritative and informative language
+versions, the criteria used to determine authoritative status should be
+documented:
+
+. Include notes explaining why specific languages are authoritative
+. Document the expertise or sources used for authoritative versions
+. Provide context for understanding the relationship between versions
+. Include version history relevant to authoritative status
+. Document any special considerations for specific entries
+
+==== Authority in terminology exchange
+
+When exchanging terminology data with other systems or organizations:
+
+. Include authoritative status information in exchange formats
+. Use standard TBX mechanisms for representing status (<<ISO30042>>)
+. Document how status is encoded in the exchange format
+. Verify that status information is preserved during import/export
+. Include relevant metadata about authority determination processes
+
+=== Processes for deriving informative translations
+
+==== Translation workflow for informative versions
+
+Informative language versions shall be created through a structured translation
+workflow:
+
+. Source content selection from authoritative version(s)
+. Qualified translator selection with subject matter expertise
+. Translation with reference to authoritative version(s)
+. Review by subject matter experts
+. Validation against authoritative version(s)
+. Documentation of the relationship to authoritative version(s)
+
+==== Quality assurance for informative versions
+
+While informative versions are derived from authoritative versions, they still
+require rigorous quality assurance:
+
+. Verification of conceptual equivalence
+. Linguistic quality review
+. Cultural appropriateness assessment
+. Terminology consistency check
+. User acceptance testing
+. Regular review and updating
+
+==== Documentation of derivation process
+
+The process by which informative versions are derived from authoritative
+versions shall be documented:
+
+. Source authoritative version(s) used
+. Translation or adaptation methodology
+. Validation processes applied
+. Known limitations or challenges
+. Date of derivation and scheduled review
+. Responsible parties for the informative version
+
+=== Managing conflicts between versions
+
+==== Conflict identification
+
+Potential conflicts between language versions may include:
+
+. Conceptual discrepancies
+. Contradictory definitions
+. Incompatible examples or contexts
+. Divergent concept relationships
+. Inconsistent usage guidance
+
+Organizations shall establish processes for identifying such conflicts through:
+
+. Regular comparative reviews
+. User feedback mechanisms
+. Automated consistency checks
+. Cross-language validation
+. Expert review panels
+
+==== Conflict resolution
+
+When conflicts between language versions are identified:
+
+. Authoritative versions take precedence in case of conflicts
+. When multiple authoritative versions conflict, a documented resolution process
+shall be followed
+. Changes to resolve conflicts shall be documented
+. All stakeholders shall be informed of significant conflict resolutions
+. Root causes of conflicts shall be analyzed to prevent recurrence
+
+==== Maintaining version alignment
+
+To prevent conflicts and maintain alignment between language versions:
+
+. Synchronize update processes across languages
+. Establish clear communication channels between language teams
+. Document concept boundaries clearly to prevent drift
+. Conduct regular alignment reviews
+. Implement version control for all language versions
+
+=== Legal and compliance implications
+
+==== Legal status of language versions
+
+The designation of authoritative and informative language versions may have
+legal implications:
+
+. In legal disputes, authoritative versions typically prevail
+. Regulatory compliance may require specific authoritative languages
+. Contractual obligations may specify authoritative languages
+. Liability may differ for authoritative versus informative content
+. Intellectual property considerations may vary by language version
+
+Organizations shall consult legal experts when establishing authoritative
+language policies and document any legal implications.
+
+==== Compliance documentation
+
+For compliance purposes, organizations shall maintain documentation of:
+
+. Criteria and processes for determining authoritative status
+. Changes to authoritative status over time
+. Quality assurance processes for all language versions
+. Validation procedures for informative versions
+. Conflict resolution processes and outcomes
+
+==== Disclaimer requirements
+
+Informative language versions should include appropriate disclaimers:
+
+. Clear indication of their informative status
+. Reference to the authoritative version(s)
+. Limitations of the informative version
+. Process for reporting discrepancies
+. Date of translation or adaptation from the authoritative version

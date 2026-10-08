@@ -1,0 +1,47 @@
+[bibliography]
+== Bibliography
+
+* [[[ISO1087,ISO 1087:2019]]],
+_Terminology work and terminology science — Vocabulary_
+
+* [[[ISO860,ISO 860:2007]]],
+_Terminology work — Harmonization of concepts and terms_
+
+* [[[ISO16642,ISO 16642:2017]]],
+_Computer applications in terminology — Terminological markup framework_
+
+* [[[ISO26162-1,ISO 26162-1:2019]]],
+_Management of terminology resources — Terminology databases — Part 1: Design_
+
+* [[[ISO26162-2,ISO 26162-2:2019]]],
+_Management of terminology resources — Terminology databases — Part 2: Software_
+
+* [[[ISO12615,ISO 12615:2004]]],
+_Bibliographic references and source identifiers for terminology work_
+
+* [[[ISO12616,ISO 12616:2002]]],
+_Translation-oriented terminography_
+
+* [[[ISO12620,ISO 12620:2019]]],
+_Management of terminology resources — Data category specifications_
+
+* [[[ISO22128,ISO 22128:2008]]],
+_Terminology products and services — Overview and guidance_
+
+* [[[ISO23185,ISO 23185:2009]]],
+_Assessment and benchmarking of terminological resources — General concepts, principles and requirements_
+
+* [[[wright,1]]],
+Wright, S.E. and G. Budin. 1997. _Handbook of Terminology Management_. Amsterdam/Philadelphia: John Benjamins.
+
+* [[[arntz,1]]],
+Arntz, R., Picht, H., & Schmitz, K. 2014. _Einführung in die Terminologiearbeit_. Hildesheim: Olms.
+
+* [[[cabré,1]]],
+Cabré, M.T. 1999. _Terminology: Theory, Methods, and Applications_. Amsterdam/Philadelphia: John Benjamins.
+
+* [[[temmerman,1]]],
+Temmerman, R. 2000. _Towards New Ways of Terminology Description: The Sociocognitive Approach_. Amsterdam/Philadelphia: John Benjamins.
+
+* [[[sager,1]]],
+Sager, J.C. 1990. _A Practical Course in Terminology Processing_. Amsterdam/Philadelphia: John Benjamins.

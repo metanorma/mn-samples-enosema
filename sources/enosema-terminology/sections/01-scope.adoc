@@ -1,0 +1,34 @@
+== Scope
+
+This document specifies principles, methods, and best practices for terminology
+management across organizations and domains. It provides a standardized approach
+to the creation, collection, storage, processing, and dissemination of
+terminology resources.
+
+The guidelines specified in this document apply to all terminology management
+activities, regardless of the subject field, industry, or organization size.
+The standardized approaches enhance terminology consistency, improve
+communication clarity, and ensure compliance with international terminology
+standards.
+
+This document provides practical guidance for implementing effective terminology
+management processes based on established international standards, including
+ISO 704, ISO 30042, ISO 10241-1, and ISO 10241-2, with examples illustrating
+the application of these principles in various contexts.
+
+This document is intended for:
+
+* Terminology managers and terminologists responsible for developing and
+maintaining terminology resources
+* Content creators, technical writers, and documentation specialists who need
+to apply consistent terminology
+* Translators and localizers who work with specialized terminology across
+languages
+* Standards developers who need to ensure terminological consistency in their
+documents
+* Subject matter experts contributing to terminology resources
+* Managers and decision-makers responsible for content quality and strategy
+
+The guidelines specified here complement the principles and methods described
+in ISO 704, the data exchange formats defined in ISO 30042, and the rules for
+terminological entries established in ISO 10241-1 and ISO 10241-2.

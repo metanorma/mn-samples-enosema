@@ -1,0 +1,1041 @@
+= Terminology management principles and methods
+:docnumber: 2501
+:boilerplate-authority: /Users/mulgogi/.asdf/installs/ruby/3.3.2/lib/ruby/gems/3.3.0/gems/metanorma-taste-0.0.5/lib/metanorma/../../data/enosema/copyright.adoc
+:publisher_logo: /Users/mulgogi/.asdf/installs/ruby/3.3.2/lib/ruby/gems/3.3.0/gems/metanorma-taste-0.0.5/lib/metanorma/../../data/enosema/logo.svg
+:i18nyaml: /Users/mulgogi/.asdf/installs/ruby/3.3.2/lib/ruby/gems/3.3.0/gems/metanorma-taste-0.0.5/lib/metanorma/../../data/enosema/i18n.yaml
+:publisher: Enosema Foundation
+:publisher_abbr: EFS
+:presentation-metadata-color-secondary: #007724
+:presentation-metadata-backcover-text: enosema.org
+:presentation-metadata-doctype-alias: standard
+:edition: 1
+:copyright-year: 2025
+:revdate: 2025-05-01
+:language: en
+:title-intro-en: Terminology management
+:title-main-en: Principles and methods
+:doctype: international-standard
+:technical-committee: Terminology
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:imagesdir: images
+:fullname: Reese W. Plews
+:surname: Plews
+:givenname: Reese W.
+:affiliation: Plews Consulting
+:fullname_2: Ronald Tse
+:surname_2: Tse
+:givenname_2: Ronald
+:affiliation_2: Ribose
+:docidentifier: EFS 2501:2025
+:mn-document-class: enosema
+:data-uri-image:
+:local-cache-only:
+
+.Foreword
+The Enosema Foundation ("`ES`") is the premier non-profit standardization
+organization for terminology standardization and terminology related processes
+such as management. It facilitates the education, standardization, research,
+promotion, definition, and usage of terminology resources and management
+practices globally.
+
+ES works with international partners and experts across the globe, reflecting
+the international nature of its mission. More information about ES is available
+on the official website (link:++https://www.enosema.org++[]).
+
+The procedures used to develop this document and those intended for its further
+maintenance are described in the ES Directives.
+
+In particular, the different approval criteria needed for the different types of
+ES documents should be noted. This document was drafted in accordance with the
+editorial rules of the ES Directives.
+
+Attention is drawn to the possibility that some of the elements of this document
+may be the subject of patent rights. ES shall not be held responsible for
+identifying any or all such patent rights. Details of any patent rights
+identified during the development of the document will be provided in the
+Introduction.
+
+Any trade name used in this document is information given for the convenience of
+users and does not constitute an endorsement.
+
+This document was prepared by Technical Committee _{technical-committee}_.
+
+== Introduction
+
+Terminology, the collection of terms and their definitions within a specific
+domain, forms the foundation of effective communication in specialized fields.
+Terminology management refers to the systematic handling of terminology,
+including the creation, collection, recording, processing, and dissemination
+of terminological information across organizations and domains.
+
+In our increasingly globalized and specialized world, the consistent use of
+terminology has become essential for clear communication, accurate knowledge
+transfer, and effective content management. Poorly managed terminology leads to
+misunderstandings, inconsistencies in documentation, increased translation costs,
+and potential safety and compliance issues in regulated industries.
+
+Several international standards provide the foundation for terminology work,
+including ISO 704 (Terminology work — Principles and methods), which establishes
+the basic principles and methods for terminology work; ISO 30042 (Management of
+terminology resources — TermBase eXchange (TBX)), which specifies a framework
+for representing terminological data; and ISO 10241-1 and ISO 10241-2, which
+provide guidelines for terminological entries in standards and the adoption of
+standardized terminological entries.
+
+Despite the existence of these standards, organizations often struggle with
+implementing effective terminology management practices due to a lack of
+practical guidance, organizational commitment, and understanding of the
+principles and methods involved. Inconsistent terminology usage continues to
+be a significant challenge across industries, leading to confusion,
+inefficiencies, and increased costs.
+
+This document addresses this gap by providing comprehensive guidelines for
+terminology management based on established international standards and best
+practices. It outlines the core principles, consistency approaches, requirements,
+and presentation rules necessary for effective terminology management.
+
+The guidelines presented in this document are designed to help organizations:
+
+* Establish consistent terminology across all content and communications
+* Implement efficient terminology management processes
+* Build and maintain terminology resources that meet international standards
+* Improve the clarity and quality of content
+* Reduce translation and localization costs
+* Facilitate knowledge transfer and communication across boundaries
+
+By following these guidelines, organizations can improve the clarity and
+consistency of their communications, enhance their content quality, reduce
+costs, and better serve their global audiences.
+
+This standard builds upon the significant contributions of terminology experts
+worldwide and the foundational work established in ISO standards. The Enosema
+Foundation recognizes the critical importance of terminology management in
+today's knowledge-based economy and is committed to advancing terminology
+standardization and related processes.
+
+== Scope
+
+This document specifies principles, methods, and best practices for terminology
+management across organizations and domains. It provides a standardized approach
+to the creation, collection, storage, processing, and dissemination of
+terminology resources.
+
+The guidelines specified in this document apply to all terminology management
+activities, regardless of the subject field, industry, or organization size.
+The standardized approaches enhance terminology consistency, improve
+communication clarity, and ensure compliance with international terminology
+standards.
+
+This document provides practical guidance for implementing effective terminology
+management processes based on established international standards, including
+ISO 704, ISO 30042, ISO 10241-1, and ISO 10241-2, with examples illustrating
+the application of these principles in various contexts.
+
+This document is intended for:
+
+* Terminology managers and terminologists responsible for developing and
+maintaining terminology resources
+* Content creators, technical writers, and documentation specialists who need
+to apply consistent terminology
+* Translators and localizers who work with specialized terminology across
+languages
+* Standards developers who need to ensure terminological consistency in their
+documents
+* Subject matter experts contributing to terminology resources
+* Managers and decision-makers responsible for content quality and strategy
+
+The guidelines specified here complement the principles and methods described
+in ISO 704, the data exchange formats defined in ISO 30042, and the rules for
+terminological entries established in ISO 10241-1 and ISO 10241-2.
+
+[bibliography]
+== Normative references
+
+* [[[ISO704,ISO 704:2022]]],
+_Terminology work — Principles and methods_
+
+* [[[ISO10241-1,ISO 10241-1:2011]]],
+_Terminological entries in standards — Part 1: General requirements and examples of presentation_
+
+* [[[ISO10241-2,ISO 10241-2:2012]]],
+_Terminological entries in standards — Part 2: Adoption of standardized terminological entries_
+
+* [[[ISO30042,ISO 30042:2019]]],
+_Management of terminology resources — TermBase eXchange (TBX)_
+
+== Terms and definitions
+
+=== terminology
+set of designations belonging to one special language
+
+[.source]
+<<ISO704>>
+
+=== term
+verbal designation of a general concept in a specific subject field
+
+[.source]
+<<ISO704>>
+
+=== terminology management
+management of terminology resources through the systematic collection,
+description, processing, and presentation of concepts and their designations
+
+[.source]
+<<ISO30042>>
+
+=== terminology database
+database containing terminology data
+
+[.source]
+<<ISO30042>>
+
+=== concept
+unit of knowledge created by a unique combination of characteristics
+
+[.source]
+<<ISO704>>
+
+=== terminological data
+data related to concepts or their designations
+
+[.source]
+<<ISO30042>>
+
+=== designation
+representation of a concept by a sign which denotes it
+
+NOTE: In terminology work, three types of designations are distinguished:
+symbols, appellations and terms.
+
+[.source]
+<<ISO704>>
+
+=== definition
+representation of a concept by a descriptive statement which serves to
+differentiate it from related concepts
+
+[.source]
+<<ISO704>>
+
+=== terminological entry
+part of a terminological data collection which contains the terminological
+data related to one concept
+
+[.source]
+<<ISO10241-1>>
+
+=== subject field
+field of special knowledge
+
+[.source]
+<<ISO704>>
+
+=== concept harmonization
+activity leading to the establishment of a correspondence between two or more
+closely related or overlapping concepts in order to eliminate or reduce minor
+differences between them
+
+[.source]
+<<ISO704>>
+
+=== concept system
+set of concepts structured according to the relations among them
+
+[.source]
+<<ISO704>>
+
+=== term extraction
+process of identifying and collecting term candidates from a corpus by manual,
+automatic, or semi-automatic means
+
+=== terminology workflow
+series of coordinated terminology activities
+
+=== terminology resource
+structured collection of terminological data
+
+== Principles of terminology management
+
+=== General
+
+Effective terminology management is founded on a set of core principles derived
+from international standards and best practices. These principles ensure that
+terminology work is systematic, consistent, and of high quality, serving the
+needs of all stakeholders.
+
+The principles outlined in this section build upon the fundamental principles of
+terminology work established in <<ISO704>> and provide a comprehensive framework
+for terminology management activities across organizations and domains.
+
+=== Concept-based approach
+
+Terminology management shall be based on concepts rather than terms. A concept is
+a unit of knowledge created by a unique combination of characteristics.
+
+This principle dictates that:
+
+. Concepts should be clearly defined before terms are assigned
+. Each concept should be placed within its appropriate concept system
+. Relationships between concepts should be explicitly documented
+. One concept should correspond to one terminological entry
+
+[example]
+====
+Instead of creating separate entries for similar terms such as "backup,"
+"back-up," and "back up," a concept-based approach would create a single
+entry for the concept, documenting these terms as synonyms or variants.
+====
+
+=== Clarity and precision
+
+Definitions and terms shall be clear, precise, and unambiguous within their
+subject field.
+
+This principle requires:
+
+. Definitions that clearly distinguish a concept from related concepts
+. Terms that accurately represent the concept they designate
+. Avoidance of ambiguity and vagueness in both definitions and terms
+. Appropriate use of defining characteristics based on the concept type
+
+[example]
+====
+Poor definition: "database — a collection of data"
+Better definition: "database — structured collection of data that is stored on
+a computer system and can be accessed, managed, and updated in various ways"
+====
+
+=== Subject field orientation
+
+Terminology shall be developed and managed within the context of its subject
+field.
+
+This principle emphasizes:
+
+. Organizing terminology within clearly defined subject fields
+. Understanding and respecting the conceptual structures of each field
+. Using field-specific classification systems where appropriate
+. Involving subject matter experts in terminology development
+
+=== Documentation of sources
+
+All terminological data shall be properly documented with reliable sources.
+
+This principle requires:
+
+. Citing authoritative sources for definitions, contexts, and other data
+. Documenting the origin and evolution of terms
+. Maintaining bibliographic information for all external sources
+. Indicating the reliability and relevance of sources
+
+=== Systematic management
+
+Terminology shall be managed systematically following established processes
+and workflows.
+
+This principle involves:
+
+. Establishing clear procedures for terminology collection, creation, validation,
+and dissemination
+. Implementing appropriate technology solutions for terminology storage and
+retrieval
+. Defining roles and responsibilities for terminology management tasks
+. Regular review and updating of terminology resources
+
+=== Appropriate level of granularity
+
+The level of detail in terminological entries shall be appropriate for the
+intended use and users.
+
+This principle means:
+
+. Determining the appropriate amount of information to include in entries based
+on user needs
+. Balancing comprehensiveness with usability
+. Providing sufficient context for proper understanding and application
+. Adapting the level of technical specificity to the target audience
+
+=== Stakeholder involvement
+
+Terminology management shall involve relevant stakeholders throughout the process.
+
+This principle emphasizes:
+
+. Identifying and engaging key stakeholders (subject experts, translators,
+content creators, etc.)
+. Establishing collaborative processes for terminology development and review
+. Considering the needs and perspectives of different user groups
+. Creating feedback mechanisms for continuous improvement
+
+=== Quality assurance
+
+Terminology management shall include quality assurance measures at all stages.
+
+This principle requires:
+
+. Establishing clear quality criteria for terminological data
+. Implementing validation and approval processes
+. Regular review and updating of terminology resources
+. Monitoring the application of terminology in content
+
+=== Harmonization
+
+Terminology shall be harmonized within and across subject fields when appropriate.
+
+This principle involves:
+
+. Identifying and resolving inconsistencies in terminology use
+. Aligning terminology across related domains and disciplines
+. Reconciling differences in term usage across departments, companies, or regions
+. Balancing standardization with domain-specific needs
+
+== Terminology consistency
+
+=== General
+
+Terminology consistency refers to the uniform and coherent use of terminology
+across all content within an organization or specific domain. Consistency in
+terminology is essential for effective communication, clear documentation,
+efficient translation, and improved user experience.
+
+This section outlines approaches and strategies for achieving and maintaining
+terminology consistency, in accordance with the principles described in ISO 704
+and the requirements for terminological entries in ISO 10241-1.
+
+=== Importance of terminology consistency
+
+==== Improved communication clarity
+
+Consistent terminology reduces ambiguity and confusion in communication.
+When the same concept is consistently represented by the same term, readers can
+focus on understanding the information rather than deciphering terminology.
+
+==== Enhanced content quality
+
+Content with consistent terminology appears more professional and authoritative.
+Inconsistent terminology can undermine reader confidence and diminish the
+perceived quality of the content.
+
+==== Reduced translation costs and improved translation quality
+
+Consistent source terminology significantly improves translation efficiency and
+quality. When terms are used consistently, translation memory systems can
+achieve higher match rates, reducing costs and increasing consistency across
+languages.
+
+==== Improved searchability and information retrieval
+
+Consistent terminology makes it easier to find and retrieve information in
+documentation, knowledge bases, and other content repositories. Users can search
+for specific terms with confidence that all relevant information will be found.
+
+==== Legal and safety compliance
+
+In regulated industries, consistent terminology is often a requirement for
+compliance. Inconsistent terminology in safety-critical documentation can lead
+to misunderstandings with potentially serious consequences.
+
+=== Strategies for achieving terminology consistency
+
+==== Establishing a single source of truth
+
+Organizations shall establish an authoritative terminology resource that serves
+as the single source of truth for approved terminology. This resource may take
+the form of:
+
+* A terminology database (termbase) following the TBX standard (<<ISO30042>>)
+* A terminology management system
+* A controlled vocabulary or glossary
+
+All content creators and translators should have access to this resource and be
+required to use it as the authoritative reference.
+
+==== Implementing terminology workflows
+
+Organizations shall establish formal workflows for terminology management,
+including:
+
+. Term identification and extraction
+. Term research and definition
+. Term approval and validation
+. Term dissemination and implementation
+. Term maintenance and updating
+
+[example]
+====
+An effective terminology workflow:
+
+* Content authors flag potential new terms during content creation
+* Terminologists research the terms and propose definitions
+* Subject matter experts validate the terms and definitions
+* The approved terms are added to the terminology database
+* Content authors are notified of new approved terms
+* Translation teams are informed of terminology updates
+====
+
+==== Integration with content creation processes
+
+Terminology consistency shall be integrated into the content creation process
+through:
+
+. Terminology validation during content authoring
+. Terminology checks in content review processes
+. Automated terminology verification tools
+. Style guides with clear terminology guidelines
+
+==== Regular terminology audits
+
+Organizations shall conduct regular terminology audits to:
+
+. Identify inconsistencies in terminology usage
+. Detect unauthorized terms or definitions
+. Evaluate compliance with terminology guidelines
+. Prioritize areas for terminology improvement
+
+=== Measuring terminology consistency
+
+==== Quantitative measures
+
+Terminology consistency can be measured quantitatively through:
+
+* Term compliance rate: percentage of terminology usage that complies with
+approved terminology
+* Term coverage: percentage of concepts in a domain that have approved terms
+* Term usage frequency: how often approved terms are used correctly compared to
+unapproved variants
+
+==== Qualitative assessment
+
+Qualitative assessment of terminology consistency may include:
+
+* User feedback on terminology clarity and consistency
+* Subject matter expert evaluation of terminology appropriateness
+* Translator assessment of terminology translatability
+* Content reviewer reports on terminology issues
+
+=== Maintaining terminology consistency over time
+
+==== Continuous improvement processes
+
+Terminology consistency requires ongoing attention through:
+
+. Regular review and updating of terminology resources
+. Soliciting and incorporating user feedback
+. Monitoring term usage patterns
+. Adapting to evolving subject field knowledge
+
+==== Change management for terminology
+
+When terminology changes are necessary, organizations shall implement change
+management processes that include:
+
+. Documentation of the rationale for terminology changes
+. Communication of changes to all stakeholders
+. Version control of terminology resources
+. Guidance on transitioning to new terminology
+. Update of existing content to reflect terminology changes
+
+==== Training and awareness
+
+Organizations shall provide appropriate training and awareness programs to
+promote terminology consistency, including:
+
+. Introductory training on terminology principles and practices
+. Regular updates on terminology changes and additions
+. Guidance on using terminology tools and resources
+. Recognition of good terminology practices
+
+== Terminology requirements
+
+=== General
+
+Terminology requirements define the technical and procedural specifications for
+establishing and maintaining effective terminology resources. These requirements
+ensure that terminology resources meet quality standards, serve their intended
+purpose, and comply with relevant international standards.
+
+The requirements outlined in this section are derived from established standards,
+including ISO 30042 for terminology data exchange and ISO 10241-1 for
+terminological entries in standards.
+
+=== Data structure requirements
+
+==== Terminological entry structure
+
+Terminological entries shall include the following core components in accordance
+with <<ISO10241-1>>:
+
+* Entry identifier
+* Subject field
+* Definition
+* Term(s)
+* Source information
+
+Additional components may include:
+
+* Grammatical information
+* Context examples
+* Notes
+* Multimedia representations
+* Cross-references to related concepts
+* Administrative information
+
+[example]
+====
+Sample terminological entry structure:
+
+Entry ID: TM-0023
+Subject field: Terminology management
+Term: terminology database
+Definition: database containing terminology data
+Source: ISO 30042:2019
+Grammatical information: noun, singular
+Context: "The terminology database should be regularly maintained to ensure
+its relevance and accuracy."
+Related concepts: terminology resource, termbase
+====
+
+==== Concept orientation
+
+Terminology resources shall be concept-oriented, meaning that:
+
+. Each entry represents one concept
+. All terms designating the same concept are included in the same entry
+. Relationships between concepts are explicitly documented
+. Each entry is assigned to at least one subject field
+
+==== Data categories
+
+Terminology resources shall use a consistent set of data categories for
+terminological information in accordance with <<ISO30042>>.
+
+Data categories should be:
+
+. Clearly defined
+. Consistently applied
+. Compatible with international standards
+. Appropriate for the intended use
+. Documented in a data category registry
+
+==== Metadata
+
+Terminology resources shall include appropriate metadata to facilitate
+management and use, including:
+
+* Resource identification information
+* Creation and modification dates
+* Version information
+* Responsibility information
+* Usage rights and permissions
+* Processing history
+
+=== Functional requirements
+
+==== Search and retrieval
+
+Terminology resources shall provide effective search and retrieval capabilities,
+including:
+
+. Multiple search criteria (term, definition, subject field, etc.)
+. Flexible matching options (exact, fuzzy, wildcard, etc.)
+. Filtering by various attributes
+. Sorting options for search results
+. Search history and saved searches
+
+==== Data import and export
+
+Terminology resources shall support data exchange through:
+
+. Import from common terminology formats
+. Export to standard exchange formats, particularly TBX (<<ISO30042>>)
+. Batch processing of multiple entries
+. Selective import and export by criteria
+. Data conversion utilities
+
+==== User management
+
+Terminology management systems shall include user management functions:
+
+. Role-based access control
+. Customizable user permissions
+. Authentication mechanisms
+. User activity tracking
+. Collaborative features
+
+==== Workflow support
+
+Terminology management systems shall support established workflows:
+
+. Task assignment and tracking
+. Status tracking for terminology entries
+. Approval processes
+. Notification mechanisms
+. Integration with content creation systems
+
+=== Quality requirements
+
+==== Data validation
+
+Terminology resources shall implement validation mechanisms to ensure data
+quality:
+
+. Format validation for specific data categories
+. Mandatory field checking
+. Consistency checking across entries
+. Duplicate detection
+. Reference integrity checking
+
+==== Revision control
+
+Terminology resources shall maintain revision history:
+
+. Change tracking at the entry level
+. Version comparison
+. Rollback capabilities
+. User attribution for changes
+. Timestamp information
+
+==== Compliance checking
+
+Terminology resources shall support compliance with terminology policies:
+
+. Automated term verification in content
+. Consistency checking against approved terminology
+. Reporting on terminology usage
+. Identification of deprecated terms
+. Detection of unapproved synonyms
+
+=== Documentation requirements
+
+==== User documentation
+
+Terminology resources shall be accompanied by comprehensive user documentation:
+
+. User guides for different user roles
+. Tutorial materials
+. FAQ documents
+. Best practice guidelines
+. Quick reference materials
+
+==== Administrative documentation
+
+Terminology resources shall include administrative documentation:
+
+. System architecture and design specifications
+. Data models and schemas
+. Configuration parameters
+. Backup and recovery procedures
+. Integration specifications
+
+==== Process documentation
+
+Terminology management processes shall be documented:
+
+. Terminology workflows and procedures
+. Decision-making processes
+. Quality assurance protocols
+. Change management procedures
+. Implementation guidelines
+
+=== Integration requirements
+
+==== Authoring system integration
+
+Terminology resources shall integrate with content authoring systems:
+
+. Real-time terminology verification
+. Term suggestion capabilities
+. Context-sensitive terminology lookup
+. Direct access to terminology resources from within authoring tools
+. Automated terminology extraction from draft content
+
+==== Translation system integration
+
+Terminology resources shall integrate with translation tools:
+
+. Compatibility with translation memory systems
+. Support for multilingual terminology management
+. Term recognition in translation interfaces
+. Terminology consistency checking during translation
+. Terminology extraction from aligned bilingual content
+
+==== Content management integration
+
+Terminology resources shall integrate with content management systems:
+
+. Shared authentication mechanisms
+. Synchronized metadata
+. Terminology status aligned with content lifecycle
+. Terminology reporting within content management analytics
+. Automated terminology updates across content repositories
+
+== Terminology presentation rules and requirements
+
+=== General
+
+Terminology presentation rules establish standardized formats for displaying
+terminological data in various contexts, ensuring clarity, consistency, and
+usability. Proper presentation enhances the accessibility and effectiveness of
+terminology resources for all users.
+
+The presentation rules outlined in this section are based on the guidelines
+provided in <<ISO10241-1>> for terminological entries and <<ISO10241-2>> for
+adopted terminological entries.
+
+=== Terminological entry presentation
+
+==== General layout
+
+The layout of terminological entries shall follow these general principles:
+
+. Each entry shall be visually distinct and clearly separated from other entries
+. Core components shall be presented in a consistent sequence
+. Typographical devices shall be used consistently to distinguish different data
+categories
+. The layout shall facilitate quick identification of key information
+
+[example]
+====
+Example of a well-structured terminological entry:
+
+*terminology database*
+
+database containing terminology data
+
+[SOURCE: ISO 30042:2019]
+
+NOTE: Terminology databases may contain additional information such as
+definitions, context examples, notes, and multimedia representations.
+====
+
+==== Term representation
+
+Terms shall be presented according to these rules:
+
+. The preferred term shall be highlighted or presented first
+. Synonyms shall be clearly marked and distinguished from the preferred term
+. Deprecated terms shall be marked as such with appropriate labels
+. Term status shall be indicated using consistent markers
+. Terms shall be presented in their basic form unless otherwise required
+
+[example]
+====
+Preferred term: *terminology database*
+Synonym: termbase
+Deprecated: term bank [DEPRECATED]
+====
+
+==== Definition presentation
+
+Definitions shall be presented according to these rules:
+
+. Definitions shall be clearly distinguished from other entry elements
+. Definitions shall be presented as a single coherent unit
+. The first word of a definition shall not repeat the term being defined
+. Definitions shall follow a consistent grammatical pattern based on the
+concept type
+. Cross-references in definitions shall be clearly marked
+
+==== Subject field indication
+
+Subject field information shall be presented:
+
+. In a consistent location within the entry
+. Using standardized subject field designations
+. With appropriate hierarchical indication when necessary
+. In a way that clearly associates it with the concept rather than with
+individual terms
+
+==== Source references
+
+Sources of terminological information shall be presented:
+
+. Using a consistent citation format
+. With clear indication of which element the source applies to (term, definition,
+etc.)
+. With sufficient information to locate the original source
+. Using standard abbreviations when appropriate
+. With date information to indicate currency
+
+=== Presentation in specialized contexts
+
+==== Presentation in standards
+
+Terminological entries in standards shall follow the specific rules established
+in <<ISO10241-1>> and <<ISO10241-2>>, including:
+
+. Placement in a dedicated "Terms and definitions" section
+. Sequential or systematic ordering
+. Consistent entry structure
+. Proper cross-referencing to other standards
+. Clear indication of adopted terms
+
+[example]
+====
+Example of a terminological entry in a standard document:
+
+*terminology management*
+
+management of terminology resources through the systematic collection,
+description, processing, and presentation of concepts and their designations
+
+ *[SOURCE: ISO 704:2009]*
+====
+
+==== Digital presentation
+
+Terminology presented in digital formats shall follow these additional
+requirements:
+
+. Hyperlinks for cross-references and sources
+. Appropriate use of metadata for improved searchability
+. Consistent layout across different viewing devices
+. Clear indication of expandable/collapsible content
+. Accessible formatting for screen readers and other assistive technologies
+
+==== Multilingual presentation
+
+Multilingual terminology shall be presented according to these rules:
+
+. Consistent indication of language for each element
+. Clear visual distinction between languages
+. Alignment of corresponding elements across languages
+. Appropriate handling of script and directionality differences
+. Indication of term equivalence status (full equivalent, partial equivalent, etc.)
+
+[example]
+====
+Example of a multilingual entry:
+
+*terminology database* (en)
+database containing terminology data
+
+*base de données terminologique* (fr)
+base de données contenant des données terminologiques
+
+*Terminologiedatenbank* (de)
+Datenbank mit terminologischen Daten
+====
+
+=== Typographical and formatting conventions
+
+==== Typographic distinctions
+
+Different data categories shall be distinguished using consistent typographic
+conventions:
+
+. Terms may be presented in bold
+. Definitions may be presented in regular type
+. Sources may be presented in italic or smaller type
+. Notes may be presented in smaller type or indented
+. Cross-references may be presented in a distinctive font or color
+
+==== Symbols and markers
+
+Special symbols and markers shall be used consistently:
+
+. Symbols indicating term status (preferred, admitted, deprecated)
+. Markers for grammatical information
+. Indicators for usage restrictions
+. Symbols for cross-referencing
+. Markers for context and examples
+
+==== Abbreviations and labels
+
+Abbreviations and labels used in terminological entries shall be:
+
+. Standardized across the terminology resource
+. Explained in a key or legend
+. Used consistently
+. Intuitive where possible
+. Compliant with relevant domain conventions
+
+=== Presentation requirements for specific data categories
+
+==== Grammatical information
+
+Grammatical information shall be presented:
+
+. In a consistent format and position
+. Using standard abbreviations
+. With clear distinction between different grammatical attributes
+. In accordance with the linguistic conventions of each language
+
+==== Context examples
+
+Context examples shall be presented:
+
+. Clearly distinguished from definitions
+. In a consistent format (e.g., italics, quotation marks)
+. With the term highlighted or emphasized within the context
+. With source attribution when applicable
+. In sufficient quantity to illustrate typical usage
+
+==== Notes and supplementary information
+
+Notes and supplementary information shall be presented:
+
+. Clearly distinguished from the definition
+. In a consistent location
+. Numbered if multiple notes exist
+. With clear indication of their purpose
+. In a hierarchical structure if appropriate
+
+==== Concept relations
+
+Concept relations shall be presented:
+
+. Using standardized relationship indicators
+. With clear distinction between different relation types
+. With consistent formatting for all related concepts
+. With appropriate directional indicators for hierarchical relations
+. With cross-references to the related concepts
+
+[bibliography]
+== Bibliography
+
+* [[[ISO1087,ISO 1087:2019]]],
+_Terminology work and terminology science — Vocabulary_
+
+* [[[ISO860,ISO 860:2007]]],
+_Terminology work — Harmonization of concepts and terms_
+
+* [[[ISO16642,ISO 16642:2017]]],
+_Computer applications in terminology — Terminological markup framework_
+
+* [[[ISO26162-1,ISO 26162-1:2019]]],
+_Management of terminology resources — Terminology databases — Part 1: Design_
+
+* [[[ISO26162-2,ISO 26162-2:2019]]],
+_Management of terminology resources — Terminology databases — Part 2: Software_
+
+* [[[ISO12615,ISO 12615:2004]]],
+_Bibliographic references and source identifiers for terminology work_
+
+* [[[ISO12616,ISO 12616:2002]]],
+_Translation-oriented terminography_
+
+* [[[ISO12620,ISO 12620:2019]]],
+_Management of terminology resources — Data category specifications_
+
+* [[[ISO22128,ISO 22128:2008]]],
+_Terminology products and services — Overview and guidance_
+
+* [[[ISO23185,ISO 23185:2009]]],
+_Assessment and benchmarking of terminological resources — General concepts, principles and requirements_
+
+* [[[wright,1]]],
+Wright, S.E. and G. Budin. 1997. _Handbook of Terminology Management_. Amsterdam/Philadelphia: John Benjamins.
+
+* [[[arntz,1]]],
+Arntz, R., Picht, H., & Schmitz, K. 2014. _Einführung in die Terminologiearbeit_. Hildesheim: Olms.
+
+* [[[cabré,1]]],
+Cabré, M.T. 1999. _Terminology: Theory, Methods, and Applications_. Amsterdam/Philadelphia: John Benjamins.
+
+* [[[temmerman,1]]],
+Temmerman, R. 2000. _Towards New Ways of Terminology Description: The Sociocognitive Approach_. Amsterdam/Philadelphia: John Benjamins.
+
+* [[[sager,1]]],
+Sager, J.C. 1990. _A Practical Course in Terminology Processing_. Amsterdam/Philadelphia: John Benjamins.

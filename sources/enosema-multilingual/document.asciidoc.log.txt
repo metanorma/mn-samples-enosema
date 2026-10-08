@@ -1,0 +1,1944 @@
+= Multilingual terminology management
+:docnumber: 2504
+:boilerplate-authority: /Users/mulgogi/.asdf/installs/ruby/3.3.2/lib/ruby/gems/3.3.0/gems/metanorma-taste-0.0.5/lib/metanorma/../../data/enosema/copyright.adoc
+:publisher_logo: /Users/mulgogi/.asdf/installs/ruby/3.3.2/lib/ruby/gems/3.3.0/gems/metanorma-taste-0.0.5/lib/metanorma/../../data/enosema/logo.svg
+:i18nyaml: /Users/mulgogi/.asdf/installs/ruby/3.3.2/lib/ruby/gems/3.3.0/gems/metanorma-taste-0.0.5/lib/metanorma/../../data/enosema/i18n.yaml
+:publisher: Enosema Foundation
+:publisher_abbr: EFS
+:presentation-metadata-color-secondary: #007724
+:presentation-metadata-backcover-text: enosema.org
+:presentation-metadata-doctype-alias: standard
+:edition: 1
+:copyright-year: 2025
+:revdate: 2025-05-01
+:language: en
+:title-intro-en: Terminology management
+:title-main-en: Multilingual terminology
+:doctype: international-standard
+:technical-committee: Terminology
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:imagesdir: images
+:fullname: Reese W. Plews
+:surname: Plews
+:givenname: Reese W.
+:affiliation: Plews Consulting
+:fullname_2: Ronald Tse
+:surname_2: Tse
+:givenname_2: Ronald
+:affiliation_2: Ribose
+:docidentifier: EFS 2504:2025
+:mn-document-class: enosema
+:data-uri-image:
+:local-cache-only:
+
+.Foreword
+The Enosema Foundation ("`ES`") is the premier non-profit standardization
+organization for terminology standardization and terminology related processes
+such as management. It facilitates the education, standardization, research,
+promotion, definition, and usage of terminology resources and management
+practices globally.
+
+ES works with international partners and experts across the globe, reflecting
+the international nature of its mission. More information about ES is available
+on the official website (link:++https://www.enosema.org++[]).
+
+The procedures used to develop this document and those intended for its further
+maintenance are described in the ES Directives.
+
+In particular, the different approval criteria needed for the different types of
+ES documents should be noted. This document was drafted in accordance with the
+editorial rules of the ES Directives.
+
+Attention is drawn to the possibility that some of the elements of this document
+may be the subject of patent rights. ES shall not be held responsible for
+identifying any or all such patent rights. Details of any patent rights
+identified during the development of the document will be provided in the
+Introduction.
+
+Any trade name used in this document is information given for the convenience of
+users and does not constitute an endorsement.
+
+This document was prepared by Technical Committee _{technical-committee}_.
+
+== Introduction
+
+In our increasingly globalized world, effective communication across language
+boundaries has become essential for organizations, industries, and communities.
+Multilingual terminology management addresses the complex challenge of ensuring
+consistent, accurate, and culturally appropriate terminology across multiple
+languages and locales.
+
+While the fundamental principles of terminology management apply across all
+contexts, multilingual environments introduce additional layers of complexity.
+These include cultural and linguistic differences, varying conceptual systems,
+challenges in establishing equivalence between terms, and the need to determine
+authoritative versus informative language versions.
+
+Several international standards provide guidance for aspects of multilingual
+terminology work, including ISO 704 (Terminology work — Principles and methods),
+ISO 30042 (Management of terminology resources — TermBase eXchange (TBX)),
+ISO 10241-1 and ISO 10241-2 (Terminological entries in standards), and
+ISO 17100 (Translation services). However, organizations often struggle with
+implementing comprehensive multilingual terminology management due to the
+complexity of coordinating terminology across languages, cultures, and regions.
+
+The challenges of multilingual terminology management include:
+
+* Establishing conceptual equivalence across languages with different cultural
+and linguistic backgrounds
+* Determining which language versions are authoritative and which are informative
+* Adapting terminology to specific locales while maintaining conceptual integrity
+* Managing the evolution of terminology across multiple languages simultaneously
+* Coordinating terminology work among diverse stakeholders with different
+linguistic expertise
+* Implementing technical solutions that support multiple languages, scripts,
+and directionality
+
+This document addresses these challenges by providing comprehensive guidelines
+for multilingual terminology management based on established international
+standards and best practices. It outlines principles, cultural considerations,
+authority determination, equivalence management, workflow processes, and
+technical implementation requirements necessary for effective multilingual
+terminology management.
+
+The guidelines presented in this document are designed to help organizations:
+
+* Establish consistent terminology across multiple languages
+* Implement efficient multilingual terminology management processes
+* Determine and document authoritative and informative language versions
+* Adapt terminology appropriately for different cultural contexts
+* Build and maintain multilingual terminology resources that meet international
+standards
+* Improve the clarity and quality of multilingual content
+* Reduce translation and localization costs
+* Facilitate knowledge transfer and communication across language boundaries
+
+By following these guidelines, organizations can improve the consistency and
+quality of their multilingual communications, enhance their global content
+strategy, reduce costs, and better serve their diverse audiences worldwide.
+
+This standard builds upon the significant contributions of terminology and
+localization experts worldwide and the foundational work established in
+ISO standards. The Enosema Foundation recognizes the critical importance of
+multilingual terminology management in facilitating mutual understanding across
+languages and cultures.
+
+== Scope
+
+This document specifies principles, methods, and best practices for multilingual
+terminology management across organizations and domains. It provides a
+standardized approach to the creation, collection, storage, processing, and
+dissemination of terminology resources in multiple languages and across different
+cultural contexts.
+
+The guidelines specified in this document apply to all multilingual terminology
+management activities, regardless of the subject field, industry, organization
+size, or languages involved. The standardized approaches enhance terminology
+consistency across languages, improve communication clarity in multilingual
+environments, and ensure compliance with international terminology standards.
+
+This document provides practical guidance for implementing effective multilingual
+terminology management processes based on established international standards,
+including ISO 704, ISO 30042, ISO 10241-1, ISO 10241-2, and ISO 17100, with
+examples illustrating the application of these principles in various multilingual
+contexts.
+
+This document specifically addresses:
+
+* Principles for managing terminology across multiple languages
+* Cultural and regional considerations in multilingual terminology
+* Determination and documentation of authoritative and informative language
+versions
+* Equivalence management across languages with different conceptual systems
+* Multilingual terminology workflows and collaboration processes
+* Technical implementation of multilingual terminology resources
+
+This document is intended for:
+
+* Terminology managers and terminologists responsible for developing and
+maintaining multilingual terminology resources
+* Translators and localizers who work with specialized terminology across
+languages
+* Content creators and technical writers producing content for multilingual
+audiences
+* Standards developers working in multilingual environments
+* Subject matter experts contributing to terminology resources in their native
+languages
+* Translation and localization project managers
+* Language service providers
+* International organizations managing multilingual documentation
+* Software developers creating tools for multilingual terminology management
+
+The guidelines specified here complement the principles and methods described
+in ISO 704, the data exchange formats defined in ISO 30042, the rules for
+terminological entries established in ISO 10241-1 and ISO 10241-2, and the
+translation service requirements in ISO 17100.
+
+[bibliography]
+== Normative references
+
+* [[[ISO704,ISO 704:2022]]],
+_Terminology work — Principles and methods_
+
+* [[[ISO10241-1,ISO 10241-1:2011]]],
+_Terminological entries in standards — Part 1: General requirements and examples of presentation_
+
+* [[[ISO10241-2,ISO 10241-2:2012]]],
+_Terminological entries in standards — Part 2: Adoption of standardized terminological entries_
+
+* [[[ISO30042,ISO 30042:2019]]],
+_Management of terminology resources — TermBase eXchange (TBX)_
+
+* [[[ISO17100,ISO 17100:2015]]],
+_Translation services — Requirements for translation services_
+
+* [[[ISO5127,ISO 5127:2017]]],
+_Information and documentation — Foundation and vocabulary_
+
+* [[[ISO639-1,ISO 639-1:2002]]],
+_Codes for the representation of names of languages — Part 1: Alpha-2 code_
+
+* [[[ISO639-2,ISO 639-2:1998]]],
+_Codes for the representation of names of languages — Part 2: Alpha-3 code_
+
+* [[[ISO15924,ISO 15924:2004]]],
+_Information and documentation — Codes for the representation of names of scripts_
+
+== Terms and definitions
+
+=== terminology
+set of designations belonging to one special language
+
+[.source]
+<<ISO704>>
+
+=== term
+verbal designation of a general concept in a specific subject field
+
+[.source]
+<<ISO704>>
+
+=== multilingual terminology management
+management of terminology resources across multiple languages through the
+systematic collection, description, processing, and presentation of concepts
+and their designations
+
+=== concept
+unit of knowledge created by a unique combination of characteristics
+
+[.source]
+<<ISO704>>
+
+=== authoritative language version
+language version of a terminological entry that serves as the reference for
+creating or validating other language versions
+
+=== informative language version
+language version of a terminological entry derived from or validated against
+an authoritative language version
+
+=== source language
+language from which a term or text is translated
+
+[.source]
+<<ISO17100>>
+
+=== target language
+language into which a term or text is translated
+
+[.source]
+<<ISO17100>>
+
+=== locale
+set of parameters that defines the user's language, region and any special
+variant preferences that the user wants to see in their user interface
+
+=== localization
+adaptation of a product, service, or content to meet the language, cultural,
+and other requirements of a specific target market
+
+[.source]
+<<ISO17100>>
+
+=== internationalization
+process of designing a product so that it can be adapted to various languages
+and regions without engineering changes
+
+=== cultural adaptation
+process of adapting content to the cultural expectations, norms, and preferences
+of a target audience
+
+=== concept equivalence
+relationship between designations in different languages representing the same
+concept
+
+=== full equivalence
+relationship between designations in different languages that represent identical
+concepts
+
+=== partial equivalence
+relationship between designations in different languages that represent similar
+but not identical concepts
+
+=== zero equivalence
+absence of a designation in a target language for a concept that exists in a
+source language
+
+=== terminological gap
+absence of a direct term equivalent in a target language for a concept in the
+source language
+
+=== neologism
+newly coined term, word, or phrase that may be in the process of entering common
+use but has not yet been fully accepted
+
+=== borrowing
+term adopted from another language with or without modification
+
+=== calque
+word or phrase borrowed from another language by literal, word-for-word or
+root-for-root translation
+
+=== language code
+code that represents the name of a language
+
+[.source]
+<<ISO639-1>>
+
+=== script code
+code that represents the name of a script
+
+[.source]
+<<ISO15924>>
+
+=== bidirectional text
+text containing text in both right-to-left and left-to-right writing directions
+
+=== language register
+variety of language used for a particular purpose or in a particular social
+setting
+
+=== terminology harmonization
+activity leading to the selection of terms and the assignment of concepts to
+terms in different languages to ensure equivalence of concepts and consistency
+of terms
+
+== Principles of multilingual terminology management
+
+=== General
+
+Multilingual terminology management is founded on a set of core principles that
+extend the fundamental principles of terminology work to address the specific
+challenges of working across multiple languages and cultures. These principles
+ensure that multilingual terminology work is systematic, consistent, and of high
+quality, serving the needs of all stakeholders regardless of their language or
+cultural background.
+
+The principles outlined in this section build upon the fundamental principles of
+terminology work established in <<ISO704>> and provide a comprehensive framework
+for multilingual terminology management activities across organizations and
+domains.
+
+=== Concept-based approach
+
+Multilingual terminology management shall be based on concepts rather than terms,
+with the understanding that concepts may have different boundaries and
+characteristics in different languages and cultures.
+
+This principle dictates that:
+
+. Concepts should be clearly defined before terms are assigned in any language
+. Each concept should be placed within its appropriate concept system, which may
+vary across cultures
+. Relationships between concepts should be explicitly documented, noting any
+cultural variations
+. One concept should correspond to one multilingual terminological entry, even
+when conceptual boundaries differ across languages
+
+[example]
+====
+The English concept of "privacy" does not have exact equivalents in many
+languages. A concept-based approach would document the English concept with its
+specific characteristics, then document the partial equivalents in other
+languages (such as "vie privée" in French or "プライバシー" in Japanese) with
+notes explaining the conceptual differences.
+====
+
+=== Cultural sensitivity
+
+Multilingual terminology management shall respect and account for cultural
+differences in conceptual systems, linguistic structures, and communication
+practices.
+
+This principle requires:
+
+. Recognition that concepts may be culture-specific or have different
+characteristics in different cultures
+. Awareness of cultural taboos, sensitivities, and preferences in term selection
+. Consideration of cultural context in definitions and examples
+. Appropriate adaptation of concepts and terms for different cultural audiences
+while maintaining conceptual integrity
+
+[example]
+====
+The concept of "family" varies significantly across cultures. In some cultures,
+it refers primarily to the nuclear family, while in others it encompasses
+extended family members. Multilingual terminology management would document
+these cultural variations in the concept description.
+====
+
+=== Language equality
+
+All languages in a multilingual terminology resource shall be treated with equal
+respect and consideration, regardless of their status as authoritative or
+informative.
+
+This principle emphasizes:
+
+. Equal attention to quality and accuracy across all language versions
+. Appropriate representation of all languages in the terminology development
+process
+. Recognition that each language has unique characteristics that must be
+respected
+. Avoidance of linguistic imperialism or the imposition of structures from one
+language onto another
+
+=== Transparency of authority
+
+The status of each language version as authoritative or informative shall be
+clearly documented and transparent to all users.
+
+This principle involves:
+
+. Explicit documentation of which language versions are authoritative
+. Clear criteria for determining authoritative status
+. Transparent processes for creating and validating informative versions
+. Documentation of the relationship between authoritative and informative
+versions
+
+[example]
+====
+A terminological entry might indicate:
+
+term: artificial intelligence
+en: artificial intelligence [AUTHORITATIVE]
+fr: intelligence artificielle [INFORMATIVE]
+de: künstliche Intelligenz [INFORMATIVE]
+ja: 人工知能 [AUTHORITATIVE]
+
+With a note explaining that both English and Japanese versions were developed
+by subject matter experts in the original concept development and serve as
+authoritative references for other language versions.
+====
+
+=== Equivalence management
+
+The degree of equivalence between terms in different languages shall be
+explicitly documented and managed.
+
+This principle requires:
+
+. Assessment and documentation of the type of equivalence (full, partial, zero)
+. Strategies for handling partial and zero equivalence
+. Clear indication of conceptual differences across languages
+. Appropriate handling of culture-specific concepts
+
+=== Collaborative development
+
+Multilingual terminology shall be developed through collaboration among experts
+with different linguistic and cultural backgrounds.
+
+This principle emphasizes:
+
+. Involvement of native speakers and subject matter experts for each language
+. Collaborative processes for resolving conceptual and terminological differences
+. Cross-cultural communication and negotiation
+. Balanced representation of different language communities
+
+=== Consistency within language versions
+
+Each language version shall maintain internal consistency in terminology use,
+style, and format.
+
+This principle involves:
+
+. Consistent application of terminological principles within each language
+. Adherence to language-specific conventions and standards
+. Consistent formatting and presentation within each language
+. Regular review and harmonization within each language version
+
+=== Adaptability to language evolution
+
+Multilingual terminology management shall accommodate the different rates and
+patterns of language evolution across languages.
+
+This principle requires:
+
+. Recognition that languages evolve at different rates and in different ways
+. Processes for updating terminology to reflect language changes
+. Documentation of obsolete or changing terms
+. Flexibility to accommodate neologisms and evolving usage
+
+=== Technical accessibility
+
+Multilingual terminology resources shall be technically accessible to users of
+all included languages.
+
+This principle involves:
+
+. Support for all required scripts and character sets
+. Appropriate handling of bidirectional text
+. Consideration of sorting and search requirements for different languages
+. Accessibility features that work across languages
+
+== Localization and cultural adaptation
+
+=== General
+
+Localization and cultural adaptation are essential aspects of multilingual
+terminology management that go beyond simple translation. They involve adapting
+terminology to specific cultural contexts while maintaining conceptual integrity
+and ensuring that terms are appropriate and effective for their target audiences.
+
+This section outlines approaches and strategies for localizing terminology and
+adapting it to different cultural contexts, in accordance with the principles
+described in the previous section and the requirements for multilingual
+terminology resources.
+
+=== Localization versus translation
+
+==== Distinguishing localization from translation
+
+Localization is a broader process than translation, encompassing cultural,
+technical, and contextual adaptations beyond linguistic conversion.
+
+In terminology management:
+
+* Translation focuses on finding linguistic equivalents for terms
+* Localization considers cultural appropriateness, usage contexts, and user
+expectations
+* Translation may be a component of localization, but localization includes
+additional adaptations
+
+[example]
+====
+The English term "cloud computing" could be translated literally into many
+languages, but proper localization would consider:
+
+* Whether the metaphor of "cloud" makes sense in the target culture
+* If there are existing terms already in use in the target locale
+* Whether technical experts in the target locale use an English borrowing or a
+native term
+* Any cultural associations or connotations that might affect understanding
+====
+
+==== Localization parameters
+
+Terminology localization may involve adapting various parameters:
+
+. Linguistic parameters (grammar, syntax, orthography)
+. Cultural parameters (metaphors, idioms, examples)
+. Technical parameters (formats, units of measurement, notation systems)
+. Legal parameters (regulated terminology, compliance requirements)
+. Market-specific parameters (industry conventions, brand considerations)
+
+=== Cultural considerations in terminology
+
+==== Cultural context of concepts
+
+Concepts exist within cultural contexts that influence their boundaries,
+characteristics, and relationships with other concepts.
+
+When managing multilingual terminology:
+
+. Identify culture-specific aspects of concepts
+. Document cultural variations in concept understanding
+. Provide cultural context in definitions and examples
+. Recognize when concepts are culture-bound or culture-specific
+
+[example]
+====
+The concept of "personal space" varies significantly across cultures. In a
+multilingual terminology resource, the entry might include:
+
+en: personal space
+definition: The physical distance one prefers to maintain in social interactions.
+cultural note: In North American culture, personal space typically extends
+approximately 45-120 cm from the body in social situations.
+
+ja: パーソナルスペース
+definition: 社会的な交流において維持したい物理的な距離。
+cultural note: 日本文化では、パーソナルスペースの概念は存在するが、
+北米文化と比較して距離が短い傾向がある。
+====
+
+==== Cultural sensitivity in term selection
+
+Term selection must consider cultural sensitivities, taboos, and preferences.
+
+Guidelines for culturally sensitive term selection:
+
+. Avoid terms with negative connotations in the target culture
+. Consider historical and political sensitivities
+. Be aware of taboo subjects and terminology
+. Respect cultural preferences for native terms versus borrowings
+. Consider register and formality appropriate to the culture
+
+==== Regional variants
+
+Many languages have regional variants that must be considered in terminology
+management.
+
+Approaches to handling regional variants:
+
+. Document regional usage patterns
+. Specify the region for each variant
+. Indicate preferred variants for specific markets
+. Provide usage notes for regional differences
+. Consider standardization needs versus regional identity
+
+[example]
+====
+The concept of "mobile phone" has different terms in different English-speaking
+regions:
+
+en-US: cell phone
+en-GB: mobile phone
+en-AU: mobile phone
+en-CA: cell phone, mobile phone
+
+Each variant would be documented with its regional code and usage notes.
+====
+
+=== Adaptation strategies
+
+==== Adaptation of culture-specific concepts
+
+When concepts are specific to one culture but need to be represented in another,
+several strategies can be employed:
+
+. Borrowing the source term with explanatory notes
+. Creating a neologism in the target language
+. Using a descriptive phrase instead of a single term
+. Finding the closest partial equivalent with clarifying notes
+. Using a generalizing term with specific qualifiers
+
+[example]
+====
+The Japanese concept of "おもてなし" (omotenashi) refers to a specific form of
+Japanese hospitality that doesn't have a direct equivalent in many languages.
+Adaptation strategies might include:
+
+* Borrowing: "omotenashi" (with explanation)
+* Descriptive phrase: "Japanese wholehearted hospitality"
+* Partial equivalent: "hospitality (Japanese style)"
+* Generalizing term with qualifier: "anticipatory hospitality (Japanese concept)"
+====
+
+==== Adaptation of examples and contexts
+
+Examples and contexts should be adapted to be culturally relevant and
+meaningful.
+
+Guidelines for adapting examples:
+
+. Replace culture-specific references with locally relevant ones
+. Adapt scenarios to reflect local practices and norms
+. Ensure examples are appropriate and not offensive in the target culture
+. Maintain the conceptual point while changing cultural specifics
+. Verify that adapted examples accurately represent the concept
+
+==== Adaptation of visual elements
+
+Visual elements associated with terminology (icons, symbols, diagrams) may also
+require cultural adaptation.
+
+Considerations for visual adaptation:
+
+. Color associations vary across cultures
+. Symbols may have different meanings or be taboo
+. Reading direction affects diagram layout
+. Gestures depicted may have different meanings
+. Cultural references in visuals may not be recognized
+
+=== Internationalization as foundation
+
+==== Internationalization principles
+
+Internationalization is the process of designing terminology resources so they
+can be easily localized.
+
+Key internationalization principles for terminology:
+
+. Separate content from presentation
+. Design for translation expansion/contraction
+. Support all required character sets and writing systems
+. Avoid culture-specific references in core definitions
+. Use culturally neutral examples where possible
+. Design for bidirectional text support
+
+==== Designing for future localization
+
+Terminology resources should be designed with future localization in mind.
+
+Best practices include:
+
+. Document the cultural context of the original terminology
+. Provide context notes to aid future localizers
+. Maintain clear concept boundaries to facilitate equivalence assessment
+. Use internationally recognized standards for data categories
+. Document the rationale for term choices
+. Establish processes for cultural review and adaptation
+
+=== Quality assurance for localized terminology
+
+==== Cultural review process
+
+Localized terminology should undergo cultural review by native speakers and
+subject matter experts.
+
+The cultural review process should:
+
+. Verify cultural appropriateness of terms and definitions
+. Check for unintended connotations or associations
+. Ensure examples are relevant to the target culture
+. Confirm that register and style are appropriate
+. Identify any missing cultural context
+
+==== User feedback mechanisms
+
+Establish mechanisms for gathering user feedback on localized terminology.
+
+Effective feedback mechanisms include:
+
+. Surveys of target language users
+. Community review processes
+. Usage monitoring and analysis
+. Consultation with local experts
+. Periodic review and update cycles
+
+== Authority and status of language versions
+
+=== General
+
+In multilingual terminology management, determining which language versions are
+authoritative and which are informative is a critical aspect of ensuring
+terminology quality and consistency. This section outlines approaches for
+establishing, documenting, and managing the authoritative status of language
+versions in multilingual terminology resources.
+
+The guidelines in this section are designed to ensure transparency, clarity, and
+appropriate governance of multilingual terminology resources while respecting
+the principles of language equality and cultural sensitivity described in
+previous sections.
+
+=== Establishing authoritative language versions
+
+==== Criteria for determining authoritative status
+
+The determination of which language versions are authoritative should be based
+on clear criteria:
+
+. Origin of the concept (language in which the concept was originally developed)
+. Expertise availability (languages with available subject matter experts)
+. Legal or regulatory requirements (legally mandated authoritative languages)
+. Organizational policy (officially designated corporate languages)
+. User base (languages of primary user communities)
+. Quality assurance capabilities (languages with robust review processes)
+
+Organizations shall document the criteria used for determining authoritative
+status and apply them consistently across their terminology resources.
+
+[example]
+====
+An international standards organization might establish these criteria for
+authoritative language versions:
+
+* The language in which the standard was originally developed is authoritative
+* Languages that are official languages of the organization are authoritative
+* Languages for which there are dedicated technical committees with subject
+matter experts are authoritative
+* All other language versions are informative
+====
+
+==== Multiple authoritative languages
+
+In some cases, multiple language versions may be designated as authoritative.
+This approach is appropriate when:
+
+. The concept was developed collaboratively in multiple languages
+. The organization has multiple official languages
+. Legal requirements mandate multiple authoritative languages
+. Equal expertise is available in multiple languages
+
+When multiple authoritative languages exist, organizations shall:
+
+. Clearly document all authoritative languages
+. Establish processes for resolving conflicts between authoritative versions
+. Ensure synchronization of updates across all authoritative versions
+. Maintain equal quality standards for all authoritative versions
+
+==== Changing authoritative status
+
+The authoritative status of language versions may change over time due to:
+
+. Organizational changes
+. Expertise availability changes
+. Quality improvements in previously informative versions
+. Legal or regulatory changes
+. Strategic business decisions
+
+When changing the authoritative status of language versions, organizations shall:
+
+. Document the rationale for the change
+. Establish a transition plan
+. Communicate the change to all stakeholders
+. Update all relevant documentation
+. Review and validate the newly authoritative versions
+
+=== Documentation of authoritativeness
+
+==== Explicit marking of status
+
+The status of each language version shall be explicitly marked in the
+terminology resource:
+
+. Use consistent markers for authoritative and informative status
+. Include status information in metadata
+. Make status visible to users
+. Include status in exported terminology data
+. Document the meaning of status markers
+
+[example]
+====
+Example of explicit status marking:
+
+concept ID: TM-0042
+en: cloud computing [AUTHORITATIVE]
+definition: model for enabling ubiquitous, convenient, on-demand network access
+to a shared pool of configurable computing resources
+
+fr: informatique en nuage [INFORMATIVE]
+definition: modèle permettant un accès omniprésent, pratique et à la demande par
+le réseau à un pool partagé de ressources informatiques configurables
+====
+
+==== Documentation of authority criteria
+
+For each terminological entry with authoritative and informative language
+versions, the criteria used to determine authoritative status should be
+documented:
+
+. Include notes explaining why specific languages are authoritative
+. Document the expertise or sources used for authoritative versions
+. Provide context for understanding the relationship between versions
+. Include version history relevant to authoritative status
+. Document any special considerations for specific entries
+
+==== Authority in terminology exchange
+
+When exchanging terminology data with other systems or organizations:
+
+. Include authoritative status information in exchange formats
+. Use standard TBX mechanisms for representing status (<<ISO30042>>)
+. Document how status is encoded in the exchange format
+. Verify that status information is preserved during import/export
+. Include relevant metadata about authority determination processes
+
+=== Processes for deriving informative translations
+
+==== Translation workflow for informative versions
+
+Informative language versions shall be created through a structured translation
+workflow:
+
+. Source content selection from authoritative version(s)
+. Qualified translator selection with subject matter expertise
+. Translation with reference to authoritative version(s)
+. Review by subject matter experts
+. Validation against authoritative version(s)
+. Documentation of the relationship to authoritative version(s)
+
+==== Quality assurance for informative versions
+
+While informative versions are derived from authoritative versions, they still
+require rigorous quality assurance:
+
+. Verification of conceptual equivalence
+. Linguistic quality review
+. Cultural appropriateness assessment
+. Terminology consistency check
+. User acceptance testing
+. Regular review and updating
+
+==== Documentation of derivation process
+
+The process by which informative versions are derived from authoritative
+versions shall be documented:
+
+. Source authoritative version(s) used
+. Translation or adaptation methodology
+. Validation processes applied
+. Known limitations or challenges
+. Date of derivation and scheduled review
+. Responsible parties for the informative version
+
+=== Managing conflicts between versions
+
+==== Conflict identification
+
+Potential conflicts between language versions may include:
+
+. Conceptual discrepancies
+. Contradictory definitions
+. Incompatible examples or contexts
+. Divergent concept relationships
+. Inconsistent usage guidance
+
+Organizations shall establish processes for identifying such conflicts through:
+
+. Regular comparative reviews
+. User feedback mechanisms
+. Automated consistency checks
+. Cross-language validation
+. Expert review panels
+
+==== Conflict resolution
+
+When conflicts between language versions are identified:
+
+. Authoritative versions take precedence in case of conflicts
+. When multiple authoritative versions conflict, a documented resolution process
+shall be followed
+. Changes to resolve conflicts shall be documented
+. All stakeholders shall be informed of significant conflict resolutions
+. Root causes of conflicts shall be analyzed to prevent recurrence
+
+==== Maintaining version alignment
+
+To prevent conflicts and maintain alignment between language versions:
+
+. Synchronize update processes across languages
+. Establish clear communication channels between language teams
+. Document concept boundaries clearly to prevent drift
+. Conduct regular alignment reviews
+. Implement version control for all language versions
+
+=== Legal and compliance implications
+
+==== Legal status of language versions
+
+The designation of authoritative and informative language versions may have
+legal implications:
+
+. In legal disputes, authoritative versions typically prevail
+. Regulatory compliance may require specific authoritative languages
+. Contractual obligations may specify authoritative languages
+. Liability may differ for authoritative versus informative content
+. Intellectual property considerations may vary by language version
+
+Organizations shall consult legal experts when establishing authoritative
+language policies and document any legal implications.
+
+==== Compliance documentation
+
+For compliance purposes, organizations shall maintain documentation of:
+
+. Criteria and processes for determining authoritative status
+. Changes to authoritative status over time
+. Quality assurance processes for all language versions
+. Validation procedures for informative versions
+. Conflict resolution processes and outcomes
+
+==== Disclaimer requirements
+
+Informative language versions should include appropriate disclaimers:
+
+. Clear indication of their informative status
+. Reference to the authoritative version(s)
+. Limitations of the informative version
+. Process for reporting discrepancies
+. Date of translation or adaptation from the authoritative version
+
+== Terminological equivalence management
+
+=== General
+
+Terminological equivalence management addresses the challenge of establishing
+relationships between terms in different languages that represent the same or
+similar concepts. This section outlines approaches for identifying, documenting,
+and managing different types of equivalence in multilingual terminology
+resources.
+
+The guidelines in this section are designed to ensure accurate representation of
+conceptual relationships across languages while acknowledging the reality that
+perfect equivalence is not always possible due to linguistic and cultural
+differences.
+
+=== Types of equivalence
+
+==== Full equivalence
+
+Full equivalence exists when terms in different languages represent identical
+concepts with the same characteristics and boundaries.
+
+Characteristics of full equivalence:
+
+. Complete conceptual overlap
+. Same position in respective concept systems
+. Same definition (accounting for linguistic differences)
+. Same usage contexts
+. Same register and connotations
+
+Full equivalence is most common in:
+
+* Technical and scientific domains with internationally standardized concepts
+* Newly developed fields where terminology is adopted across languages
+* Domains with strong international standardization
+
+[example]
+====
+The concept of "oxygen" has full equivalents across many languages:
+
+en: oxygen
+definition: chemical element with atomic number 8
+
+fr: oxygène
+definition: élément chimique de numéro atomique 8
+
+de: Sauerstoff
+definition: chemisches Element mit der Ordnungszahl 8
+
+ja: 酸素
+definition: 原子番号8の化学元素
+====
+
+==== Partial equivalence
+
+Partial equivalence exists when terms in different languages represent similar
+but not identical concepts, with some differences in characteristics or
+boundaries.
+
+Types of partial equivalence:
+
+. Inclusion (one concept includes the other)
+. Intersection (concepts overlap partially)
+. Different register or usage contexts
+. Different connotations or associations
+. Different positions in respective concept systems
+
+[example]
+====
+The English term "privacy" and French "vie privée" have partial equivalence:
+
+en: privacy
+definition: state of being free from public attention or intrusion into one's
+personal matters
+
+fr: vie privée
+definition: ensemble des activités d'une personne qui relèvent de l'intimité et
+qui ne concernent pas la vie publique ou professionnelle
+
+The French concept focuses more specifically on activities and has stronger
+connotations of intimacy than the broader English concept.
+====
+
+==== Zero equivalence
+
+Zero equivalence occurs when a concept exists in one language but has no
+established equivalent term in another language.
+
+Causes of zero equivalence:
+
+. Culture-specific concepts
+. Newly emerged concepts not yet named in all languages
+. Specialized concepts relevant only in certain linguistic communities
+. Concepts tied to specific legal or regulatory systems
+. Concepts related to unique cultural practices or artifacts
+
+[example]
+====
+The Portuguese concept "saudade" (a deep emotional state of melancholic longing
+for something or someone that is absent) has no direct equivalent in many
+languages, representing a case of zero equivalence.
+====
+
+=== Equivalence assessment
+
+==== Assessment methodology
+
+Equivalence assessment shall follow a systematic methodology:
+
+. Analyze concept characteristics in the source language
+. Identify potential equivalent terms in the target language
+. Compare concept characteristics across languages
+. Determine the type of equivalence (full, partial, zero)
+. Document the degree and nature of equivalence
+. Validate the assessment with subject matter experts
+
+==== Assessment criteria
+
+Criteria for assessing equivalence include:
+
+. Conceptual overlap (extent to which characteristics match)
+. Position in respective concept systems
+. Usage contexts and collocations
+. Register and stylistic level
+. Connotations and associations
+. Acceptance by subject matter experts
+. Established usage in authoritative sources
+
+==== Documentation of assessment
+
+The equivalence assessment shall be documented:
+
+. Type of equivalence determined
+. Basis for the determination
+. Specific differences in case of partial equivalence
+. Sources consulted
+. Experts involved in the assessment
+. Date of assessment
+. Confidence level of the assessment
+
+=== Strategies for handling equivalence challenges
+
+==== Handling partial equivalence
+
+When partial equivalence is identified, the following strategies may be employed:
+
+. Document the specific differences between concepts
+. Provide usage notes explaining the limitations of equivalence
+. Include context examples illustrating appropriate usage
+. Consider creating multiple target language entries for different aspects of
+the source concept
+. Use qualifiers to narrow or expand the concept as needed
+
+[example]
+====
+For the English term "accountability" which has partial equivalents in many
+languages:
+
+fr: responsabilité
+usage note: In French, "responsabilité" encompasses both the concepts of
+"responsibility" and "accountability" in English, with less emphasis on the
+aspect of being answerable to external stakeholders than the English
+"accountability."
+
+Additional context examples would illustrate appropriate usage scenarios.
+====
+
+==== Handling zero equivalence
+
+When zero equivalence is identified, the following strategies may be employed:
+
+. Borrowing the source term
+. Creating a neologism
+. Using a descriptive phrase
+. Using a functional equivalent with explanatory notes
+. Adapting an existing term with qualifiers
+. Using a combination of strategies
+
+The choice of strategy should consider:
+
+. Target audience needs
+. Domain conventions
+. Language policies
+. Usability considerations
+. Long-term terminology development goals
+
+[example]
+====
+For the Japanese concept "wabi-sabi" (侘寂) in English:
+
+Strategy 1 - Borrowing: "wabi-sabi"
+with note: "A Japanese aesthetic concept centered on the acceptance of
+transience and imperfection, characterized by asymmetry, roughness, simplicity,
+and appreciation of natural processes."
+
+Strategy 2 - Descriptive phrase: "imperfect beauty aesthetic"
+with note: "Refers to the Japanese concept of finding beauty in imperfection,
+impermanence, and incompleteness."
+====
+
+==== Neologism creation
+
+When creating neologisms to address zero equivalence, the following guidelines
+apply:
+
+. Follow word formation patterns of the target language
+. Ensure transparency of meaning where possible
+. Consider ease of pronunciation and use
+. Consult with native speakers and subject matter experts
+. Test acceptance with target users
+. Document the creation process and rationale
+
+==== Borrowing strategies
+
+When borrowing terms from the source language, consider:
+
+. Adaptation to target language phonology and orthography
+. Grammatical integration into the target language
+. Cultural acceptability of borrowings
+. Existing patterns of borrowing between the languages
+. Potential for confusion with existing terms
+. Documentation of the source term and its meaning
+
+=== Managing equivalence in terminology resources
+
+==== Representation in terminological entries
+
+Equivalence information shall be represented in terminological entries:
+
+. Clear indication of equivalence type
+. Cross-references between related entries
+. Notes explaining partial or zero equivalence
+. Context examples illustrating usage
+. Source information for equivalence determinations
+. Visual representation of conceptual relationships where helpful
+
+==== Equivalence in concept systems
+
+Equivalence relationships affect how concepts are positioned in multilingual
+concept systems:
+
+. Document differences in concept system structures across languages
+. Show how partial equivalents relate to other concepts in their respective
+systems
+. Indicate where concept boundaries differ
+. Use visual representations to illustrate cross-language concept relationships
+. Document culture-specific conceptual structures
+
+==== Evolving equivalence
+
+Equivalence relationships may evolve over time due to:
+
+. Language evolution
+. Concept development
+. Increasing international harmonization
+. Changes in usage patterns
+. Deliberate terminology planning
+
+Terminology resources shall:
+
+. Include version history of equivalence relationships
+. Document changes in equivalence status
+. Provide dates for equivalence determinations
+. Establish review cycles for equivalence relationships
+. Monitor usage to detect evolving equivalence
+
+== Multilingual terminology workflow
+
+=== General
+
+Effective multilingual terminology management requires well-defined workflows
+that coordinate the efforts of various stakeholders across languages and
+cultures. This section outlines approaches for establishing and managing
+multilingual terminology workflows, from initial planning through ongoing
+maintenance.
+
+The guidelines in this section are designed to ensure efficient, collaborative,
+and high-quality terminology development across multiple languages, with
+appropriate consideration of authoritative and informative language versions.
+
+=== Planning multilingual terminology resources
+
+==== Strategic planning
+
+Strategic planning for multilingual terminology resources shall address:
+
+. Organizational goals and requirements for multilingual terminology
+. Target languages and their prioritization
+. Authoritative language determination strategy
+. Resource allocation across languages
+. Timeline for development and implementation
+. Success metrics and evaluation criteria
+. Alignment with broader content and localization strategies
+
+[example]
+====
+A strategic plan for multilingual terminology might include:
+
+* Primary goal: Support product documentation in 10 languages
+* Authoritative languages: English and Japanese (product development languages)
+* First-tier target languages: French, German, Spanish, Chinese (major markets)
+* Second-tier target languages: Italian, Portuguese, Korean, Russian
+* Timeline: First-tier languages within 6 months, second-tier within 12 months
+* Success metrics: 95% terminology consistency in documentation, 30% reduction
+in translation queries
+====
+
+==== Resource assessment
+
+Before initiating multilingual terminology work, organizations shall assess:
+
+. Available expertise in each language
+. Existing terminology resources
+. Technology infrastructure
+. Budget constraints
+. Time constraints
+. Stakeholder availability
+. External resources and partnerships
+
+==== Scope definition
+
+The scope of multilingual terminology resources shall be clearly defined:
+
+. Subject fields and domains to be covered
+. Concept boundaries and inclusion criteria
+. Types of terminological data to be collected
+. Level of detail for each language
+. Relationship to other terminology resources
+. Target user groups and their needs
+. Deliverables and formats
+
+=== Collaborative terminology development
+
+==== Stakeholder identification
+
+Key stakeholders in multilingual terminology development include:
+
+. Subject matter experts in each language
+. Terminologists and linguists
+. Content creators and technical writers
+. Translators and localizers
+. Product and service developers
+. Legal and compliance specialists
+. End users of terminology resources
+. Management and decision-makers
+
+Organizations shall identify relevant stakeholders for each language and define
+their roles and responsibilities in the terminology workflow.
+
+==== Collaboration models
+
+Effective collaboration models for multilingual terminology work include:
+
+. Centralized model (core team coordinates all language work)
+. Distributed model (language-specific teams with central coordination)
+. Hybrid model (combination of centralized and distributed elements)
+. Community model (broader stakeholder involvement with expert oversight)
+. Expert network model (reliance on external subject matter experts)
+
+The choice of collaboration model should consider:
+
+. Organizational structure
+. Geographic distribution of expertise
+. Language priorities
+. Resource constraints
+. Quality requirements
+. Timeline considerations
+
+==== Communication protocols
+
+Clear communication protocols shall be established:
+
+. Regular coordination meetings across language teams
+. Shared documentation and progress tracking
+. Issue escalation procedures
+. Decision-making processes
+. Conflict resolution mechanisms
+. Knowledge sharing practices
+. Feedback channels
+
+=== Multilingual terminology workflow stages
+
+==== Concept identification and analysis
+
+The workflow shall begin with concept identification and analysis:
+
+. Identify concepts requiring multilingual representation
+. Analyze concept characteristics and boundaries
+. Determine concept relationships and systems
+. Document concept origins and cultural context
+. Identify potential equivalence challenges
+. Prioritize concepts for multilingual development
+. Document initial concept information in authoritative language(s)
+
+==== Term extraction and research
+
+Term extraction and research shall be conducted:
+
+. Extract term candidates from authoritative sources
+. Research existing terminology usage in each language
+. Consult subject matter experts in each language
+. Analyze term usage patterns and contexts
+. Document term variants and synonyms
+. Identify potential cultural or linguistic issues
+. Compile preliminary term lists for each language
+
+==== Collaborative development
+
+Collaborative development of multilingual terminology shall include:
+
+. Draft definitions in authoritative language(s)
+. Propose equivalent terms in target languages
+. Assess equivalence relationships
+. Develop target language definitions
+. Document usage contexts and examples
+. Address cultural adaptation needs
+. Resolve terminology conflicts and inconsistencies
+
+==== Review and validation
+
+Multilingual terminology shall undergo review and validation:
+
+. Expert review of conceptual accuracy
+. Linguistic review of term appropriateness
+. Cross-language consistency review
+. Cultural appropriateness review
+. User acceptance testing
+. Compliance and legal review if applicable
+. Final approval by designated authorities
+
+==== Implementation and dissemination
+
+Approved terminology shall be implemented and disseminated:
+
+. Import into terminology management systems
+. Format for various delivery channels
+. Integrate with content creation tools
+. Distribute to stakeholders
+. Provide training and guidance
+. Monitor initial usage
+. Gather feedback for improvement
+
+==== Maintenance and updating
+
+Ongoing maintenance and updating shall be established:
+
+. Regular review cycles for all language versions
+. Process for handling change requests
+. Update synchronization across languages
+. Version control and history tracking
+. Obsolescence management
+. Feedback incorporation
+. Continuous improvement processes
+
+=== Authority assignment in workflows
+
+==== Authority determination workflow
+
+The workflow for determining authoritative language versions shall include:
+
+. Application of established criteria for authoritative status
+. Documentation of the rationale for authority decisions
+. Review and approval of authority designations
+. Communication of authority status to all stakeholders
+. Implementation of authority markers in terminology resources
+. Periodic review of authority designations
+
+==== Workflow for informative versions
+
+The workflow for developing informative language versions shall:
+
+. Begin after authoritative versions are approved
+. Include reference to authoritative source(s)
+. Involve qualified translators and subject matter experts
+. Include validation against authoritative versions
+. Document the relationship to authoritative versions
+. Establish review processes appropriate to informative status
+
+==== Authority transition management
+
+When authority status changes, the workflow shall include:
+
+. Documentation of the rationale for the change
+. Review of the newly authoritative version
+. Update of all affected terminology entries
+. Communication to all stakeholders
+. Revision of dependent informative versions
+. Update of all documentation and metadata
+
+=== Quality assurance in multilingual workflows
+
+==== Quality criteria
+
+Quality criteria for multilingual terminology shall be established:
+
+. Conceptual accuracy and clarity
+. Linguistic correctness and appropriateness
+. Cultural sensitivity and appropriateness
+. Consistency within and across languages
+. Compliance with terminology standards
+. Usability for target audiences
+. Technical accuracy and precision
+
+==== Quality control processes
+
+Quality control processes shall be integrated throughout the workflow:
+
+. Entry-level validation checks
+. Peer review processes
+. Expert validation procedures
+. Cross-language consistency checks
+. User feedback mechanisms
+. Automated quality checks
+. Regular quality audits
+
+==== Continuous improvement
+
+Continuous improvement of multilingual terminology workflows shall be
+implemented through:
+
+. Regular workflow evaluation
+. Stakeholder feedback collection
+. Performance metrics analysis
+. Identification of recurring issues
+. Process optimization
+. Best practice documentation
+. Training and skill development
+
+=== Technology support for multilingual workflows
+
+==== Terminology management systems
+
+Terminology management systems supporting multilingual workflows shall provide:
+
+. Support for all required languages and scripts
+. Concept-oriented data structures
+. Authority status tracking
+. Equivalence relationship management
+. Collaborative workflow features
+. Version control and history tracking
+. Integration with content creation tools
+
+==== Collaboration tools
+
+Collaboration tools for multilingual terminology work shall support:
+
+. Cross-language team communication
+. Document sharing and co-editing
+. Task assignment and tracking
+. Review and approval processes
+. Comment and feedback mechanisms
+. Version comparison
+. Knowledge sharing
+
+==== Automation opportunities
+
+Workflow automation opportunities include:
+
+. Term extraction from corpora
+. Consistency checking
+. Status tracking and notifications
+. Validation against rules and patterns
+. Report generation
+. Integration with translation management systems
+. Synchronization across systems
+
+== Technical implementation
+
+=== General
+
+The technical implementation of multilingual terminology resources requires
+careful consideration of data structures, exchange formats, system architecture,
+and integration with other tools and processes. This section outlines approaches
+for implementing multilingual terminology resources that effectively support the
+principles and workflows described in previous sections.
+
+The guidelines in this section are designed to ensure that technical
+implementations of multilingual terminology resources are robust, scalable,
+interoperable, and capable of supporting the complex requirements of
+multilingual terminology management.
+
+=== Data modeling for multilingual terminology
+
+==== Concept-oriented data model
+
+Multilingual terminology resources shall be based on a concept-oriented data
+model:
+
+. Each concept forms the core of a terminological entry
+. All language versions are linked to the same concept
+. Concept characteristics are documented independently of language-specific
+representations
+. Concept relationships are maintained at the concept level
+. Language-specific information is clearly distinguished from concept-level
+information
+
+[example]
+====
+Concept-oriented data model example:
+
+```
+Concept ID: C-0042
+  Domain: Information Technology
+  Concept diagram: [link to visual representation]
+  Concept relationships:
+    - broader: C-0040 (Computing)
+    - related: C-0043 (Cloud Storage)
+
+  Language versions:
+    en [AUTHORITATIVE]:
+      Term: cloud computing
+      Definition: model for enabling ubiquitous, convenient, on-demand network
+      access to a shared pool of configurable computing resources
+      Usage context: "The company migrated its infrastructure to cloud computing."
+
+    fr [INFORMATIVE]:
+      Term: informatique en nuage
+      Definition: modèle permettant un accès omniprésent, pratique et à la
+      demande par le réseau à un pool partagé de ressources informatiques
+      configurables
+      Usage context: "L'entreprise a migré son infrastructure vers
+      l'informatique en nuage."
+```
+====
+
+==== Data categories
+
+Data categories for multilingual terminology shall include:
+
+. Core concept information (ID, domain, concept relationships)
+. Term-related information (term, part of speech, usage status)
+. Definition-related information (definition, source, context)
+. Administrative information (creation date, modification date, responsible party)
+. Language-specific information (language code, regional variant, script)
+. Authority information (authoritative/informative status, authority criteria)
+. Equivalence information (equivalence type, equivalence notes)
+. Cultural information (cultural notes, adaptation guidance)
+
+Data categories shall be defined in accordance with <<ISO30042>> and
+documented in a data category registry.
+
+==== Metadata requirements
+
+Metadata for multilingual terminology resources shall include:
+
+. Resource identification information
+. Included languages and their status
+. Subject fields covered
+. Creation and modification dates
+. Responsible organizations and individuals
+. Version information
+. Usage rights and permissions
+. Applicable standards and guidelines
+. Quality assurance information
+. Intended user groups
+
+=== Exchange formats and interoperability
+
+==== TBX implementation
+
+Terminology exchange between systems shall use TBX (TermBase eXchange) format
+as specified in <<ISO30042>>:
+
+. TBX dialect selection appropriate to the application
+. Proper mapping of data categories to TBX elements
+. Inclusion of required administrative information
+. Appropriate handling of language codes
+. Proper representation of concept relationships
+. Documentation of custom data categories
+. Validation against TBX schemas
+
+[example]
+====
+Example of TBX representation for a multilingual entry:
+
+```xml
+<termEntry id="C-0042">
+  <descrip type="subjectField">Information Technology</descrip>
+  <langSet xml:lang="en">
+    <descrip type="authorityStatus">authoritative</descrip>
+    <tig>
+      <term>cloud computing</term>
+      <termNote type="partOfSpeech">noun</termNote>
+      <descrip type="definition">model for enabling ubiquitous, convenient,
+      on-demand network access to a shared pool of configurable computing
+      resources</descrip>
+    </tig>
+  </langSet>
+  <langSet xml:lang="fr">
+    <descrip type="authorityStatus">informative</descrip>
+    <tig>
+      <term>informatique en nuage</term>
+      <termNote type="partOfSpeech">noun</termNote>
+      <descrip type="definition">modèle permettant un accès omniprésent,
+      pratique et à la demande par le réseau à un pool partagé de ressources
+      informatiques configurables</descrip>
+    </tig>
+  </langSet>
+</termEntry>
+```
+====
+
+==== Other exchange formats
+
+In addition to TBX, other exchange formats may be supported:
+
+. CSV/Excel for simple terminology lists
+. XML formats for specific applications
+. JSON for web applications
+. RDF/OWL for semantic web applications
+. Custom formats for specific tools
+
+When using formats other than TBX, organizations shall:
+
+. Document the mapping between internal data model and exchange format
+. Ensure all essential information is preserved
+. Validate the exchange format against defined schemas
+. Test the exchange process thoroughly
+. Document any limitations or information loss
+
+==== API considerations
+
+APIs for multilingual terminology resources shall support:
+
+. Retrieval of complete terminological entries
+. Language-specific queries
+. Concept-based queries
+. Filtering by various criteria
+. Authentication and authorization
+. Rate limiting and usage monitoring
+. Comprehensive error handling
+. Documentation and examples for all supported languages
+
+=== Multilingual database design
+
+==== Character set and encoding
+
+Multilingual terminology databases shall support:
+
+. Unicode character encoding (preferably UTF-8)
+. All scripts required for included languages
+. Bidirectional text handling
+. Special characters and symbols
+. Proper sorting and collation for all languages
+. Normalization of character representations
+. Fallback mechanisms for unsupported characters
+
+==== Search and retrieval considerations
+
+Search and retrieval functionality shall support:
+
+. Language-specific search options
+. Script-specific search features
+. Fuzzy matching appropriate to each language
+. Morphological analysis for relevant languages
+. Cross-language search capabilities
+. Filtering by authority status
+. Filtering by equivalence type
+. Combined concept and language-based queries
+
+==== Performance considerations
+
+Performance optimization for multilingual databases shall address:
+
+. Indexing strategies for multiple languages
+. Caching mechanisms for frequently accessed entries
+. Query optimization for language-specific searches
+. Scalability for growing language coverage
+. Response time targets for different operations
+. Load balancing for distributed access
+. Monitoring and performance tuning
+
+=== Integration with other systems
+
+==== Content authoring integration
+
+Integration with content authoring systems shall provide:
+
+. Real-time terminology verification
+. Term suggestion capabilities
+. Context-sensitive terminology lookup
+. Automatic term recognition
+. Terminology consistency checking
+. Feedback mechanisms for terminology issues
+. Support for all authoring languages
+
+==== Translation management integration
+
+Integration with translation management systems shall support:
+
+. Terminology extraction from source content
+. Terminology verification during translation
+. Automatic propagation of terminology updates
+. Term candidate identification
+. Terminology consistency metrics
+. Terminology feedback workflows
+. Support for all translation languages
+
+==== Localization workflow integration
+
+Integration with localization workflows shall enable:
+
+. Terminology verification during localization
+. Cultural adaptation guidance
+. Regional variant management
+. Terminology consistency across localized content
+. Feedback mechanisms for localization-specific terminology issues
+. Support for locale-specific terminology requirements
+
+=== Technical considerations for authority and equivalence
+
+==== Authority status implementation
+
+Technical implementation of authority status shall include:
+
+. Clear status indicators in the data model
+. Status filtering in search interfaces
+. Status-based access controls if required
+. Status change tracking and history
+. Status-based validation rules
+. Status visualization in user interfaces
+. Status preservation in data exchange
+
+==== Equivalence relationship implementation
+
+Technical implementation of equivalence relationships shall provide:
+
+. Storage of equivalence type information
+. Visualization of equivalence relationships
+. Navigation between equivalent terms
+. Filtering by equivalence type
+. Documentation of equivalence assessment
+. Equivalence-based validation rules
+. Preservation of equivalence information in exchange formats
+
+=== Security and access control
+
+==== User roles and permissions
+
+Security implementation shall include role-based access control:
+
+. Terminologist roles for each language
+. Reviewer roles for quality assurance
+. Administrator roles for system management
+. Read-only roles for general users
+. Language-specific roles for multilingual management
+. Subject field expert roles
+. External collaborator roles
+
+==== Audit and compliance
+
+Audit capabilities shall support:
+
+. Tracking of all terminology changes
+. User attribution for modifications
+. Timestamp information for all activities
+. Approval workflow documentation
+. Compliance verification
+. Activity reporting
+. Security incident monitoring
+
+=== Deployment and scaling
+
+==== Deployment models
+
+Deployment options for multilingual terminology systems include:
+
+. On-premises installation
+. Cloud-based deployment
+. Hybrid deployment
+. Containerized deployment
+. Distributed deployment for global access
+. Mobile-accessible deployment
+. Offline-capable deployment
+
+==== Scaling considerations
+
+Scaling strategies shall address:
+
+. Growth in number of languages
+. Growth in terminology volume
+. Increasing user base
+. Geographic distribution of users
+. Performance requirements
+. Availability requirements
+. Disaster recovery needs
+
+[bibliography]
+== Bibliography
+
+* [[[ISO1087,ISO 1087:2019]]],
+_Terminology work and terminology science — Vocabulary_
+
+* [[[ISO860,ISO 860:2007]]],
+_Terminology work — Harmonization of concepts and terms_
+
+* [[[ISO16642,ISO 16642:2017]]],
+_Computer applications in terminology — Terminological markup framework_
+
+* [[[ISO26162-1,ISO 26162-1:2019]]],
+_Management of terminology resources — Terminology databases — Part 1: Design_
+
+* [[[ISO26162-2,ISO 26162-2:2019]]],
+_Management of terminology resources — Terminology databases — Part 2: Software_
+
+* [[[ISO12615,ISO 12615:2004]]],
+_Bibliographic references and source identifiers for terminology work_
+
+* [[[ISO12616,ISO 12616:2002]]],
+_Translation-oriented terminography_
+
+* [[[ISO12620,ISO 12620:2019]]],
+_Management of terminology resources — Data category specifications_
+
+* [[[ISO22128,ISO 22128:2008]]],
+_Terminology products and services — Overview and guidance_
+
+* [[[ISO23185,ISO 23185:2009]]],
+_Assessment and benchmarking of terminological resources — General concepts, principles and requirements_
+
+* [[[ISO24156-1,ISO 24156-1:2014]]],
+_Graphic notations for concept modelling in terminology work and its relationship with UML — Part 1: Guidelines for using UML notation in terminology work_
+
+* [[[ISO9001,ISO 9001:2015]]],
+_Quality management systems — Requirements_
+
+* [[[ISO15188,ISO 15188:2001]]],
+_Project management guidelines for terminology standardization_
+
+* [[[ISO18841,ISO 18841:2018]]],
+_Interpreting services — General requirements and recommendations_
+
+* [[[ISO20771,ISO 20771:2020]]],
+_Legal translation — Requirements_
+
+* [[[ISO21998,ISO 21998:2020]]],
+_Interpreting services — Healthcare interpreting — Requirements and recommendations_
+
+* [[[ISO21999,ISO 21999:2020]]],
+_Interpreting services — Conference interpreting — Requirements and recommendations_
+
+* [[[ISO/IEC15897,ISO/IEC 15897:2011]]],
+_Information technology — Procedures for the registration of cultural elements_
+
+* [[[wright,Wright1997]]],
+Wright, S.E. and G. Budin. 1997. _Handbook of Terminology Management_. Amsterdam/Philadelphia: John Benjamins.
+
+* [[[cabré,Cabré1999]]],
+Cabré, M.T. 1999. _Terminology: Theory, Methods, and Applications_. Amsterdam/Philadelphia: John Benjamins.
+
+* [[[temmerman,Temmerman2000]]],
+Temmerman, R. 2000. _Towards New Ways of Terminology Description: The Sociocognitive Approach_. Amsterdam/Philadelphia: John Benjamins.
+
+* [[[sager,Sager1990]]],
+Sager, J.C. 1990. _A Practical Course in Terminology Processing_. Amsterdam/Philadelphia: John Benjamins.
+
+* [[[kockaert,Kockaert2015]]],
+Kockaert, H.J. and F. Steurs (eds). 2015. _Handbook of Terminology, Volume 1_. Amsterdam/Philadelphia: John Benjamins.
+
+* [[[faber,Faber2012]]],
+Faber, P. (ed). 2012. _A Cognitive Linguistics View of Terminology and Specialized Language_. Berlin/Boston: De Gruyter Mouton.
+
+* [[[pym,Pym2014]]],
+Pym, A. 2014. _Exploring Translation Theories_. London/New York: Routledge.
+
+* [[[esselink,Esselink2000]]],
+Esselink, B. 2000. _A Practical Guide to Localization_. Amsterdam/Philadelphia: John Benjamins.
+
+* [[[singh,Singh2011]]],
+Singh, N. 2011. _Localization Strategies for Global E-Business_. Cambridge: Cambridge University Press.
+
+* [[[oard,Oard1997]]],
+Oard, D.W. and B.J. Dorr. 1997. "A Survey of Multilingual Text Retrieval." _Technical Report UMIACS-TR-96-19_. College Park, MD: University of Maryland Institute for Advanced Computer Studies.
+
+* [[[gouadec,Gouadec2007]]],
+Gouadec, D. 2007. _Translation as a Profession_. Amsterdam/Philadelphia: John Benjamins.
+
+* [[[dunne,Dunne2006]]],
+Dunne, K.J. (ed). 2006. _Perspectives on Localization_. Amsterdam/Philadelphia: John Benjamins.
+
+* [[[jiménez-crespo,Jiménez-Crespo2013]]],
+Jiménez-Crespo, M.A. 2013. _Translation and Web Localization_. London/New York: Routledge.

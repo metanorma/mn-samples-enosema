@@ -1,0 +1,320 @@
+== Technical implementation
+
+=== General
+
+The technical implementation of multilingual terminology resources requires
+careful consideration of data structures, exchange formats, system architecture,
+and integration with other tools and processes. This section outlines approaches
+for implementing multilingual terminology resources that effectively support the
+principles and workflows described in previous sections.
+
+The guidelines in this section are designed to ensure that technical
+implementations of multilingual terminology resources are robust, scalable,
+interoperable, and capable of supporting the complex requirements of
+multilingual terminology management.
+
+=== Data modeling for multilingual terminology
+
+==== Concept-oriented data model
+
+Multilingual terminology resources shall be based on a concept-oriented data
+model:
+
+. Each concept forms the core of a terminological entry
+. All language versions are linked to the same concept
+. Concept characteristics are documented independently of language-specific
+representations
+. Concept relationships are maintained at the concept level
+. Language-specific information is clearly distinguished from concept-level
+information
+
+[example]
+====
+Concept-oriented data model example:
+
+```
+Concept ID: C-0042
+  Domain: Information Technology
+  Concept diagram: [link to visual representation]
+  Concept relationships:
+    - broader: C-0040 (Computing)
+    - related: C-0043 (Cloud Storage)
+
+  Language versions:
+    en [AUTHORITATIVE]:
+      Term: cloud computing
+      Definition: model for enabling ubiquitous, convenient, on-demand network
+      access to a shared pool of configurable computing resources
+      Usage context: "The company migrated its infrastructure to cloud computing."
+
+    fr [INFORMATIVE]:
+      Term: informatique en nuage
+      Definition: modèle permettant un accès omniprésent, pratique et à la
+      demande par le réseau à un pool partagé de ressources informatiques
+      configurables
+      Usage context: "L'entreprise a migré son infrastructure vers
+      l'informatique en nuage."
+```
+====
+
+==== Data categories
+
+Data categories for multilingual terminology shall include:
+
+. Core concept information (ID, domain, concept relationships)
+. Term-related information (term, part of speech, usage status)
+. Definition-related information (definition, source, context)
+. Administrative information (creation date, modification date, responsible party)
+. Language-specific information (language code, regional variant, script)
+. Authority information (authoritative/informative status, authority criteria)
+. Equivalence information (equivalence type, equivalence notes)
+. Cultural information (cultural notes, adaptation guidance)
+
+Data categories shall be defined in accordance with <<ISO30042>> and
+documented in a data category registry.
+
+==== Metadata requirements
+
+Metadata for multilingual terminology resources shall include:
+
+. Resource identification information
+. Included languages and their status
+. Subject fields covered
+. Creation and modification dates
+. Responsible organizations and individuals
+. Version information
+. Usage rights and permissions
+. Applicable standards and guidelines
+. Quality assurance information
+. Intended user groups
+
+=== Exchange formats and interoperability
+
+==== TBX implementation
+
+Terminology exchange between systems shall use TBX (TermBase eXchange) format
+as specified in <<ISO30042>>:
+
+. TBX dialect selection appropriate to the application
+. Proper mapping of data categories to TBX elements
+. Inclusion of required administrative information
+. Appropriate handling of language codes
+. Proper representation of concept relationships
+. Documentation of custom data categories
+. Validation against TBX schemas
+
+[example]
+====
+Example of TBX representation for a multilingual entry:
+
+```xml
+<termEntry id="C-0042">
+  <descrip type="subjectField">Information Technology</descrip>
+  <langSet xml:lang="en">
+    <descrip type="authorityStatus">authoritative</descrip>
+    <tig>
+      <term>cloud computing</term>
+      <termNote type="partOfSpeech">noun</termNote>
+      <descrip type="definition">model for enabling ubiquitous, convenient,
+      on-demand network access to a shared pool of configurable computing
+      resources</descrip>
+    </tig>
+  </langSet>
+  <langSet xml:lang="fr">
+    <descrip type="authorityStatus">informative</descrip>
+    <tig>
+      <term>informatique en nuage</term>
+      <termNote type="partOfSpeech">noun</termNote>
+      <descrip type="definition">modèle permettant un accès omniprésent,
+      pratique et à la demande par le réseau à un pool partagé de ressources
+      informatiques configurables</descrip>
+    </tig>
+  </langSet>
+</termEntry>
+```
+====
+
+==== Other exchange formats
+
+In addition to TBX, other exchange formats may be supported:
+
+. CSV/Excel for simple terminology lists
+. XML formats for specific applications
+. JSON for web applications
+. RDF/OWL for semantic web applications
+. Custom formats for specific tools
+
+When using formats other than TBX, organizations shall:
+
+. Document the mapping between internal data model and exchange format
+. Ensure all essential information is preserved
+. Validate the exchange format against defined schemas
+. Test the exchange process thoroughly
+. Document any limitations or information loss
+
+==== API considerations
+
+APIs for multilingual terminology resources shall support:
+
+. Retrieval of complete terminological entries
+. Language-specific queries
+. Concept-based queries
+. Filtering by various criteria
+. Authentication and authorization
+. Rate limiting and usage monitoring
+. Comprehensive error handling
+. Documentation and examples for all supported languages
+
+=== Multilingual database design
+
+==== Character set and encoding
+
+Multilingual terminology databases shall support:
+
+. Unicode character encoding (preferably UTF-8)
+. All scripts required for included languages
+. Bidirectional text handling
+. Special characters and symbols
+. Proper sorting and collation for all languages
+. Normalization of character representations
+. Fallback mechanisms for unsupported characters
+
+==== Search and retrieval considerations
+
+Search and retrieval functionality shall support:
+
+. Language-specific search options
+. Script-specific search features
+. Fuzzy matching appropriate to each language
+. Morphological analysis for relevant languages
+. Cross-language search capabilities
+. Filtering by authority status
+. Filtering by equivalence type
+. Combined concept and language-based queries
+
+==== Performance considerations
+
+Performance optimization for multilingual databases shall address:
+
+. Indexing strategies for multiple languages
+. Caching mechanisms for frequently accessed entries
+. Query optimization for language-specific searches
+. Scalability for growing language coverage
+. Response time targets for different operations
+. Load balancing for distributed access
+. Monitoring and performance tuning
+
+=== Integration with other systems
+
+==== Content authoring integration
+
+Integration with content authoring systems shall provide:
+
+. Real-time terminology verification
+. Term suggestion capabilities
+. Context-sensitive terminology lookup
+. Automatic term recognition
+. Terminology consistency checking
+. Feedback mechanisms for terminology issues
+. Support for all authoring languages
+
+==== Translation management integration
+
+Integration with translation management systems shall support:
+
+. Terminology extraction from source content
+. Terminology verification during translation
+. Automatic propagation of terminology updates
+. Term candidate identification
+. Terminology consistency metrics
+. Terminology feedback workflows
+. Support for all translation languages
+
+==== Localization workflow integration
+
+Integration with localization workflows shall enable:
+
+. Terminology verification during localization
+. Cultural adaptation guidance
+. Regional variant management
+. Terminology consistency across localized content
+. Feedback mechanisms for localization-specific terminology issues
+. Support for locale-specific terminology requirements
+
+=== Technical considerations for authority and equivalence
+
+==== Authority status implementation
+
+Technical implementation of authority status shall include:
+
+. Clear status indicators in the data model
+. Status filtering in search interfaces
+. Status-based access controls if required
+. Status change tracking and history
+. Status-based validation rules
+. Status visualization in user interfaces
+. Status preservation in data exchange
+
+==== Equivalence relationship implementation
+
+Technical implementation of equivalence relationships shall provide:
+
+. Storage of equivalence type information
+. Visualization of equivalence relationships
+. Navigation between equivalent terms
+. Filtering by equivalence type
+. Documentation of equivalence assessment
+. Equivalence-based validation rules
+. Preservation of equivalence information in exchange formats
+
+=== Security and access control
+
+==== User roles and permissions
+
+Security implementation shall include role-based access control:
+
+. Terminologist roles for each language
+. Reviewer roles for quality assurance
+. Administrator roles for system management
+. Read-only roles for general users
+. Language-specific roles for multilingual management
+. Subject field expert roles
+. External collaborator roles
+
+==== Audit and compliance
+
+Audit capabilities shall support:
+
+. Tracking of all terminology changes
+. User attribution for modifications
+. Timestamp information for all activities
+. Approval workflow documentation
+. Compliance verification
+. Activity reporting
+. Security incident monitoring
+
+=== Deployment and scaling
+
+==== Deployment models
+
+Deployment options for multilingual terminology systems include:
+
+. On-premises installation
+. Cloud-based deployment
+. Hybrid deployment
+. Containerized deployment
+. Distributed deployment for global access
+. Mobile-accessible deployment
+. Offline-capable deployment
+
+==== Scaling considerations
+
+Scaling strategies shall address:
+
+. Growth in number of languages
+. Growth in terminology volume
+. Increasing user base
+. Geographic distribution of users
+. Performance requirements
+. Availability requirements
+. Disaster recovery needs

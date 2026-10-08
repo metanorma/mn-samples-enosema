@@ -1,0 +1,62 @@
+== Introduction
+
+In our increasingly globalized world, effective communication across language
+boundaries has become essential for organizations, industries, and communities.
+Multilingual terminology management addresses the complex challenge of ensuring
+consistent, accurate, and culturally appropriate terminology across multiple
+languages and locales.
+
+While the fundamental principles of terminology management apply across all
+contexts, multilingual environments introduce additional layers of complexity.
+These include cultural and linguistic differences, varying conceptual systems,
+challenges in establishing equivalence between terms, and the need to determine
+authoritative versus informative language versions.
+
+Several international standards provide guidance for aspects of multilingual
+terminology work, including ISO 704 (Terminology work — Principles and methods),
+ISO 30042 (Management of terminology resources — TermBase eXchange (TBX)),
+ISO 10241-1 and ISO 10241-2 (Terminological entries in standards), and
+ISO 17100 (Translation services). However, organizations often struggle with
+implementing comprehensive multilingual terminology management due to the
+complexity of coordinating terminology across languages, cultures, and regions.
+
+The challenges of multilingual terminology management include:
+
+* Establishing conceptual equivalence across languages with different cultural
+and linguistic backgrounds
+* Determining which language versions are authoritative and which are informative
+* Adapting terminology to specific locales while maintaining conceptual integrity
+* Managing the evolution of terminology across multiple languages simultaneously
+* Coordinating terminology work among diverse stakeholders with different
+linguistic expertise
+* Implementing technical solutions that support multiple languages, scripts,
+and directionality
+
+This document addresses these challenges by providing comprehensive guidelines
+for multilingual terminology management based on established international
+standards and best practices. It outlines principles, cultural considerations,
+authority determination, equivalence management, workflow processes, and
+technical implementation requirements necessary for effective multilingual
+terminology management.
+
+The guidelines presented in this document are designed to help organizations:
+
+* Establish consistent terminology across multiple languages
+* Implement efficient multilingual terminology management processes
+* Determine and document authoritative and informative language versions
+* Adapt terminology appropriately for different cultural contexts
+* Build and maintain multilingual terminology resources that meet international
+standards
+* Improve the clarity and quality of multilingual content
+* Reduce translation and localization costs
+* Facilitate knowledge transfer and communication across language boundaries
+
+By following these guidelines, organizations can improve the consistency and
+quality of their multilingual communications, enhance their global content
+strategy, reduce costs, and better serve their diverse audiences worldwide.
+
+This standard builds upon the significant contributions of terminology and
+localization experts worldwide and the foundational work established in
+ISO standards. The Enosema Foundation recognizes the critical importance of
+multilingual terminology management in facilitating mutual understanding across
+languages and cultures.

@@ -1,0 +1,332 @@
+== Enosema's approach
+
+=== General
+
+The Enosema Foundation has developed a comprehensive approach to concept
+relationships that builds upon the abstract model presented in this document.
+This approach provides practical guidance for implementing concept relationships
+in terminology resources while maintaining semantic precision and
+interoperability.
+
+The Enosema approach is designed to be adaptable to various domains and
+implementation contexts while ensuring consistency in how relationships are
+defined, documented, and managed.
+
+=== Core principles
+
+==== Concept-centricity
+
+The Enosema approach places concepts at the center of terminology work,
+recognizing that relationships exist between concepts rather than between terms.
+This principle ensures that:
+
+. Relationships are established based on conceptual analysis, not merely
+linguistic connections
+. Relationship assertions remain valid across different linguistic expressions
+of the same concepts
+. Conceptual structures are maintained independently of specific terminological
+representations
+. Relationships can be effectively translated across languages and cultures
+
+==== Relationship explicitness
+
+Relationships should be explicitly defined and documented rather than left
+implicit. This principle ensures that:
+
+. Relationship semantics are clearly understood by all users
+. Relationship assertions can be validated against defined criteria
+. Relationships can be effectively exchanged between systems
+. Ambiguity in relationship interpretation is minimized
+
+==== Contextual validity
+
+Relationships exist within specific contexts that affect their validity and
+interpretation. This principle ensures that:
+
+. Relationship assertions include appropriate contextual parameters
+. Domain-specific relationship semantics are properly documented
+. Relationships are not inappropriately generalized beyond their valid contexts
+. Users can assess the applicability of relationships to their specific needs
+
+==== Semantic precision
+
+Relationships should be defined with sufficient semantic precision to support
+their intended applications. This principle ensures that:
+
+. Relationship types are clearly distinguished from one another
+. Relationship properties are explicitly documented
+. Relationship assertions can be validated against formal criteria
+. Relationships support accurate inference and reasoning
+
+==== Practical usability
+
+Relationship models should balance theoretical rigor with practical usability.
+This principle ensures that:
+
+. Relationship frameworks can be implemented in real-world systems
+. Users can effectively work with relationships without excessive complexity
+. Relationship documentation is accessible and understandable
+. Implementation guidance is provided for different contexts
+
+=== Enosema relationship registry
+
+==== Registry structure
+
+The Enosema Foundation maintains a relationship type registry that provides a
+standardized collection of relationship types with their associated properties,
+constraints, and documentation. The registry includes:
+
+. Core relationship types applicable across domains
+. Domain-specific relationship types for selected fields
+. Mapping to standard relationship types in other systems
+. Implementation guidance for each relationship type
+. Examples illustrating proper usage
+
+The registry serves as a reference for consistent application of relationship
+types across terminology resources and provides a foundation for semantic
+interoperability.
+
+==== Core relationship types
+
+The core relationship types in the Enosema registry include:
+
+. Hierarchical relationships
+  * generic (is-a, type-of)
+  * partitive (part-of, has-part)
+  * instance (instance-of, has-instance)
+. Associative relationships
+  * causal (causes, caused-by)
+  * temporal (precedes, follows)
+  * functional (has-function, function-of)
+  * spatial (located-in, contains)
+. Equivalence relationships
+  * exact-equivalence (same-as)
+  * inexact-equivalence (similar-to)
+  * partial-equivalence (broader-than, narrower-than)
+
+Each relationship type is defined with:
+
+. Unique identifier
+. Preferred name and synonyms
+. Definition and scope
+. Logical properties (transitivity, symmetry, etc.)
+. Inverse relationship (if applicable)
+. Usage notes and examples
+. Implementation guidance
+
+==== Extension mechanisms
+
+The Enosema registry provides mechanisms for extending the core relationship
+types to meet specific domain needs:
+
+. Specialization: Creating subtypes of core relationship types
+. Composition: Combining relationship types to create complex relationships
+. Contextualization: Adapting relationship types for specific contexts
+. Custom types: Defining domain-specific relationship types
+
+Extensions should maintain compatibility with the core registry while addressing
+domain-specific requirements.
+
+[example]
+====
+Extension of a core relationship type for a specific domain:
+
+Core type: "causes" (causal relationship)
+Domain: Pharmacology
+Extension: "has-side-effect"
+
+Definition: A specialized causal relationship between a medication and an
+unintended physiological response.
+
+Properties:
+* Inherits asymmetry from "causes"
+* Domain-specific cardinality: one-to-many (one medication can have many side
+effects)
+* Domain-specific constraint: side effects must be unintended effects
+
+This extension maintains compatibility with the core "causes" type while adding
+domain-specific semantics and constraints.
+====
+
+=== Documentation guidelines
+
+==== Relationship assertion documentation
+
+The Enosema approach includes guidelines for documenting relationship assertions:
+
+. Source and target concepts should be clearly identified with unique identifiers
+. Relationship type should be specified using registry identifiers
+. Relationship properties should be explicitly stated
+. Context parameters should be documented as appropriate
+. Authority information should be included
+. Creation and modification metadata should be recorded
+
+[example]
+====
+Documented relationship assertion:
+
+* Source concept: C0018681 (Headache)
+* Target concept: C0038454 (Stress, Psychological)
+* Relationship type: RT-023 (may-be-caused-by)
+* Properties: non-transitive, asymmetric
+* Context: Medical domain, general clinical knowledge
+* Strength: probable (not definitive)
+* Authority: Medical Subject Headings (MeSH)
+* Created: 2024-03-15
+* Last validated: 2025-01-10
+====
+
+==== Context documentation
+
+Context documentation should include:
+
+. Domain context: Subject field(s) in which the relationship is valid
+. Temporal context: Time period during which the relationship holds
+. Cultural context: Cultural factors affecting interpretation
+. Application context: Specific use case or purpose
+. Authority context: Source of the relationship assertion
+. Certainty context: Degree of confidence in the relationship
+
+The level of detail for context documentation should be appropriate for the
+intended application of the relationship.
+
+==== Relationship validation documentation
+
+Validation documentation should include:
+
+. Validation method: How the relationship was validated
+. Validation criteria: What standards or rules were applied
+. Validation authority: Who performed or approved the validation
+. Validation date: When the validation was performed
+. Validation outcome: Results of the validation process
+. Validation limitations: Any constraints or caveats
+
+=== Quality assurance
+
+==== Validation processes
+
+The Enosema approach includes processes for validating relationship assertions:
+
+. Formal validation: Checking compliance with logical properties and constraints
+. Expert validation: Review by domain experts
+. Consistency validation: Checking for conflicts with existing relationships
+. Contextual validation: Verifying validity within stated contexts
+. User validation: Gathering feedback from terminology users
+
+Validation processes should be applied at appropriate stages in the relationship
+lifecycle, including creation, modification, and periodic review.
+
+==== Quality criteria
+
+Quality criteria for relationship assertions include:
+
+. Accuracy: Correctness of the relationship assertion
+. Precision: Specificity of the relationship type
+. Completeness: Inclusion of all required information
+. Consistency: Compatibility with other relationship assertions
+. Clarity: Understandability of the relationship documentation
+. Traceability: Ability to track the source and history of the assertion
+
+These criteria should be applied during validation processes and used to guide
+continuous improvement of relationship resources.
+
+==== Governance framework
+
+The Enosema governance framework for relationships includes:
+
+. Roles and responsibilities for relationship management
+. Decision-making processes for relationship issues
+. Change management procedures
+. Conflict resolution mechanisms
+. Review and approval workflows
+. Feedback processing procedures
+
+The governance framework ensures that relationships are managed consistently and
+that changes are properly controlled and documented.
+
+=== Implementation support
+
+==== Implementation patterns
+
+The Enosema approach includes implementation patterns for different contexts:
+
+. Reference work patterns: How to implement relationships in dictionaries,
+glossaries, and thesauri
+. Knowledge organization patterns: How to implement relationships in taxonomies,
+ontologies, and semantic networks
+. Database patterns: How to implement relationships in terminology databases and
+other structured repositories
+. Exchange patterns: How to represent relationships in exchange formats
+
+These patterns provide practical guidance while maintaining compatibility with
+the abstract model.
+
+==== Conformance levels
+
+The Enosema approach defines conformance levels for relationship implementation:
+
+. Level 1: Basic relationship support with minimal documentation
+. Level 2: Structured relationship types with standard properties
+. Level 3: Comprehensive relationship model with context documentation
+. Level 4: Full implementation of the abstract model with all features
+
+These levels allow systems to implement relationships at an appropriate level of
+sophistication for their needs while providing a path for future enhancement.
+
+==== Migration strategies
+
+For existing terminology resources, the Enosema approach provides migration
+strategies:
+
+. Assessment: Evaluating current relationship implementations
+. Mapping: Relating existing relationships to the abstract model
+. Enrichment: Adding missing relationship information
+. Validation: Checking migrated relationships against quality criteria
+. Integration: Incorporating relationships into the overall terminology system
+
+Migration strategies recognize that many systems have existing relationship
+implementations that need to be preserved while enhancing their semantic
+precision and interoperability.
+
+=== Enosema tools and resources
+
+==== Relationship management tools
+
+The Enosema Foundation provides or recommends tools for relationship management:
+
+. Relationship registry browser: For exploring standardized relationship types
+. Relationship validator: For checking relationship assertions against rules
+. Relationship visualization tools: For exploring relationship networks
+. Relationship exchange utilities: For converting between formats
+. Relationship documentation templates: For consistent documentation
+
+These tools support the practical implementation of the abstract model in
+various contexts.
+
+==== Training and guidance
+
+The Enosema Foundation provides training and guidance materials:
+
+. Introductory guides to concept relationships
+. Best practice documentation
+. Implementation tutorials
+. Case studies of successful relationship management
+. Troubleshooting guides for common issues
+
+These materials help organizations develop the knowledge and skills needed for
+effective relationship management.
+
+==== Community resources
+
+The Enosema Foundation fosters a community of practice around concept
+relationships:
+
+. Forums for discussing relationship issues
+. Repositories of shared relationship resources
+. Collaborative development of relationship standards
+. Expert networks for relationship validation
+. Events for knowledge exchange and professional development
+
+Community resources leverage collective expertise to advance the state of the
+art in relationship management and provide mutual support for implementation
+challenges.

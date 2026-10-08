@@ -1,0 +1,360 @@
+== Classification of relationship types
+
+=== General
+
+Relationship types provide a semantic categorization of the connections between
+concepts. A well-defined classification of relationship types is essential for
+ensuring semantic precision, facilitating knowledge organization, and enabling
+effective information retrieval.
+
+This section presents a classification system for relationship types based on
+their semantic properties. The classification is designed to be comprehensive
+enough to cover the major categories of relationships while remaining abstract
+enough to be applicable across domains and implementation contexts.
+
+NOTE: The classification presented here is not intended to be exhaustive but
+rather to provide a foundation that can be extended and refined for specific
+domains and applications. The focus is on establishing clear semantic
+distinctions between major relationship categories.
+
+=== Hierarchical relationships
+
+==== General characteristics
+
+Hierarchical relationships establish a superordinate-subordinate structure
+between concepts. They are characterized by:
+
+. Asymmetry: If A is hierarchically related to B, B is not hierarchically
+related to A in the same way
+. Transitivity: If A is hierarchically related to B and B is hierarchically
+related to C, then A is hierarchically related to C
+. Irreflexivity: A concept cannot be hierarchically related to itself
+
+Hierarchical relationships are fundamental to organizing concepts into structured
+systems and supporting inheritance of characteristics.
+
+==== Generic relationships
+
+Generic relationships (also called "is-a" or "type-of" relationships) connect a
+more specific concept (species) to a more general concept (genus). The
+subordinate concept inherits all characteristics of the superordinate concept
+and adds at least one delimiting characteristic.
+
+[example]
+====
+* "Oak" has a generic relationship to "tree"
+* "Laptop" has a generic relationship to "computer"
+* "Pneumonia" has a generic relationship to "respiratory disease"
+
+In each case, the subordinate concept (oak, laptop, pneumonia) inherits all the
+characteristics of the superordinate concept (tree, computer, respiratory
+disease) and adds at least one delimiting characteristic.
+====
+
+Generic relationships support:
+
+. Classification of concepts into categories
+. Inheritance of characteristics from superordinate to subordinate concepts
+. Reasoning from specific to general and general to specific
+. Organization of concepts into taxonomies
+
+==== Partitive relationships
+
+Partitive relationships (also called "part-of" or "has-part" relationships)
+connect a part to its whole. The superordinate concept represents the whole,
+while the subordinate concept represents a component or constituent.
+
+[example]
+====
+* "Wheel" has a partitive relationship to "car"
+* "Chapter" has a partitive relationship to "book"
+* "Neuron" has a partitive relationship to "nervous system"
+
+In each case, the subordinate concept (wheel, chapter, neuron) is a component
+or constituent of the superordinate concept (car, book, nervous system).
+====
+
+Partitive relationships can be further classified based on the nature of the
+part-whole connection:
+
+. Component-object: Physical parts of objects (e.g., wheel-car)
+. Member-collection: Elements of collections (e.g., tree-forest)
+. Portion-mass: Portions of masses (e.g., slice-pie)
+. Material-object: Substances of objects (e.g., steel-car)
+. Feature-activity: Phases of activities (e.g., payment-purchase)
+. Place-area: Areas of larger areas (e.g., city-country)
+
+==== Instance relationships
+
+Instance relationships connect an individual instance to its class or category.
+Unlike generic relationships, which connect classes to more general classes,
+instance relationships connect specific individuals to their classes.
+
+[example]
+====
+* "Eiffel Tower" has an instance relationship to "tower"
+* "Albert Einstein" has an instance relationship to "physicist"
+* "Amazon River" has an instance relationship to "river"
+
+In each case, the subordinate concept represents a specific individual that is
+an instance of the superordinate concept.
+====
+
+Instance relationships are particularly important in:
+
+. Knowledge representation systems that distinguish between classes and instances
+. Proper name handling in terminology resources
+. Reference to specific entities in domain models
+
+=== Associative relationships
+
+==== General characteristics
+
+Associative relationships connect concepts that are semantically related but not
+in a hierarchical or equivalence manner. They are characterized by:
+
+. Semantic relevance: The concepts are meaningfully related
+. Non-hierarchical nature: Neither concept is superordinate to the other
+. Domain-specificity: The relationship types often reflect domain-specific
+connections
+
+Associative relationships capture a wide range of semantic connections and are
+essential for expressing the rich network of relationships between concepts in a
+domain.
+
+NOTE: Associative relationships are often less formally defined than hierarchical
+relationships and may have different properties depending on the specific
+relationship type. Some may be symmetric, others asymmetric; some may be
+transitive, others non-transitive.
+
+==== Causal relationships
+
+Causal relationships connect concepts where one represents a cause and the other
+an effect. Subtypes include:
+
+. Cause-effect: Direct causal connection (e.g., virus-infection)
+. Process-result: Outcome of a process (e.g., combustion-ash)
+. Agent-action: Performer of an action (e.g., teacher-teaching)
+. Action-recipient: Target of an action (e.g., teaching-student)
+
+[example]
+====
+In healthcare terminology:
+
+* "Smoking" has a causal relationship to "lung cancer"
+* "Virus" has a causal relationship to "infection"
+* "Bacteria" has a causal relationship to "inflammation"
+
+These relationships express that one concept (smoking, virus, bacteria) causes
+or contributes to the other (lung cancer, infection, inflammation).
+====
+
+==== Temporal relationships
+
+Temporal relationships connect concepts based on their time sequence. Subtypes
+include:
+
+. Precedence: One concept precedes another (e.g., pregnancy-childbirth)
+. Succession: One concept follows another (e.g., treatment-recovery)
+. Simultaneity: Concepts occur at the same time (e.g., fever-chills)
+. Duration: One concept represents the timespan of another (e.g., childhood-development)
+
+[example]
+====
+In project management terminology:
+
+* "Planning" has a temporal relationship (precedes) to "execution"
+* "Testing" has a temporal relationship (precedes) to "deployment"
+* "Maintenance" has a temporal relationship (follows) to "implementation"
+
+These relationships express the sequence in which the activities occur.
+====
+
+==== Spatial relationships
+
+Spatial relationships connect concepts based on their physical or conceptual
+location. Subtypes include:
+
+. Containment: One concept contains another (e.g., building-room)
+. Adjacency: Concepts are next to each other (e.g., neighboring countries)
+. Orientation: Concepts have a directional relationship (e.g., north-south)
+. Distance: Concepts are separated by space (e.g., near-far)
+
+==== Functional relationships
+
+Functional relationships connect concepts based on their purpose, role, or
+function. Subtypes include:
+
+. Tool-function: Object and its purpose (e.g., hammer-pounding)
+. Process-instrument: Activity and its tool (e.g., writing-pen)
+. Object-application: Item and its use (e.g., medicine-treatment)
+. Role-activity: Position and its responsibilities (e.g., doctor-diagnosis)
+
+[example]
+====
+In information technology terminology:
+
+* "Firewall" has a functional relationship to "network protection"
+* "Database" has a functional relationship to "data storage"
+* "Algorithm" has a functional relationship to "problem solving"
+
+These relationships express the purpose or function of each concept.
+====
+
+==== Developmental relationships
+
+Developmental relationships connect concepts representing different stages or
+states of development. Subtypes include:
+
+. Source-product: Raw material and result (e.g., flour-bread)
+. Immature-mature: Developmental stages (e.g., larva-butterfly)
+. Natural-processed: Natural and processed forms (e.g., cotton-fabric)
+
+==== Possessive relationships
+
+Possessive relationships connect concepts where one possesses or owns the other.
+Subtypes include:
+
+. Owner-possession: Legal ownership (e.g., author-copyright)
+. Container-contained: Physical containment (e.g., bottle-water)
+. Attribute-entity: Characteristic and its bearer (e.g., color-object)
+
+=== Equivalence relationships
+
+==== General characteristics
+
+Equivalence relationships connect concepts that have the same or similar meaning.
+They are characterized by:
+
+. Semantic similarity: The concepts share significant meaning
+. Substitutability: One concept can replace another in certain contexts
+. Varying degrees of equivalence: From exact to partial
+
+Equivalence relationships are crucial for terminology harmonization, cross-domain
+mapping, and information retrieval.
+
+==== Exact equivalence
+
+Exact equivalence connects concepts that are identical in meaning and can be
+substituted for each other in all contexts. Characteristics include:
+
+. Complete conceptual overlap
+. Same essential and delimiting characteristics
+. Interchangeability in all contexts
+. Symmetry: If A is exactly equivalent to B, B is exactly equivalent to A
+
+[example]
+====
+* "Heart attack" and "myocardial infarction" in medical terminology
+* "Automobile" and "car" in general language
+* "H₂O" and "water" in chemistry
+
+These pairs represent the same concept and can be used interchangeably in their
+respective domains.
+====
+
+NOTE: True exact equivalence is rare outside of synonymy within a single
+language. Even apparent synonyms often have subtle differences in connotation,
+register, or usage context.
+
+==== Inexact equivalence
+
+Inexact equivalence connects concepts that are similar in meaning but not
+identical. Characteristics include:
+
+. Significant conceptual overlap
+. Minor differences in characteristics or scope
+. Limited interchangeability (context-dependent)
+. Symmetry: If A is inexactly equivalent to B, B is inexactly equivalent to A
+
+[example]
+====
+* "Happiness" and "joy" (similar emotions with different intensities)
+* "Forest" and "woods" (similar but with potential differences in size and density)
+* "Efficiency" and "effectiveness" (related but distinct performance measures)
+
+These pairs represent similar but not identical concepts, with subtle
+differences in meaning or application.
+====
+
+==== Partial equivalence
+
+Partial equivalence connects concepts where one includes the other but also
+covers additional meaning. Characteristics include:
+
+. Partial conceptual overlap
+. One concept has broader or narrower scope than the other
+. Limited interchangeability (direction-dependent)
+. Asymmetry: If A is partially equivalent to B, the relationship from B to A
+is different
+
+[example]
+====
+* "Furniture" and "chair" (chair is a type of furniture, but furniture includes
+more than chairs)
+* "Disease" and "infection" (all infections are diseases, but not all diseases
+are infections)
+* "Vehicle" and "car" (all cars are vehicles, but not all vehicles are cars)
+
+In each case, one concept (furniture, disease, vehicle) is broader than the
+other (chair, infection, car).
+====
+
+==== Cross-language equivalence
+
+Cross-language equivalence connects concepts expressed in different languages.
+This type of equivalence is particularly important for translation and
+multilingual terminology management. Characteristics include:
+
+. Consideration of linguistic and cultural differences
+. Varying degrees of equivalence (from exact to zero)
+. Context-dependent validity
+. Potential asymmetry due to linguistic and cultural factors
+
+[example]
+====
+* English "privacy" and French "vie privée" (partial equivalence due to cultural
+and legal differences)
+* English "computer" and German "Computer" (near-exact equivalence)
+* Japanese "wabi-sabi" and English (no direct equivalent - zero equivalence)
+
+These examples illustrate different degrees of cross-language equivalence, from
+near-exact to zero.
+====
+
+=== Relationship type registry
+
+==== Purpose and structure
+
+A relationship type registry provides a structured collection of relationship
+type definitions with their associated properties, constraints, and
+documentation. The registry serves as a reference for consistent application of
+relationship types across terminology resources.
+
+A comprehensive relationship type registry should include:
+
+. Unique identifier for each relationship type
+. Name and definition of the relationship type
+. Category within the classification system
+. Logical properties (transitivity, symmetry, etc.)
+. Domain and range constraints
+. Inverse relationship (if applicable)
+. Usage examples and notes
+. References to standards or authorities
+
+==== Extension mechanisms
+
+The relationship type classification can be extended to meet the needs of
+specific domains and applications through:
+
+. Specialization: Creating subtypes of existing relationship types
+. Composition: Combining relationship types to create complex relationships
+. Contextualization: Adapting relationship types for specific contexts
+. Custom types: Defining domain-specific relationship types
+
+Extension mechanisms should maintain compatibility with the core classification
+while allowing for the expression of domain-specific semantics.
+
+NOTE: When extending the relationship type classification, it is important to
+clearly document the relationship between custom types and the core
+classification to facilitate interoperability and understanding across systems.

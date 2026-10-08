@@ -1,0 +1,50 @@
+== Scope
+
+This document specifies principles, methods, and best practices for multilingual
+terminology management across organizations and domains. It provides a
+standardized approach to the creation, collection, storage, processing, and
+dissemination of terminology resources in multiple languages and across different
+cultural contexts.
+
+The guidelines specified in this document apply to all multilingual terminology
+management activities, regardless of the subject field, industry, organization
+size, or languages involved. The standardized approaches enhance terminology
+consistency across languages, improve communication clarity in multilingual
+environments, and ensure compliance with international terminology standards.
+
+This document provides practical guidance for implementing effective multilingual
+terminology management processes based on established international standards,
+including ISO 704, ISO 30042, ISO 10241-1, ISO 10241-2, and ISO 17100, with
+examples illustrating the application of these principles in various multilingual
+contexts.
+
+This document specifically addresses:
+
+* Principles for managing terminology across multiple languages
+* Cultural and regional considerations in multilingual terminology
+* Determination and documentation of authoritative and informative language
+versions
+* Equivalence management across languages with different conceptual systems
+* Multilingual terminology workflows and collaboration processes
+* Technical implementation of multilingual terminology resources
+
+This document is intended for:
+
+* Terminology managers and terminologists responsible for developing and
+maintaining multilingual terminology resources
+* Translators and localizers who work with specialized terminology across
+languages
+* Content creators and technical writers producing content for multilingual
+audiences
+* Standards developers working in multilingual environments
+* Subject matter experts contributing to terminology resources in their native
+languages
+* Translation and localization project managers
+* Language service providers
+* International organizations managing multilingual documentation
+* Software developers creating tools for multilingual terminology management
+
+The guidelines specified here complement the principles and methods described
+in ISO 704, the data exchange formats defined in ISO 30042, the rules for
+terminological entries established in ISO 10241-1 and ISO 10241-2, and the
+translation service requirements in ISO 17100.

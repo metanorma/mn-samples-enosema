@@ -1,0 +1,44 @@
+= Terminology management principles and methods
+:docnumber: 2501
+:edition: 1
+:copyright-year: 2025
+:revdate: 2025-05-01
+:language: en
+:title-intro-en: Terminology management
+:title-main-en: Principles and methods
+:doctype: standard
+:technical-committee: Terminology
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:imagesdir: images
+:fullname: Reese W. Plews
+:surname: Plews
+:givenname: Reese W.
+:affiliation: Plews Consulting
+:fullname_2: Ronald Tse
+:surname_2: Tse
+:givenname_2: Ronald
+:affiliation_2: Ribose
+:docidentifier: EFS 2501:2025
+:mn-document-class: enosema
+:data-uri-image:
+:local-cache-only:
+
+include::sections/00-foreword.adoc[]
+
+include::sections/00-introduction.adoc[]
+
+include::sections/01-scope.adoc[]
+
+include::sections/02-normrefs.adoc[]
+
+include::sections/03-terms.adoc[]
+
+include::sections/04-principles.adoc[]
+
+include::sections/05-consistency.adoc[]
+
+include::sections/06-requirements.adoc[]
+
+include::sections/07-presentation.adoc[]
+
+include::sections/az-bibliography.adoc[]

@@ -1,0 +1,553 @@
+[appendix]
+== Mappings to existing standards
+
+=== General
+
+This annex provides mappings between the abstract model for concept relationships
+presented in this document and various existing standards and frameworks for
+representing relationships. These mappings demonstrate how the abstract model
+can be realized in different implementation contexts while maintaining semantic
+consistency.
+
+The mappings are not intended to be exhaustive but rather to illustrate the
+correspondence between the abstract model and common implementation approaches.
+They can serve as a guide for implementing the abstract model in specific
+technical environments.
+
+=== Mapping to ISO standards
+
+==== Mapping to ISO 704
+
+ISO 704:2022 (Terminology work — Principles and methods) provides fundamental
+principles for terminology work, including the representation of concept
+relationships. The mapping between the abstract model and ISO 704 includes:
+
+[cols="1,1,1"]
+|===
+|Abstract Model Element |ISO 704 Element |Notes
+
+|Concept
+|Concept
+|Direct correspondence
+
+|Concept relationship
+|Concept relation
+|Direct correspondence
+
+|Hierarchical relationships
+|Hierarchical relations
+|Direct correspondence
+
+|Generic relationship
+|Generic relation
+|Direct correspondence
+
+|Partitive relationship
+|Partitive relation
+|Direct correspondence
+
+|Instance relationship
+|Instance relation
+|Direct correspondence
+
+|Associative relationships
+|Associative relations
+|Direct correspondence
+
+|Equivalence relationships
+|Not explicitly covered
+|Can be represented through terminological synonymy
+
+|Relationship properties
+|Relation characteristics
+|Partial correspondence
+
+|Relationship context
+|Subject field
+|Partial correspondence
+|===
+
+NOTE: ISO 704 focuses primarily on hierarchical and associative relationships
+within a single language. The abstract model extends this with more detailed
+treatment of equivalence relationships, relationship properties, and
+cross-domain contexts.
+
+==== Mapping to ISO 24156-1
+
+ISO 24156-1:2014 (Graphic notations for concept modelling in terminology work
+and its relationship with UML — Part 1: Guidelines for using UML notation in
+terminology work) provides guidance on using UML for representing concept
+relationships. The mapping includes:
+
+[cols="1,1,1"]
+|===
+|Abstract Model Element |ISO 24156-1 Element |Notes
+
+|Concept
+|UML Class
+|Concepts are represented as classes
+
+|Concept relationship
+|UML Association
+|Relationships are represented as associations
+
+|Hierarchical relationships
+|UML Generalization
+|Generic relationships use the generalization relationship
+
+|Generic relationship
+|UML Generalization
+|Direct correspondence
+
+|Partitive relationship
+|UML Aggregation/Composition
+|Partitive relationships use aggregation or composition
+
+|Instance relationship
+|UML Instantiation
+|Instances are represented as objects
+
+|Associative relationships
+|UML Association
+|With appropriate stereotypes
+
+|Equivalence relationships
+|UML Dependency
+|With «equivalent» stereotype
+
+|Relationship properties
+|UML Association properties
+|Properties like transitivity can be represented as constraints
+
+|Relationship context
+|UML Package
+|Contexts can be represented as packages
+|===
+
+==== Mapping to ISO 30042 (TBX)
+
+ISO 30042:2019 (Management of terminology resources — TermBase eXchange (TBX))
+provides a format for exchanging terminology data. The mapping includes:
+
+[cols="1,1,1"]
+|===
+|Abstract Model Element |TBX Element |Notes
+
+|Concept
+|<termEntry>
+|Concepts are represented as term entries
+
+|Concept relationship
+|<xref>
+|Relationships are represented as cross-references
+
+|Hierarchical relationships
+|<xref type="broaderConcept">, <xref type="narrowerConcept">
+|Using appropriate relationship types
+
+|Generic relationship
+|<xref type="superordinateConcept">, <xref type="subordinateConcept">
+|Using appropriate relationship types
+
+|Partitive relationship
+|<xref type="wholeConcept">, <xref type="partConcept">
+|Using appropriate relationship types
+
+|Instance relationship
+|<xref type="instanceConcept">, <xref type="generalConcept">
+|Using appropriate relationship types
+
+|Associative relationships
+|<xref type="relatedConcept">
+|With more specific types as needed
+
+|Equivalence relationships
+|<termNote type="termType">
+|Within a concept for same-language equivalence
+
+|Relationship properties
+|Custom data categories
+|Can be represented using custom data categories
+
+|Relationship context
+|<descrip type="subjectField">
+|Context represented through subject field
+|===
+
+=== Mapping to semantic web standards
+
+==== Mapping to RDF/RDFS
+
+The Resource Description Framework (RDF) and RDF Schema (RDFS) provide a
+foundation for representing relationships in the semantic web. The mapping
+includes:
+
+[cols="1,1,1"]
+|===
+|Abstract Model Element |RDF/RDFS Element |Notes
+
+|Concept
+|rdfs:Class
+|Concepts are represented as classes
+
+|Concept relationship
+|rdf:Property
+|Relationships are represented as properties
+
+|Hierarchical relationships
+|rdfs:subClassOf
+|For generic relationships
+
+|Generic relationship
+|rdfs:subClassOf
+|Direct correspondence
+
+|Partitive relationship
+|Custom property
+|E.g., ex:hasPart, ex:isPartOf
+
+|Instance relationship
+|rdf:type
+|Direct correspondence
+
+|Associative relationships
+|Custom properties
+|With appropriate semantics
+
+|Equivalence relationships
+|owl:equivalentClass, owl:sameAs
+|Using OWL extensions to RDF
+
+|Relationship properties
+|rdfs:domain, rdfs:range
+|Basic properties; others require extensions
+
+|Relationship context
+|Named graphs
+|Contexts can be represented as named graphs
+|===
+
+==== Mapping to OWL
+
+The Web Ontology Language (OWL) extends RDF with more expressive constructs for
+representing relationships. The mapping includes:
+
+[cols="1,1,1"]
+|===
+|Abstract Model Element |OWL Element |Notes
+
+|Concept
+|owl:Class
+|Concepts are represented as classes
+
+|Concept relationship
+|owl:ObjectProperty
+|Relationships are represented as object properties
+
+|Hierarchical relationships
+|rdfs:subClassOf
+|For generic relationships
+
+|Generic relationship
+|rdfs:subClassOf
+|Direct correspondence
+
+|Partitive relationship
+|Custom object property
+|With appropriate semantics
+
+|Instance relationship
+|rdf:type
+|Direct correspondence
+
+|Associative relationships
+|Custom object properties
+|With appropriate semantics
+
+|Equivalence relationships
+|owl:equivalentClass, owl:sameAs
+|Direct correspondence
+
+|Relationship properties
+|Property characteristics
+|owl:TransitiveProperty, owl:SymmetricProperty, etc.
+
+|Relationship context
+|owl:imports, Named graphs
+|Contexts can be represented through imports or named graphs
+|===
+
+==== Mapping to SKOS
+
+The Simple Knowledge Organization System (SKOS) provides a model for expressing
+knowledge organization systems. The mapping includes:
+
+[cols="1,1,1"]
+|===
+|Abstract Model Element |SKOS Element |Notes
+
+|Concept
+|skos:Concept
+|Direct correspondence
+
+|Concept relationship
+|skos:semanticRelation
+|Base class for all relationships
+
+|Hierarchical relationships
+|skos:broader, skos:narrower
+|Direct correspondence
+
+|Generic relationship
+|skos:broader, skos:narrower
+|SKOS doesn't distinguish between generic and partitive
+
+|Partitive relationship
+|skos:broader, skos:narrower
+|With optional extensions
+
+|Instance relationship
+|Not directly supported
+|Can be represented with extensions
+
+|Associative relationships
+|skos:related
+|Direct correspondence
+
+|Equivalence relationships
+|skos:exactMatch, skos:closeMatch
+|For cross-scheme equivalence
+
+|Relationship properties
+|Not directly supported
+|Requires extensions
+
+|Relationship context
+|skos:ConceptScheme
+|Contexts represented as concept schemes
+|===
+
+=== Mapping to knowledge organization systems
+
+==== Mapping to thesaurus standards
+
+Thesaurus standards like ISO 25964 provide models for representing relationships
+in thesauri. The mapping includes:
+
+[cols="1,1,1"]
+|===
+|Abstract Model Element |Thesaurus Element |Notes
+
+|Concept
+|Concept
+|Direct correspondence
+
+|Concept relationship
+|Relationship
+|Direct correspondence
+
+|Hierarchical relationships
+|BT/NT (Broader Term/Narrower Term)
+|Direct correspondence
+
+|Generic relationship
+|BTG/NTG (Broader Term Generic/Narrower Term Generic)
+|In ISO 25964
+
+|Partitive relationship
+|BTP/NTP (Broader Term Partitive/Narrower Term Partitive)
+|In ISO 25964
+
+|Instance relationship
+|BTI/NTI (Broader Term Instance/Narrower Term Instance)
+|In ISO 25964
+
+|Associative relationships
+|RT (Related Term)
+|Direct correspondence
+
+|Equivalence relationships
+|USE/UF (Use/Used For)
+|For same-language equivalence
+
+|Relationship properties
+|Not explicitly represented
+|Implicit in relationship types
+
+|Relationship context
+|Microthesaurus, Facet
+|Contexts represented through structural elements
+|===
+
+==== Mapping to taxonomy standards
+
+Taxonomies typically focus on hierarchical relationships. The mapping includes:
+
+[cols="1,1,1"]
+|===
+|Abstract Model Element |Taxonomy Element |Notes
+
+|Concept
+|Category, Class
+|Concepts represented as categories or classes
+
+|Concept relationship
+|Hierarchical relationship
+|Primarily hierarchical
+
+|Hierarchical relationships
+|Parent-child relationship
+|Direct correspondence
+
+|Generic relationship
+|Is-a relationship
+|Direct correspondence
+
+|Partitive relationship
+|Has-part relationship
+|When supported
+
+|Instance relationship
+|Instance relationship
+|When supported
+
+|Associative relationships
+|See-also relationship
+|Limited support in most taxonomies
+
+|Equivalence relationships
+|Synonym relationship
+|Limited to same-language synonyms
+
+|Relationship properties
+|Not explicitly represented
+|Implicit in relationship types
+
+|Relationship context
+|Facet, Domain
+|Contexts represented through structural elements
+|===
+
+=== Mapping to database models
+
+==== Mapping to relational database model
+
+Relational databases can represent concept relationships through various table
+structures. The mapping includes:
+
+[cols="1,1,1"]
+|===
+|Abstract Model Element |Relational DB Element |Notes
+
+|Concept
+|Entity (table)
+|Concepts represented as entities
+
+|Concept relationship
+|Relationship (foreign key)
+|Relationships represented through foreign keys
+
+|Hierarchical relationships
+|Self-referencing relationship
+|With type indicators
+
+|Generic relationship
+|Self-referencing relationship
+|With type="generic"
+
+|Partitive relationship
+|Self-referencing relationship
+|With type="partitive"
+
+|Instance relationship
+|Foreign key relationship
+|Between instance and class tables
+
+|Associative relationships
+|Many-to-many relationship
+|Through junction tables
+
+|Equivalence relationships
+|Synonym table
+|With equivalence type indicators
+
+|Relationship properties
+|Attributes in relationship tables
+|Properties stored as attributes
+
+|Relationship context
+|Context table
+|With relationships to context entities
+|===
+
+==== Mapping to graph database model
+
+Graph databases are particularly well-suited for representing concept
+relationships. The mapping includes:
+
+[cols="1,1,1"]
+|===
+|Abstract Model Element |Graph DB Element |Notes
+
+|Concept
+|Node
+|Concepts represented as nodes
+
+|Concept relationship
+|Edge
+|Relationships represented as edges
+
+|Hierarchical relationships
+|Typed edge
+|With hierarchical type label
+
+|Generic relationship
+|Edge with "is-a" label
+|Direct correspondence
+
+|Partitive relationship
+|Edge with "part-of" label
+|Direct correspondence
+
+|Instance relationship
+|Edge with "instance-of" label
+|Direct correspondence
+
+|Associative relationships
+|Typed edges
+|With appropriate type labels
+
+|Equivalence relationships
+|Typed edges
+|With equivalence type labels
+
+|Relationship properties
+|Edge properties
+|Properties stored as edge attributes
+
+|Relationship context
+|Context nodes or edge properties
+|Contexts represented through additional structures
+|===
+
+=== Implementation considerations
+
+When mapping the abstract model to specific standards or frameworks, several
+considerations should be taken into account:
+
+. Semantic precision: Ensure that the semantic nuances of the abstract model are
+preserved in the target representation
+. Relationship type granularity: Adjust the level of detail in relationship types
+to match the capabilities of the target system
+. Property representation: Determine how to represent relationship properties
+that may not be directly supported
+. Context handling: Develop appropriate mechanisms for representing relationship
+contexts
+. Extension mechanisms: Utilize extension mechanisms in the target system to
+represent aspects of the abstract model that are not directly supported
+. Documentation: Clearly document the mapping to ensure consistent implementation
+and interpretation
+
+NOTE: No single implementation can perfectly capture all aspects of the abstract
+model. The goal should be to preserve the essential semantics while adapting to
+the constraints and capabilities of the target system.

@@ -1,0 +1,265 @@
+== Terminological equivalence management
+
+=== General
+
+Terminological equivalence management addresses the challenge of establishing
+relationships between terms in different languages that represent the same or
+similar concepts. This section outlines approaches for identifying, documenting,
+and managing different types of equivalence in multilingual terminology
+resources.
+
+The guidelines in this section are designed to ensure accurate representation of
+conceptual relationships across languages while acknowledging the reality that
+perfect equivalence is not always possible due to linguistic and cultural
+differences.
+
+=== Types of equivalence
+
+==== Full equivalence
+
+Full equivalence exists when terms in different languages represent identical
+concepts with the same characteristics and boundaries.
+
+Characteristics of full equivalence:
+
+. Complete conceptual overlap
+. Same position in respective concept systems
+. Same definition (accounting for linguistic differences)
+. Same usage contexts
+. Same register and connotations
+
+Full equivalence is most common in:
+
+* Technical and scientific domains with internationally standardized concepts
+* Newly developed fields where terminology is adopted across languages
+* Domains with strong international standardization
+
+[example]
+====
+The concept of "oxygen" has full equivalents across many languages:
+
+en: oxygen
+definition: chemical element with atomic number 8
+
+fr: oxygène
+definition: élément chimique de numéro atomique 8
+
+de: Sauerstoff
+definition: chemisches Element mit der Ordnungszahl 8
+
+ja: 酸素
+definition: 原子番号8の化学元素
+====
+
+==== Partial equivalence
+
+Partial equivalence exists when terms in different languages represent similar
+but not identical concepts, with some differences in characteristics or
+boundaries.
+
+Types of partial equivalence:
+
+. Inclusion (one concept includes the other)
+. Intersection (concepts overlap partially)
+. Different register or usage contexts
+. Different connotations or associations
+. Different positions in respective concept systems
+
+[example]
+====
+The English term "privacy" and French "vie privée" have partial equivalence:
+
+en: privacy
+definition: state of being free from public attention or intrusion into one's
+personal matters
+
+fr: vie privée
+definition: ensemble des activités d'une personne qui relèvent de l'intimité et
+qui ne concernent pas la vie publique ou professionnelle
+
+The French concept focuses more specifically on activities and has stronger
+connotations of intimacy than the broader English concept.
+====
+
+==== Zero equivalence
+
+Zero equivalence occurs when a concept exists in one language but has no
+established equivalent term in another language.
+
+Causes of zero equivalence:
+
+. Culture-specific concepts
+. Newly emerged concepts not yet named in all languages
+. Specialized concepts relevant only in certain linguistic communities
+. Concepts tied to specific legal or regulatory systems
+. Concepts related to unique cultural practices or artifacts
+
+[example]
+====
+The Portuguese concept "saudade" (a deep emotional state of melancholic longing
+for something or someone that is absent) has no direct equivalent in many
+languages, representing a case of zero equivalence.
+====
+
+=== Equivalence assessment
+
+==== Assessment methodology
+
+Equivalence assessment shall follow a systematic methodology:
+
+. Analyze concept characteristics in the source language
+. Identify potential equivalent terms in the target language
+. Compare concept characteristics across languages
+. Determine the type of equivalence (full, partial, zero)
+. Document the degree and nature of equivalence
+. Validate the assessment with subject matter experts
+
+==== Assessment criteria
+
+Criteria for assessing equivalence include:
+
+. Conceptual overlap (extent to which characteristics match)
+. Position in respective concept systems
+. Usage contexts and collocations
+. Register and stylistic level
+. Connotations and associations
+. Acceptance by subject matter experts
+. Established usage in authoritative sources
+
+==== Documentation of assessment
+
+The equivalence assessment shall be documented:
+
+. Type of equivalence determined
+. Basis for the determination
+. Specific differences in case of partial equivalence
+. Sources consulted
+. Experts involved in the assessment
+. Date of assessment
+. Confidence level of the assessment
+
+=== Strategies for handling equivalence challenges
+
+==== Handling partial equivalence
+
+When partial equivalence is identified, the following strategies may be employed:
+
+. Document the specific differences between concepts
+. Provide usage notes explaining the limitations of equivalence
+. Include context examples illustrating appropriate usage
+. Consider creating multiple target language entries for different aspects of
+the source concept
+. Use qualifiers to narrow or expand the concept as needed
+
+[example]
+====
+For the English term "accountability" which has partial equivalents in many
+languages:
+
+fr: responsabilité
+usage note: In French, "responsabilité" encompasses both the concepts of
+"responsibility" and "accountability" in English, with less emphasis on the
+aspect of being answerable to external stakeholders than the English
+"accountability."
+
+Additional context examples would illustrate appropriate usage scenarios.
+====
+
+==== Handling zero equivalence
+
+When zero equivalence is identified, the following strategies may be employed:
+
+. Borrowing the source term
+. Creating a neologism
+. Using a descriptive phrase
+. Using a functional equivalent with explanatory notes
+. Adapting an existing term with qualifiers
+. Using a combination of strategies
+
+The choice of strategy should consider:
+
+. Target audience needs
+. Domain conventions
+. Language policies
+. Usability considerations
+. Long-term terminology development goals
+
+[example]
+====
+For the Japanese concept "wabi-sabi" (侘寂) in English:
+
+Strategy 1 - Borrowing: "wabi-sabi"
+with note: "A Japanese aesthetic concept centered on the acceptance of
+transience and imperfection, characterized by asymmetry, roughness, simplicity,
+and appreciation of natural processes."
+
+Strategy 2 - Descriptive phrase: "imperfect beauty aesthetic"
+with note: "Refers to the Japanese concept of finding beauty in imperfection,
+impermanence, and incompleteness."
+====
+
+==== Neologism creation
+
+When creating neologisms to address zero equivalence, the following guidelines
+apply:
+
+. Follow word formation patterns of the target language
+. Ensure transparency of meaning where possible
+. Consider ease of pronunciation and use
+. Consult with native speakers and subject matter experts
+. Test acceptance with target users
+. Document the creation process and rationale
+
+==== Borrowing strategies
+
+When borrowing terms from the source language, consider:
+
+. Adaptation to target language phonology and orthography
+. Grammatical integration into the target language
+. Cultural acceptability of borrowings
+. Existing patterns of borrowing between the languages
+. Potential for confusion with existing terms
+. Documentation of the source term and its meaning
+
+=== Managing equivalence in terminology resources
+
+==== Representation in terminological entries
+
+Equivalence information shall be represented in terminological entries:
+
+. Clear indication of equivalence type
+. Cross-references between related entries
+. Notes explaining partial or zero equivalence
+. Context examples illustrating usage
+. Source information for equivalence determinations
+. Visual representation of conceptual relationships where helpful
+
+==== Equivalence in concept systems
+
+Equivalence relationships affect how concepts are positioned in multilingual
+concept systems:
+
+. Document differences in concept system structures across languages
+. Show how partial equivalents relate to other concepts in their respective
+systems
+. Indicate where concept boundaries differ
+. Use visual representations to illustrate cross-language concept relationships
+. Document culture-specific conceptual structures
+
+==== Evolving equivalence
+
+Equivalence relationships may evolve over time due to:
+
+. Language evolution
+. Concept development
+. Increasing international harmonization
+. Changes in usage patterns
+. Deliberate terminology planning
+
+Terminology resources shall:
+
+. Include version history of equivalence relationships
+. Document changes in equivalence status
+. Provide dates for equivalence determinations
+. Establish review cycles for equivalence relationships
+. Monitor usage to detect evolving equivalence

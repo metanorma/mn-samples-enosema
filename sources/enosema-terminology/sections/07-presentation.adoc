@@ -1,0 +1,221 @@
+== Terminology presentation rules and requirements
+
+=== General
+
+Terminology presentation rules establish standardized formats for displaying
+terminological data in various contexts, ensuring clarity, consistency, and
+usability. Proper presentation enhances the accessibility and effectiveness of
+terminology resources for all users.
+
+The presentation rules outlined in this section are based on the guidelines
+provided in <<ISO10241-1>> for terminological entries and <<ISO10241-2>> for
+adopted terminological entries.
+
+=== Terminological entry presentation
+
+==== General layout
+
+The layout of terminological entries shall follow these general principles:
+
+. Each entry shall be visually distinct and clearly separated from other entries
+. Core components shall be presented in a consistent sequence
+. Typographical devices shall be used consistently to distinguish different data
+categories
+. The layout shall facilitate quick identification of key information
+
+[example]
+====
+Example of a well-structured terminological entry:
+
+*terminology database*
+
+database containing terminology data
+
+[SOURCE: ISO 30042:2019]
+
+NOTE: Terminology databases may contain additional information such as
+definitions, context examples, notes, and multimedia representations.
+====
+
+==== Term representation
+
+Terms shall be presented according to these rules:
+
+. The preferred term shall be highlighted or presented first
+. Synonyms shall be clearly marked and distinguished from the preferred term
+. Deprecated terms shall be marked as such with appropriate labels
+. Term status shall be indicated using consistent markers
+. Terms shall be presented in their basic form unless otherwise required
+
+[example]
+====
+Preferred term: *terminology database*
+Synonym: termbase
+Deprecated: term bank [DEPRECATED]
+====
+
+==== Definition presentation
+
+Definitions shall be presented according to these rules:
+
+. Definitions shall be clearly distinguished from other entry elements
+. Definitions shall be presented as a single coherent unit
+. The first word of a definition shall not repeat the term being defined
+. Definitions shall follow a consistent grammatical pattern based on the
+concept type
+. Cross-references in definitions shall be clearly marked
+
+==== Subject field indication
+
+Subject field information shall be presented:
+
+. In a consistent location within the entry
+. Using standardized subject field designations
+. With appropriate hierarchical indication when necessary
+. In a way that clearly associates it with the concept rather than with
+individual terms
+
+==== Source references
+
+Sources of terminological information shall be presented:
+
+. Using a consistent citation format
+. With clear indication of which element the source applies to (term, definition,
+etc.)
+. With sufficient information to locate the original source
+. Using standard abbreviations when appropriate
+. With date information to indicate currency
+
+=== Presentation in specialized contexts
+
+==== Presentation in standards
+
+Terminological entries in standards shall follow the specific rules established
+in <<ISO10241-1>> and <<ISO10241-2>>, including:
+
+. Placement in a dedicated "Terms and definitions" section
+. Sequential or systematic ordering
+. Consistent entry structure
+. Proper cross-referencing to other standards
+. Clear indication of adopted terms
+
+[example]
+====
+Example of a terminological entry in a standard document:
+
+*terminology management*
+
+management of terminology resources through the systematic collection,
+description, processing, and presentation of concepts and their designations
+
+ *[SOURCE: ISO 704:2009]*
+====
+
+==== Digital presentation
+
+Terminology presented in digital formats shall follow these additional
+requirements:
+
+. Hyperlinks for cross-references and sources
+. Appropriate use of metadata for improved searchability
+. Consistent layout across different viewing devices
+. Clear indication of expandable/collapsible content
+. Accessible formatting for screen readers and other assistive technologies
+
+==== Multilingual presentation
+
+Multilingual terminology shall be presented according to these rules:
+
+. Consistent indication of language for each element
+. Clear visual distinction between languages
+. Alignment of corresponding elements across languages
+. Appropriate handling of script and directionality differences
+. Indication of term equivalence status (full equivalent, partial equivalent, etc.)
+
+[example]
+====
+Example of a multilingual entry:
+
+*terminology database* (en)
+database containing terminology data
+
+*base de données terminologique* (fr)
+base de données contenant des données terminologiques
+
+*Terminologiedatenbank* (de)
+Datenbank mit terminologischen Daten
+====
+
+=== Typographical and formatting conventions
+
+==== Typographic distinctions
+
+Different data categories shall be distinguished using consistent typographic
+conventions:
+
+. Terms may be presented in bold
+. Definitions may be presented in regular type
+. Sources may be presented in italic or smaller type
+. Notes may be presented in smaller type or indented
+. Cross-references may be presented in a distinctive font or color
+
+==== Symbols and markers
+
+Special symbols and markers shall be used consistently:
+
+. Symbols indicating term status (preferred, admitted, deprecated)
+. Markers for grammatical information
+. Indicators for usage restrictions
+. Symbols for cross-referencing
+. Markers for context and examples
+
+==== Abbreviations and labels
+
+Abbreviations and labels used in terminological entries shall be:
+
+. Standardized across the terminology resource
+. Explained in a key or legend
+. Used consistently
+. Intuitive where possible
+. Compliant with relevant domain conventions
+
+=== Presentation requirements for specific data categories
+
+==== Grammatical information
+
+Grammatical information shall be presented:
+
+. In a consistent format and position
+. Using standard abbreviations
+. With clear distinction between different grammatical attributes
+. In accordance with the linguistic conventions of each language
+
+==== Context examples
+
+Context examples shall be presented:
+
+. Clearly distinguished from definitions
+. In a consistent format (e.g., italics, quotation marks)
+. With the term highlighted or emphasized within the context
+. With source attribution when applicable
+. In sufficient quantity to illustrate typical usage
+
+==== Notes and supplementary information
+
+Notes and supplementary information shall be presented:
+
+. Clearly distinguished from the definition
+. In a consistent location
+. Numbered if multiple notes exist
+. With clear indication of their purpose
+. In a hierarchical structure if appropriate
+
+==== Concept relations
+
+Concept relations shall be presented:
+
+. Using standardized relationship indicators
+. With clear distinction between different relation types
+. With consistent formatting for all related concepts
+. With appropriate directional indicators for hierarchical relations
+. With cross-references to the related concepts

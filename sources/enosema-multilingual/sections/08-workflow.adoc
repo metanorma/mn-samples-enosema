@@ -1,0 +1,299 @@
+== Multilingual terminology workflow
+
+=== General
+
+Effective multilingual terminology management requires well-defined workflows
+that coordinate the efforts of various stakeholders across languages and
+cultures. This section outlines approaches for establishing and managing
+multilingual terminology workflows, from initial planning through ongoing
+maintenance.
+
+The guidelines in this section are designed to ensure efficient, collaborative,
+and high-quality terminology development across multiple languages, with
+appropriate consideration of authoritative and informative language versions.
+
+=== Planning multilingual terminology resources
+
+==== Strategic planning
+
+Strategic planning for multilingual terminology resources shall address:
+
+. Organizational goals and requirements for multilingual terminology
+. Target languages and their prioritization
+. Authoritative language determination strategy
+. Resource allocation across languages
+. Timeline for development and implementation
+. Success metrics and evaluation criteria
+. Alignment with broader content and localization strategies
+
+[example]
+====
+A strategic plan for multilingual terminology might include:
+
+* Primary goal: Support product documentation in 10 languages
+* Authoritative languages: English and Japanese (product development languages)
+* First-tier target languages: French, German, Spanish, Chinese (major markets)
+* Second-tier target languages: Italian, Portuguese, Korean, Russian
+* Timeline: First-tier languages within 6 months, second-tier within 12 months
+* Success metrics: 95% terminology consistency in documentation, 30% reduction
+in translation queries
+====
+
+==== Resource assessment
+
+Before initiating multilingual terminology work, organizations shall assess:
+
+. Available expertise in each language
+. Existing terminology resources
+. Technology infrastructure
+. Budget constraints
+. Time constraints
+. Stakeholder availability
+. External resources and partnerships
+
+==== Scope definition
+
+The scope of multilingual terminology resources shall be clearly defined:
+
+. Subject fields and domains to be covered
+. Concept boundaries and inclusion criteria
+. Types of terminological data to be collected
+. Level of detail for each language
+. Relationship to other terminology resources
+. Target user groups and their needs
+. Deliverables and formats
+
+=== Collaborative terminology development
+
+==== Stakeholder identification
+
+Key stakeholders in multilingual terminology development include:
+
+. Subject matter experts in each language
+. Terminologists and linguists
+. Content creators and technical writers
+. Translators and localizers
+. Product and service developers
+. Legal and compliance specialists
+. End users of terminology resources
+. Management and decision-makers
+
+Organizations shall identify relevant stakeholders for each language and define
+their roles and responsibilities in the terminology workflow.
+
+==== Collaboration models
+
+Effective collaboration models for multilingual terminology work include:
+
+. Centralized model (core team coordinates all language work)
+. Distributed model (language-specific teams with central coordination)
+. Hybrid model (combination of centralized and distributed elements)
+. Community model (broader stakeholder involvement with expert oversight)
+. Expert network model (reliance on external subject matter experts)
+
+The choice of collaboration model should consider:
+
+. Organizational structure
+. Geographic distribution of expertise
+. Language priorities
+. Resource constraints
+. Quality requirements
+. Timeline considerations
+
+==== Communication protocols
+
+Clear communication protocols shall be established:
+
+. Regular coordination meetings across language teams
+. Shared documentation and progress tracking
+. Issue escalation procedures
+. Decision-making processes
+. Conflict resolution mechanisms
+. Knowledge sharing practices
+. Feedback channels
+
+=== Multilingual terminology workflow stages
+
+==== Concept identification and analysis
+
+The workflow shall begin with concept identification and analysis:
+
+. Identify concepts requiring multilingual representation
+. Analyze concept characteristics and boundaries
+. Determine concept relationships and systems
+. Document concept origins and cultural context
+. Identify potential equivalence challenges
+. Prioritize concepts for multilingual development
+. Document initial concept information in authoritative language(s)
+
+==== Term extraction and research
+
+Term extraction and research shall be conducted:
+
+. Extract term candidates from authoritative sources
+. Research existing terminology usage in each language
+. Consult subject matter experts in each language
+. Analyze term usage patterns and contexts
+. Document term variants and synonyms
+. Identify potential cultural or linguistic issues
+. Compile preliminary term lists for each language
+
+==== Collaborative development
+
+Collaborative development of multilingual terminology shall include:
+
+. Draft definitions in authoritative language(s)
+. Propose equivalent terms in target languages
+. Assess equivalence relationships
+. Develop target language definitions
+. Document usage contexts and examples
+. Address cultural adaptation needs
+. Resolve terminology conflicts and inconsistencies
+
+==== Review and validation
+
+Multilingual terminology shall undergo review and validation:
+
+. Expert review of conceptual accuracy
+. Linguistic review of term appropriateness
+. Cross-language consistency review
+. Cultural appropriateness review
+. User acceptance testing
+. Compliance and legal review if applicable
+. Final approval by designated authorities
+
+==== Implementation and dissemination
+
+Approved terminology shall be implemented and disseminated:
+
+. Import into terminology management systems
+. Format for various delivery channels
+. Integrate with content creation tools
+. Distribute to stakeholders
+. Provide training and guidance
+. Monitor initial usage
+. Gather feedback for improvement
+
+==== Maintenance and updating
+
+Ongoing maintenance and updating shall be established:
+
+. Regular review cycles for all language versions
+. Process for handling change requests
+. Update synchronization across languages
+. Version control and history tracking
+. Obsolescence management
+. Feedback incorporation
+. Continuous improvement processes
+
+=== Authority assignment in workflows
+
+==== Authority determination workflow
+
+The workflow for determining authoritative language versions shall include:
+
+. Application of established criteria for authoritative status
+. Documentation of the rationale for authority decisions
+. Review and approval of authority designations
+. Communication of authority status to all stakeholders
+. Implementation of authority markers in terminology resources
+. Periodic review of authority designations
+
+==== Workflow for informative versions
+
+The workflow for developing informative language versions shall:
+
+. Begin after authoritative versions are approved
+. Include reference to authoritative source(s)
+. Involve qualified translators and subject matter experts
+. Include validation against authoritative versions
+. Document the relationship to authoritative versions
+. Establish review processes appropriate to informative status
+
+==== Authority transition management
+
+When authority status changes, the workflow shall include:
+
+. Documentation of the rationale for the change
+. Review of the newly authoritative version
+. Update of all affected terminology entries
+. Communication to all stakeholders
+. Revision of dependent informative versions
+. Update of all documentation and metadata
+
+=== Quality assurance in multilingual workflows
+
+==== Quality criteria
+
+Quality criteria for multilingual terminology shall be established:
+
+. Conceptual accuracy and clarity
+. Linguistic correctness and appropriateness
+. Cultural sensitivity and appropriateness
+. Consistency within and across languages
+. Compliance with terminology standards
+. Usability for target audiences
+. Technical accuracy and precision
+
+==== Quality control processes
+
+Quality control processes shall be integrated throughout the workflow:
+
+. Entry-level validation checks
+. Peer review processes
+. Expert validation procedures
+. Cross-language consistency checks
+. User feedback mechanisms
+. Automated quality checks
+. Regular quality audits
+
+==== Continuous improvement
+
+Continuous improvement of multilingual terminology workflows shall be
+implemented through:
+
+. Regular workflow evaluation
+. Stakeholder feedback collection
+. Performance metrics analysis
+. Identification of recurring issues
+. Process optimization
+. Best practice documentation
+. Training and skill development
+
+=== Technology support for multilingual workflows
+
+==== Terminology management systems
+
+Terminology management systems supporting multilingual workflows shall provide:
+
+. Support for all required languages and scripts
+. Concept-oriented data structures
+. Authority status tracking
+. Equivalence relationship management
+. Collaborative workflow features
+. Version control and history tracking
+. Integration with content creation tools
+
+==== Collaboration tools
+
+Collaboration tools for multilingual terminology work shall support:
+
+. Cross-language team communication
+. Document sharing and co-editing
+. Task assignment and tracking
+. Review and approval processes
+. Comment and feedback mechanisms
+. Version comparison
+. Knowledge sharing
+
+==== Automation opportunities
+
+Workflow automation opportunities include:
+
+. Term extraction from corpora
+. Consistency checking
+. Status tracking and notifications
+. Validation against rules and patterns
+. Report generation
+. Integration with translation management systems
+. Synchronization across systems

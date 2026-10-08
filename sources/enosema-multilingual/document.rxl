@@ -1,0 +1,17 @@
+<bibdata type="standard">
+<title language="en" format="text/plain" type="main">Terminology management — Multilingual terminology</title>
+
+<title language="en" format="text/plain" type="title-intro">Terminology management</title>
+
+<title language="en" format="text/plain" type="title-main">Multilingual terminology</title>
+
+
+<docidentifier type="ISO" primary="true">EFS 2504:2025</docidentifier><docnumber>2504</docnumber><contributor><role type="author"/><organization>
+<name>EFS</name>
+</organization></contributor><contributor><role type="authorizer"><description>Agency</description></role><organization>
+<name>International Organization for Standardization</name>
+<abbreviation>ISO</abbreviation></organization></contributor><contributor><role type="publisher"/><organization>
+<name>EFS</name>
+</organization></contributor><edition>1</edition><version><revision-date>2025-05-01</revision-date></version><language>en</language><script>Latn</script><status><stage>60</stage><substage>60</substage></status><copyright><from>2025</from><owner><organization>
+<name>EFS</name>
+</organization></owner></copyright><ext><doctype>international-standard</doctype><flavor>iso</flavor><editorialgroup><agency>EFS</agency></editorialgroup><approvalgroup><agency>ISO</agency></approvalgroup><structuredidentifier><project-number>EFS 2504</project-number></structuredidentifier><stagename>International Standard</stagename></ext></bibdata>

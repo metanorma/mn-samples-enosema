@@ -1,0 +1,78 @@
+= Enosema Foundation Specifications
+
+image:https://github.com/enosema/docs/workflows/generate/badge.svg["Build Status", link="https://github.com/enosema/docs/actions?query=workflow%3Agenerate"]
+
+This document is available in its rendered forms here:
+
+* https://www.enosema.org/docs/[On Enosema Foundation]
+* https://enosema.github.io/docs/[On GitHub]
+
+== Introduction
+
+This repository contains official specifications maintained by the Enosema
+Foundation (ES). The Enosema Foundation is the premier non-profit standardization
+organization for terminology standardization and terminology related processes
+such as management.
+
+The specifications include:
+
+2501:: *Terminology management principles and methods* -- Specification for effective management of terminology resources including creation, collection, maintenance, and presentation
+2504:: *Multilingual terminology management* -- Principles and methods for managing terminology across multiple languages and cultures
+2507:: *Concept relationships* -- Abstract model and implementation guidance for defining and managing relationships between concepts
+
+These specifications are written in Metanorma to generate standardized
+documentation in multiple formats.
+
+== Structure
+
+`sources/`:: source files for specifications in Metanorma format.
+
+`sources/enosema-terminology/`:::
+Terminology management principles and methods specification
+
+`sources/enosema-multilingual/`:::
+Multilingual terminology management specification
+
+`sources/enosema-relationships/`:::
+Concept relationships specification
+
+
+== Building documentation
+
+This repository uses Metanorma to build standardized documentation.
+
+=== Installing build tools
+
+See https://www.metanorma.org/install/ for detailed installation instructions.
+
+
+=== Building locally
+
+If you have Metanorma installed locally, run:
+
+[source,sh]
+----
+metanorma site generate
+----
+
+=== Building with Docker
+
+If you prefer using Docker, run:
+
+[source,sh]
+----
+docker run -v "$(pwd)":/metanorma -w /metanorma -it metanorma/mn metanorma site generate
+----
+
+== Generated Formats
+
+The build process generates documentation in multiple formats:
+
+* HTML -- Web-friendly format with navigation
+* PDF -- Print-ready format
+* XML -- Machine-readable format
+* RXL -- Relaton XML bibliographic format
+
+== License
+
+Copyright © 2025 Enosema Foundation. All rights reserved.

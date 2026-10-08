@@ -1,0 +1,556 @@
+[appendix]
+== Common relationship patterns
+
+=== General
+
+This annex provides a collection of common relationship patterns that can be
+used as templates for implementing concept relationships in various domains and
+applications. These patterns represent recurring structures of relationships
+that have proven useful in terminology management and knowledge organization.
+
+The patterns are presented at an abstract level and can be adapted to specific
+domains and implementation contexts. Each pattern includes a description,
+typical applications, implementation considerations, and examples.
+
+=== Hierarchical classification pattern
+
+==== Pattern description
+
+The hierarchical classification pattern organizes concepts into a tree or
+directed acyclic graph structure using generic (is-a) relationships. Each
+concept (except the root) has one or more superordinate concepts, and concepts
+inherit characteristics from their superordinates.
+
+==== Structure
+
+. Root concept(s) at the top level
+. Multiple levels of subordinate concepts
+. Generic relationships connecting levels
+. Inheritance of characteristics down the hierarchy
+. Potential for multiple inheritance (polyhierarchy)
+
+==== Applications
+
+. Scientific taxonomies (biology, chemistry, etc.)
+. Product and service classifications
+. Organizational structures
+. Document and content categorization
+. Skill and competency frameworks
+
+==== Implementation considerations
+
+. Deciding between strict hierarchy (single inheritance) and polyhierarchy
+(multiple inheritance)
+. Determining appropriate granularity at each level
+. Handling cross-classification needs
+. Managing inheritance exceptions
+. Versioning and evolution of the classification
+
+[example]
+====
+Medical disease classification:
+
+```
+Diseases
+├── Infectious diseases
+│   ├── Bacterial infections
+│   │   ├── Tuberculosis
+│   │   └── Pneumococcal pneumonia
+│   ├── Viral infections
+│   │   ├── Influenza
+│   │   └── COVID-19
+│   └── ...
+├── Neoplastic diseases
+│   ├── Benign neoplasms
+│   ├── Malignant neoplasms
+│   │   ├── Carcinomas
+│   │   ├── Sarcomas
+│   │   └── ...
+│   └── ...
+└── ...
+```
+
+This pattern uses generic relationships to classify diseases by etiology and
+pathology, with each level inheriting characteristics from higher levels.
+====
+
+=== Compositional pattern
+
+==== Pattern description
+
+The compositional pattern represents how concepts combine to form more complex
+structures. It uses partitive relationships to connect components to wholes and
+can represent multiple levels of composition.
+
+==== Structure
+
+. Whole concept at the top level
+. Component concepts at lower levels
+. Partitive relationships connecting components to wholes
+. Potential for multiple levels of decomposition
+. Optional cardinality constraints on components
+
+==== Applications
+
+. Product and system architecture
+. Document and content structure
+. Organizational composition
+. Geographical and administrative divisions
+. Anatomical structures
+
+==== Implementation considerations
+
+. Distinguishing between mandatory and optional components
+. Handling cardinality constraints
+. Representing ordering of components (if relevant)
+. Managing shared components
+. Documenting component roles and functions
+
+[example]
+====
+Automotive compositional structure:
+
+```
+Automobile
+├── has-part: Powertrain system
+│   ├── has-part: Engine
+│   │   ├── has-part: Cylinder block
+│   │   ├── has-part: Pistons
+│   │   └── ...
+│   ├── has-part: Transmission
+│   └── ...
+├── has-part: Chassis system
+│   ├── has-part: Frame
+│   ├── has-part: Suspension
+│   └── ...
+├── has-part: Electrical system
+└── ...
+```
+
+This pattern uses partitive relationships to represent the physical composition
+of an automobile, with multiple levels of decomposition.
+====
+
+=== Process flow pattern
+
+==== Pattern description
+
+The process flow pattern represents sequences of activities, events, or states
+using temporal relationships. It captures the order of steps in a process and
+can include branching, loops, and parallel paths.
+
+==== Structure
+
+. Process steps or states as concepts
+. Temporal relationships connecting steps
+. Potential branch and merge points
+. Optional conditions on transitions
+. Start and end points
+
+==== Applications
+
+. Business processes
+. Clinical pathways
+. Manufacturing procedures
+. Project workflows
+. System behavior models
+
+==== Implementation considerations
+
+. Representing sequential, parallel, and alternative paths
+. Handling conditional transitions
+. Documenting iteration and looping
+. Managing exceptions and error paths
+. Connecting to resources and actors
+
+[example]
+====
+Clinical diagnostic process:
+
+```
+Patient presentation
+├── precedes: Initial assessment
+│   ├── precedes: Physical examination
+│   └── precedes: Medical history taking
+├── may-precede: Emergency intervention (if critical)
+└── ...
+
+Physical examination + Medical history taking
+├── precedes: Differential diagnosis
+│   ├── precedes: Diagnostic testing
+│   │   ├── precedes: Test result interpretation
+│   │   │   ├── precedes: Diagnosis confirmation (if positive)
+│   │   │   └── precedes: Alternative testing (if negative)
+│   │   └── ...
+│   └── ...
+└── ...
+```
+
+This pattern uses temporal relationships to represent the clinical process from
+patient presentation to diagnosis, including alternative paths based on
+conditions.
+====
+
+=== Causal network pattern
+
+==== Pattern description
+
+The causal network pattern represents cause-effect relationships between
+concepts. It can capture complex causal chains, multiple causes and effects,
+and causal strength or probability.
+
+==== Structure
+
+. Cause and effect concepts
+. Causal relationships connecting them
+. Potential for causal chains (A causes B causes C)
+. Possible multiple causes for a single effect
+. Optional causal strength or probability indicators
+
+==== Applications
+
+. Risk analysis
+. Fault diagnosis
+. Scientific explanations
+. Medical etiology
+. Environmental impact assessment
+
+==== Implementation considerations
+
+. Distinguishing between necessary and sufficient causes
+. Representing causal strength or probability
+. Handling complex causal networks
+. Documenting temporal aspects of causation
+. Managing uncertainty and conflicting evidence
+
+[example]
+====
+Environmental causal network:
+
+```
+Industrial emissions
+├── causes: Air pollution
+│   ├── causes: Respiratory diseases
+│   │   ├── causes: Increased healthcare costs
+│   │   └── causes: Reduced quality of life
+│   └── causes: Acid rain
+│       ├── causes: Water acidification
+│       │   └── causes: Aquatic ecosystem damage
+│       └── causes: Soil degradation
+│           └── causes: Reduced agricultural productivity
+└── causes: Greenhouse gas increase
+    └── causes: Climate change
+        ├── causes: Sea level rise
+        ├── causes: Extreme weather events
+        └── ...
+```
+
+This pattern uses causal relationships to represent the environmental impacts
+of industrial emissions, showing causal chains and multiple effects.
+====
+
+=== Functional pattern
+
+==== Pattern description
+
+The functional pattern represents the purposes, roles, and functions of concepts
+and how they relate to activities, goals, and requirements. It connects entities
+to their functions and functions to their contexts.
+
+==== Structure
+
+. Entity concepts (objects, systems, etc.)
+. Function concepts (purposes, capabilities)
+. Functional relationships connecting entities to functions
+. Context concepts (situations, environments)
+. Context relationships connecting functions to contexts
+
+==== Applications
+
+. Product and system design
+. Requirements engineering
+. Job and role descriptions
+. Tool and technology classification
+. Service descriptions
+
+==== Implementation considerations
+
+. Distinguishing between primary and secondary functions
+. Representing functional hierarchies
+. Connecting functions to performance criteria
+. Documenting functional dependencies
+. Handling multi-functional entities
+
+[example]
+====
+Medical device functional pattern:
+
+```
+Ventilator
+├── has-function: Oxygen delivery
+│   ├── has-context: Respiratory failure
+│   └── has-context: Anesthesia
+├── has-function: Airway pressure management
+│   ├── has-context: Acute respiratory distress syndrome
+│   └── has-context: Chronic obstructive pulmonary disease
+├── has-function: Respiratory rate control
+└── ...
+
+Oxygen delivery
+├── has-requirement: Oxygen source
+├── has-requirement: Delivery mechanism
+└── has-performance-indicator: Oxygen concentration
+```
+
+This pattern uses functional relationships to connect a medical device
+(ventilator) to its functions, contexts, and requirements.
+====
+
+=== Equivalence mapping pattern
+
+==== Pattern description
+
+The equivalence mapping pattern represents relationships between equivalent or
+similar concepts across different systems, domains, languages, or versions. It
+captures different degrees of equivalence and provides context for the mappings.
+
+==== Structure
+
+. Source concepts from one system or domain
+. Target concepts from another system or domain
+. Equivalence relationships connecting source and target
+. Equivalence type indicators (exact, inexact, partial)
+. Mapping context and metadata
+
+==== Applications
+
+. Terminology mapping and alignment
+. Standard harmonization
+. Cross-language terminology
+. System integration
+. Version migration
+
+==== Implementation considerations
+
+. Documenting the degree of equivalence
+. Handling one-to-many and many-to-many mappings
+. Providing mapping rationale and evidence
+. Managing mapping versioning
+. Addressing gaps and untranslatable concepts
+
+[example]
+====
+Cross-terminology medical mapping:
+
+```
+SNOMED CT: Myocardial infarction (22298006)
+├── exact-equivalent-to ICD-10: Acute myocardial infarction (I21)
+├── exact-equivalent-to MeSH: Myocardial Infarction (D009203)
+└── broader-than ICD-10: Acute transmural myocardial infarction of anterior
+    wall (I21.0)
+
+SNOMED CT: Pneumonia (233604007)
+├── exact-equivalent-to ICD-10: Pneumonia, organism unspecified (J18)
+├── exact-equivalent-to MeSH: Pneumonia (D011014)
+├── narrower-than ICD-10: Pneumonia (J12-J18)
+└── broader-than ICD-10: Viral pneumonia, not elsewhere classified (J12)
+```
+
+This pattern uses equivalence relationships to map concepts between different
+medical terminologies (SNOMED CT, ICD-10, MeSH), indicating the type of
+equivalence for each mapping.
+====
+
+=== Semantic field pattern
+
+==== Pattern description
+
+The semantic field pattern organizes concepts into interconnected networks based
+on their semantic relationships within a domain. It represents the rich web of
+associations that give concepts their full meaning in context.
+
+==== Structure
+
+. Central concept(s) as focal points
+. Related concepts connected by various relationship types
+. Multiple relationship layers (hierarchical, associative, etc.)
+. Cross-connections between related concepts
+. Domain context binding the field together
+
+==== Applications
+
+. Domain vocabulary development
+. Semantic analysis
+. Content organization
+. Knowledge representation
+. Educational materials
+
+==== Implementation considerations
+
+. Balancing comprehensiveness with usability
+. Selecting appropriate relationship types
+. Determining field boundaries
+. Handling overlapping semantic fields
+. Representing relationship strength or salience
+
+[example]
+====
+Semantic field for "education":
+
+```
+Education
+├── is-a: Process
+├── has-part: Teaching
+│   ├── has-agent: Teacher
+│   │   ├── has-role: Instructor
+│   │   ├── has-role: Mentor
+│   │   └── has-role: Facilitator
+│   └── has-recipient: Student
+│       ├── has-characteristic: Learning style
+│       └── has-activity: Studying
+├── has-part: Learning
+│   ├── has-result: Knowledge acquisition
+│   ├── has-result: Skill development
+│   └── has-result: Attitude formation
+├── has-setting: Educational institution
+│   ├── has-instance: School
+│   ├── has-instance: University
+│   └── has-instance: Training center
+├── has-instrument: Curriculum
+│   ├── has-part: Course
+│   ├── has-part: Lesson
+│   └── has-part: Assessment
+└── ...
+```
+
+This pattern uses multiple relationship types to represent the semantic field
+of education, showing how concepts are interconnected in this domain.
+====
+
+=== Cross-domain bridge pattern
+
+==== Pattern description
+
+The cross-domain bridge pattern connects concepts from different domains through
+interface concepts and specialized cross-domain relationships. It facilitates
+knowledge integration and interdisciplinary communication.
+
+==== Structure
+
+. Source domain concepts
+. Target domain concepts
+. Interface concepts that span domains
+. Cross-domain relationships
+. Domain context documentation
+
+==== Applications
+
+. Interdisciplinary research
+. Cross-sector collaboration
+. Integrated information systems
+. Translational science
+. Policy development
+
+==== Implementation considerations
+
+. Identifying appropriate interface concepts
+. Documenting domain-specific meanings
+. Establishing clear cross-domain relationship semantics
+. Handling terminology differences
+. Managing conceptual misalignments
+
+[example]
+====
+Bridge between medical and legal domains:
+
+```
+Medical domain:
+Patient consent
+├── is-a: Medical process
+├── has-purpose: Treatment authorization
+├── has-agent: Healthcare provider
+├── has-recipient: Patient
+└── cross-domain-relates-to: Informed consent (Legal domain)
+
+Legal domain:
+Informed consent
+├── is-a: Legal doctrine
+├── has-purpose: Liability protection
+├── has-requirement: Disclosure of risks
+├── has-result: Legal authorization
+└── cross-domain-relates-to: Patient consent (Medical domain)
+
+Interface concept:
+Capacity to consent
+├── medical-aspect: Mental competence assessment
+├── legal-aspect: Legal capacity determination
+├── bridges: Medical and legal domains
+```
+
+This pattern uses cross-domain relationships and an interface concept to
+connect related concepts from the medical and legal domains.
+====
+
+=== Versioning pattern
+
+==== Pattern description
+
+The versioning pattern represents relationships between different versions,
+editions, or states of concepts over time. It captures the evolution of concepts
+and maintains connections between successive versions.
+
+==== Structure
+
+. Concept versions as separate entities
+. Temporal relationships between versions
+. Version metadata (dates, status, etc.)
+. Change documentation
+. Optional branching and merging
+
+==== Applications
+
+. Standards versioning
+. Terminology evolution
+. Content management
+. Product development
+. Historical documentation
+
+==== Implementation considerations
+
+. Determining version granularity
+. Documenting version differences
+. Handling backward compatibility
+. Managing concurrent versions
+. Implementing version control policies
+
+[example]
+====
+Standard versioning pattern:
+
+```
+ISO 9001:2008
+├── has-previous-version: ISO 9001:2000
+│   └── has-previous-version: ISO 9001:1994
+├── has-next-version: ISO 9001:2015
+├── has-status: Superseded
+├── valid-from: 2008-11-14
+├── valid-to: 2018-09-14
+└── has-change:
+    ├── Addition of risk management principles
+    ├── Enhanced focus on process approach
+    └── ...
+
+ISO 9001:2015
+├── has-previous-version: ISO 9001:2008
+├── has-status: Current
+├── valid-from: 2015-09-15
+└── has-change:
+    ├── New high-level structure
+    ├── Explicit risk-based thinking
+    └── ...
+```
+
+This pattern uses temporal relationships and metadata to represent the evolution
+of the ISO 9001 standard through multiple versions, documenting the changes
+between versions and their validity periods.
+====

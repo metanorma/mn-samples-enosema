@@ -1,0 +1,50 @@
+= Concept relationships
+:docnumber: 2507
+:edition: 1
+:copyright-year: 2025
+:revdate: 2025-05-03
+:language: en
+:title-intro-en: Terminology management
+:title-main-en: Concept relationships
+:doctype: standard
+:technical-committee: Terminology
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:imagesdir: images
+:fullname: Reese W. Plews
+:surname: Plews
+:givenname: Reese W.
+:affiliation: Plews Consulting
+:fullname_2: Ronald Tse
+:surname_2: Tse
+:givenname_2: Ronald
+:affiliation_2: Ribose
+:docidentifier: EFS 2507:2025
+:mn-document-class: enosema
+:data-uri-image:
+:local-cache-only:
+
+include::sections/00-foreword.adoc[]
+
+include::sections/00-introduction.adoc[]
+
+include::sections/01-scope.adoc[]
+
+include::sections/02-normrefs.adoc[]
+
+include::sections/03-terms.adoc[]
+
+include::sections/04-abstract-model.adoc[]
+
+include::sections/05-relationship-types.adoc[]
+
+include::sections/06-domain-contexts.adoc[]
+
+include::sections/07-implementation.adoc[]
+
+include::sections/08-enosema-approach.adoc[]
+
+include::sections/a1-patterns.adoc[]
+
+include::sections/a2-mappings.adoc[]
+
+include::sections/az-bibliography.adoc[]

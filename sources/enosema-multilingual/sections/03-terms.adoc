@@ -1,0 +1,118 @@
+== Terms and definitions
+
+=== terminology
+set of designations belonging to one special language
+
+[.source]
+<<ISO704>>
+
+=== term
+verbal designation of a general concept in a specific subject field
+
+[.source]
+<<ISO704>>
+
+=== multilingual terminology management
+management of terminology resources across multiple languages through the
+systematic collection, description, processing, and presentation of concepts
+and their designations
+
+=== concept
+unit of knowledge created by a unique combination of characteristics
+
+[.source]
+<<ISO704>>
+
+=== authoritative language version
+language version of a terminological entry that serves as the reference for
+creating or validating other language versions
+
+=== informative language version
+language version of a terminological entry derived from or validated against
+an authoritative language version
+
+=== source language
+language from which a term or text is translated
+
+[.source]
+<<ISO17100>>
+
+=== target language
+language into which a term or text is translated
+
+[.source]
+<<ISO17100>>
+
+=== locale
+set of parameters that defines the user's language, region and any special
+variant preferences that the user wants to see in their user interface
+
+=== localization
+adaptation of a product, service, or content to meet the language, cultural,
+and other requirements of a specific target market
+
+[.source]
+<<ISO17100>>
+
+=== internationalization
+process of designing a product so that it can be adapted to various languages
+and regions without engineering changes
+
+=== cultural adaptation
+process of adapting content to the cultural expectations, norms, and preferences
+of a target audience
+
+=== concept equivalence
+relationship between designations in different languages representing the same
+concept
+
+=== full equivalence
+relationship between designations in different languages that represent identical
+concepts
+
+=== partial equivalence
+relationship between designations in different languages that represent similar
+but not identical concepts
+
+=== zero equivalence
+absence of a designation in a target language for a concept that exists in a
+source language
+
+=== terminological gap
+absence of a direct term equivalent in a target language for a concept in the
+source language
+
+=== neologism
+newly coined term, word, or phrase that may be in the process of entering common
+use but has not yet been fully accepted
+
+=== borrowing
+term adopted from another language with or without modification
+
+=== calque
+word or phrase borrowed from another language by literal, word-for-word or
+root-for-root translation
+
+=== language code
+code that represents the name of a language
+
+[.source]
+<<ISO639-1>>
+
+=== script code
+code that represents the name of a script
+
+[.source]
+<<ISO15924>>
+
+=== bidirectional text
+text containing text in both right-to-left and left-to-right writing directions
+
+=== language register
+variety of language used for a particular purpose or in a particular social
+setting
+
+=== terminology harmonization
+activity leading to the selection of terms and the assignment of concepts to
+terms in different languages to ensure equivalence of concepts and consistency
+of terms

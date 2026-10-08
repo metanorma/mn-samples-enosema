@@ -1,0 +1,91 @@
+== Terms and definitions
+
+=== terminology
+set of designations belonging to one special language
+
+[.source]
+<<ISO704>>
+
+=== term
+verbal designation of a general concept in a specific subject field
+
+[.source]
+<<ISO704>>
+
+=== terminology management
+management of terminology resources through the systematic collection,
+description, processing, and presentation of concepts and their designations
+
+[.source]
+<<ISO30042>>
+
+=== terminology database
+database containing terminology data
+
+[.source]
+<<ISO30042>>
+
+=== concept
+unit of knowledge created by a unique combination of characteristics
+
+[.source]
+<<ISO704>>
+
+=== terminological data
+data related to concepts or their designations
+
+[.source]
+<<ISO30042>>
+
+=== designation
+representation of a concept by a sign which denotes it
+
+NOTE: In terminology work, three types of designations are distinguished:
+symbols, appellations and terms.
+
+[.source]
+<<ISO704>>
+
+=== definition
+representation of a concept by a descriptive statement which serves to
+differentiate it from related concepts
+
+[.source]
+<<ISO704>>
+
+=== terminological entry
+part of a terminological data collection which contains the terminological
+data related to one concept
+
+[.source]
+<<ISO10241-1>>
+
+=== subject field
+field of special knowledge
+
+[.source]
+<<ISO704>>
+
+=== concept harmonization
+activity leading to the establishment of a correspondence between two or more
+closely related or overlapping concepts in order to eliminate or reduce minor
+differences between them
+
+[.source]
+<<ISO704>>
+
+=== concept system
+set of concepts structured according to the relations among them
+
+[.source]
+<<ISO704>>
+
+=== term extraction
+process of identifying and collecting term candidates from a corpus by manual,
+automatic, or semi-automatic means
+
+=== terminology workflow
+series of coordinated terminology activities
+
+=== terminology resource
+structured collection of terminological data

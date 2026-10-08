@@ -1,0 +1,134 @@
+== Principles of terminology management
+
+=== General
+
+Effective terminology management is founded on a set of core principles derived
+from international standards and best practices. These principles ensure that
+terminology work is systematic, consistent, and of high quality, serving the
+needs of all stakeholders.
+
+The principles outlined in this section build upon the fundamental principles of
+terminology work established in <<ISO704>> and provide a comprehensive framework
+for terminology management activities across organizations and domains.
+
+=== Concept-based approach
+
+Terminology management shall be based on concepts rather than terms. A concept is
+a unit of knowledge created by a unique combination of characteristics.
+
+This principle dictates that:
+
+. Concepts should be clearly defined before terms are assigned
+. Each concept should be placed within its appropriate concept system
+. Relationships between concepts should be explicitly documented
+. One concept should correspond to one terminological entry
+
+[example]
+====
+Instead of creating separate entries for similar terms such as "backup,"
+"back-up," and "back up," a concept-based approach would create a single
+entry for the concept, documenting these terms as synonyms or variants.
+====
+
+=== Clarity and precision
+
+Definitions and terms shall be clear, precise, and unambiguous within their
+subject field.
+
+This principle requires:
+
+. Definitions that clearly distinguish a concept from related concepts
+. Terms that accurately represent the concept they designate
+. Avoidance of ambiguity and vagueness in both definitions and terms
+. Appropriate use of defining characteristics based on the concept type
+
+[example]
+====
+Poor definition: "database — a collection of data"
+Better definition: "database — structured collection of data that is stored on
+a computer system and can be accessed, managed, and updated in various ways"
+====
+
+=== Subject field orientation
+
+Terminology shall be developed and managed within the context of its subject
+field.
+
+This principle emphasizes:
+
+. Organizing terminology within clearly defined subject fields
+. Understanding and respecting the conceptual structures of each field
+. Using field-specific classification systems where appropriate
+. Involving subject matter experts in terminology development
+
+=== Documentation of sources
+
+All terminological data shall be properly documented with reliable sources.
+
+This principle requires:
+
+. Citing authoritative sources for definitions, contexts, and other data
+. Documenting the origin and evolution of terms
+. Maintaining bibliographic information for all external sources
+. Indicating the reliability and relevance of sources
+
+=== Systematic management
+
+Terminology shall be managed systematically following established processes
+and workflows.
+
+This principle involves:
+
+. Establishing clear procedures for terminology collection, creation, validation,
+and dissemination
+. Implementing appropriate technology solutions for terminology storage and
+retrieval
+. Defining roles and responsibilities for terminology management tasks
+. Regular review and updating of terminology resources
+
+=== Appropriate level of granularity
+
+The level of detail in terminological entries shall be appropriate for the
+intended use and users.
+
+This principle means:
+
+. Determining the appropriate amount of information to include in entries based
+on user needs
+. Balancing comprehensiveness with usability
+. Providing sufficient context for proper understanding and application
+. Adapting the level of technical specificity to the target audience
+
+=== Stakeholder involvement
+
+Terminology management shall involve relevant stakeholders throughout the process.
+
+This principle emphasizes:
+
+. Identifying and engaging key stakeholders (subject experts, translators,
+content creators, etc.)
+. Establishing collaborative processes for terminology development and review
+. Considering the needs and perspectives of different user groups
+. Creating feedback mechanisms for continuous improvement
+
+=== Quality assurance
+
+Terminology management shall include quality assurance measures at all stages.
+
+This principle requires:
+
+. Establishing clear quality criteria for terminological data
+. Implementing validation and approval processes
+. Regular review and updating of terminology resources
+. Monitoring the application of terminology in content
+
+=== Harmonization
+
+Terminology shall be harmonized within and across subject fields when appropriate.
+
+This principle involves:
+
+. Identifying and resolving inconsistencies in terminology use
+. Aligning terminology across related domains and disciplines
+. Reconciling differences in term usage across departments, companies, or regions
+. Balancing standardization with domain-specific needs

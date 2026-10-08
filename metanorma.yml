@@ -1,0 +1,11 @@
+---
+metanorma:
+  source:
+    files:
+      - sources/enosema-terminology/document.adoc
+      - sources/enosema-multilingual/document.adoc
+      - sources/enosema-relationships/document.adoc
+
+  collection:
+    organization: "Enosema Foundation"
+    name: "ES specifications"

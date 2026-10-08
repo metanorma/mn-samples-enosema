@@ -1,0 +1,14 @@
+[bibliography]
+== Normative references
+
+* [[[ISO704,ISO 704:2022]]],
+_Terminology work — Principles and methods_
+
+* [[[ISO10241-1,ISO 10241-1:2011]]],
+_Terminological entries in standards — Part 1: General requirements and examples of presentation_
+
+* [[[ISO10241-2,ISO 10241-2:2012]]],
+_Terminological entries in standards — Part 2: Adoption of standardized terminological entries_
+
+* [[[ISO30042,ISO 30042:2019]]],
+_Management of terminology resources — TermBase eXchange (TBX)_

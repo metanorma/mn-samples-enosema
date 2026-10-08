@@ -1,0 +1,110 @@
+== Terms and definitions
+
+=== concept
+unit of knowledge created by a unique combination of characteristics
+
+[.source]
+<<ISO1087>>
+
+=== concept relationship
+semantic connection between two or more concepts
+
+NOTE: Concept relationships can exist within a single domain or across multiple domains.
+
+=== relationship type
+category of concept relationship characterized by specific semantic properties
+
+NOTE: Examples include hierarchical, associative, and equivalence relationship types.
+
+=== abstract relationship model
+conceptual framework that defines the structure, properties, and behavior of
+relationships independent of specific implementation technologies
+
+=== relationship assertion
+statement that declares the existence of a specific relationship between two or
+more concepts
+
+=== relationship property
+characteristic or attribute of a relationship that defines its semantic behavior
+
+NOTE: Examples include transitivity, symmetry, and reflexivity.
+
+=== hierarchical relationship
+concept relationship where one concept is in a superordinate position to the
+other concept
+
+[.source]
+<<ISO1087>>
+
+=== generic relationship
+hierarchical relationship between two concepts where the intension of the
+subordinate concept includes the intension of the superordinate concept plus at
+least one additional delimiting characteristic
+
+[.source]
+<<ISO1087>>
+
+=== partitive relationship
+hierarchical relationship between two concepts where the superordinate concept
+represents a whole and the subordinate concept represents a part of that whole
+
+[.source]
+<<ISO1087>>
+
+=== associative relationship
+concept relationship that is neither hierarchical nor equivalence-based
+
+NOTE: Associative relationships include spatial, temporal, causal, and functional
+connections between concepts.
+
+=== equivalence relationship
+concept relationship where two or more concepts are considered to have the same
+or nearly the same meaning
+
+NOTE: Equivalence relationships can be exact, inexact, or partial, depending on
+the degree of conceptual overlap.
+
+=== cross-domain relationship
+concept relationship that connects concepts from different subject fields or
+domains
+
+=== relationship cardinality
+specification of the number of concept instances that can participate in a
+relationship
+
+=== relationship direction
+specification of whether a relationship is unidirectional, bidirectional, or
+non-directional
+
+=== metarelationship
+relationship between relationships
+
+NOTE: Metarelationships can express dependencies, constraints, or other
+connections between different relationship assertions.
+
+=== relationship registry
+structured collection of relationship type definitions with their associated
+properties, constraints, and documentation
+
+=== semantic interoperability
+ability of different information systems to exchange and use information based
+on shared understanding of meaning
+
+=== knowledge organization system
+system for organizing knowledge that supports the description, management, and
+retrieval of information resources
+
+NOTE: Examples include taxonomies, thesauri, ontologies, and classification
+schemes.
+
+=== domain
+field of special knowledge
+
+[.source]
+<<ISO1087>>
+
+=== relationship constraint
+restriction or condition that must be satisfied by a relationship assertion
+
+NOTE: Constraints can apply to the concepts involved, the relationship type, or
+the context in which the relationship is valid.

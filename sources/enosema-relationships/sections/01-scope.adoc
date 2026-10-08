@@ -1,0 +1,54 @@
+== Scope
+
+This document specifies an abstract model for defining, documenting, and
+managing concept relationships in terminology resources and knowledge
+organization systems. It provides a generic mechanism for concept relationships
+that can be implemented across different standards, frameworks, and applications.
+
+The abstract model and guidelines specified in this document apply to concept
+relationships in all subject fields, domains, and disciplines. The standardized
+approach enhances semantic precision, improves interoperability, and facilitates
+knowledge exchange across systems and domains.
+
+This document provides:
+
+* An abstract model for concept relationships independent of specific
+implementation technologies
+* A classification system for relationship types based on their semantic
+properties
+* Guidelines for documenting relationship characteristics and constraints
+* Approaches for managing relationships within and across domain boundaries
+* Implementation guidance for various terminology and knowledge systems
+* Examples illustrating the application of the abstract model in different
+contexts
+
+This document is intended for:
+
+* Terminology managers and terminologists responsible for developing and
+maintaining terminology resources
+* Knowledge engineers and ontologists designing knowledge organization systems
+* Standards developers working on terminology and knowledge representation
+standards
+* Information architects designing information retrieval systems
+* Software developers implementing terminology management and knowledge
+organization systems
+* Subject matter experts contributing to terminology resources and knowledge
+bases
+* Researchers in terminology science, knowledge organization, and semantic
+technologies
+
+The abstract model specified here complements existing standards for terminology
+management, knowledge organization, and semantic technologies, providing a
+foundation that can be realized in various implementation contexts.
+
+This document does not:
+
+* Prescribe specific notations or formalisms for representing relationships
+* Replace existing standards for terminology management or knowledge
+organization
+* Specify implementation details for particular systems or applications
+* Mandate specific visualization techniques for concept relationships
+* Provide domain-specific relationship taxonomies
+
+Instead, it offers a generic framework that can be adapted and extended to meet
+the needs of specific domains, applications, and implementation contexts.

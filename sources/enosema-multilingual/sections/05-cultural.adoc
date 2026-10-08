@@ -1,0 +1,225 @@
+== Localization and cultural adaptation
+
+=== General
+
+Localization and cultural adaptation are essential aspects of multilingual
+terminology management that go beyond simple translation. They involve adapting
+terminology to specific cultural contexts while maintaining conceptual integrity
+and ensuring that terms are appropriate and effective for their target audiences.
+
+This section outlines approaches and strategies for localizing terminology and
+adapting it to different cultural contexts, in accordance with the principles
+described in the previous section and the requirements for multilingual
+terminology resources.
+
+=== Localization versus translation
+
+==== Distinguishing localization from translation
+
+Localization is a broader process than translation, encompassing cultural,
+technical, and contextual adaptations beyond linguistic conversion.
+
+In terminology management:
+
+* Translation focuses on finding linguistic equivalents for terms
+* Localization considers cultural appropriateness, usage contexts, and user
+expectations
+* Translation may be a component of localization, but localization includes
+additional adaptations
+
+[example]
+====
+The English term "cloud computing" could be translated literally into many
+languages, but proper localization would consider:
+
+* Whether the metaphor of "cloud" makes sense in the target culture
+* If there are existing terms already in use in the target locale
+* Whether technical experts in the target locale use an English borrowing or a
+native term
+* Any cultural associations or connotations that might affect understanding
+====
+
+==== Localization parameters
+
+Terminology localization may involve adapting various parameters:
+
+. Linguistic parameters (grammar, syntax, orthography)
+. Cultural parameters (metaphors, idioms, examples)
+. Technical parameters (formats, units of measurement, notation systems)
+. Legal parameters (regulated terminology, compliance requirements)
+. Market-specific parameters (industry conventions, brand considerations)
+
+=== Cultural considerations in terminology
+
+==== Cultural context of concepts
+
+Concepts exist within cultural contexts that influence their boundaries,
+characteristics, and relationships with other concepts.
+
+When managing multilingual terminology:
+
+. Identify culture-specific aspects of concepts
+. Document cultural variations in concept understanding
+. Provide cultural context in definitions and examples
+. Recognize when concepts are culture-bound or culture-specific
+
+[example]
+====
+The concept of "personal space" varies significantly across cultures. In a
+multilingual terminology resource, the entry might include:
+
+en: personal space
+definition: The physical distance one prefers to maintain in social interactions.
+cultural note: In North American culture, personal space typically extends
+approximately 45-120 cm from the body in social situations.
+
+ja: パーソナルスペース
+definition: 社会的な交流において維持したい物理的な距離。
+cultural note: 日本文化では、パーソナルスペースの概念は存在するが、
+北米文化と比較して距離が短い傾向がある。
+====
+
+==== Cultural sensitivity in term selection
+
+Term selection must consider cultural sensitivities, taboos, and preferences.
+
+Guidelines for culturally sensitive term selection:
+
+. Avoid terms with negative connotations in the target culture
+. Consider historical and political sensitivities
+. Be aware of taboo subjects and terminology
+. Respect cultural preferences for native terms versus borrowings
+. Consider register and formality appropriate to the culture
+
+==== Regional variants
+
+Many languages have regional variants that must be considered in terminology
+management.
+
+Approaches to handling regional variants:
+
+. Document regional usage patterns
+. Specify the region for each variant
+. Indicate preferred variants for specific markets
+. Provide usage notes for regional differences
+. Consider standardization needs versus regional identity
+
+[example]
+====
+The concept of "mobile phone" has different terms in different English-speaking
+regions:
+
+en-US: cell phone
+en-GB: mobile phone
+en-AU: mobile phone
+en-CA: cell phone, mobile phone
+
+Each variant would be documented with its regional code and usage notes.
+====
+
+=== Adaptation strategies
+
+==== Adaptation of culture-specific concepts
+
+When concepts are specific to one culture but need to be represented in another,
+several strategies can be employed:
+
+. Borrowing the source term with explanatory notes
+. Creating a neologism in the target language
+. Using a descriptive phrase instead of a single term
+. Finding the closest partial equivalent with clarifying notes
+. Using a generalizing term with specific qualifiers
+
+[example]
+====
+The Japanese concept of "おもてなし" (omotenashi) refers to a specific form of
+Japanese hospitality that doesn't have a direct equivalent in many languages.
+Adaptation strategies might include:
+
+* Borrowing: "omotenashi" (with explanation)
+* Descriptive phrase: "Japanese wholehearted hospitality"
+* Partial equivalent: "hospitality (Japanese style)"
+* Generalizing term with qualifier: "anticipatory hospitality (Japanese concept)"
+====
+
+==== Adaptation of examples and contexts
+
+Examples and contexts should be adapted to be culturally relevant and
+meaningful.
+
+Guidelines for adapting examples:
+
+. Replace culture-specific references with locally relevant ones
+. Adapt scenarios to reflect local practices and norms
+. Ensure examples are appropriate and not offensive in the target culture
+. Maintain the conceptual point while changing cultural specifics
+. Verify that adapted examples accurately represent the concept
+
+==== Adaptation of visual elements
+
+Visual elements associated with terminology (icons, symbols, diagrams) may also
+require cultural adaptation.
+
+Considerations for visual adaptation:
+
+. Color associations vary across cultures
+. Symbols may have different meanings or be taboo
+. Reading direction affects diagram layout
+. Gestures depicted may have different meanings
+. Cultural references in visuals may not be recognized
+
+=== Internationalization as foundation
+
+==== Internationalization principles
+
+Internationalization is the process of designing terminology resources so they
+can be easily localized.
+
+Key internationalization principles for terminology:
+
+. Separate content from presentation
+. Design for translation expansion/contraction
+. Support all required character sets and writing systems
+. Avoid culture-specific references in core definitions
+. Use culturally neutral examples where possible
+. Design for bidirectional text support
+
+==== Designing for future localization
+
+Terminology resources should be designed with future localization in mind.
+
+Best practices include:
+
+. Document the cultural context of the original terminology
+. Provide context notes to aid future localizers
+. Maintain clear concept boundaries to facilitate equivalence assessment
+. Use internationally recognized standards for data categories
+. Document the rationale for term choices
+. Establish processes for cultural review and adaptation
+
+=== Quality assurance for localized terminology
+
+==== Cultural review process
+
+Localized terminology should undergo cultural review by native speakers and
+subject matter experts.
+
+The cultural review process should:
+
+. Verify cultural appropriateness of terms and definitions
+. Check for unintended connotations or associations
+. Ensure examples are relevant to the target culture
+. Confirm that register and style are appropriate
+. Identify any missing cultural context
+
+==== User feedback mechanisms
+
+Establish mechanisms for gathering user feedback on localized terminology.
+
+Effective feedback mechanisms include:
+
+. Surveys of target language users
+. Community review processes
+. Usage monitoring and analysis
+. Consultation with local experts
+. Periodic review and update cycles

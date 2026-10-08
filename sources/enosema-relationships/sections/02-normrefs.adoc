@@ -1,0 +1,26 @@
+[bibliography]
+== Normative references
+
+* [[[ISO704,ISO 704:2022]]],
+_Terminology work — Principles and methods_
+
+* [[[ISO1087,ISO 1087:2019]]],
+_Terminology work and terminology science — Vocabulary_
+
+* [[[ISO24156-1,ISO 24156-1:2014]]],
+_Graphic notations for concept modelling in terminology work and its relationship with UML — Part 1: Guidelines for using UML notation in terminology work_
+
+* [[[ISO16642,ISO 16642:2017]]],
+_Computer applications in terminology — Terminological markup framework_
+
+* [[[ISO30042,ISO 30042:2019]]],
+_Management of terminology resources — TermBase eXchange (TBX)_
+
+* [[[ISO19146,ISO 19146:2018]]],
+_Geographic information — Cross-domain vocabularies_
+
+* [[[ISO25964-1,ISO 25964-1:2011]]],
+_Information and documentation — Thesauri and interoperability with other vocabularies — Part 1: Thesauri for information retrieval_
+
+* [[[ISO25964-2,ISO 25964-2:2013]]],
+_Information and documentation — Thesauri and interoperability with other vocabularies — Part 2: Interoperability with other vocabularies_

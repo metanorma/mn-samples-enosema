@@ -1,0 +1,116 @@
+[bibliography]
+== Bibliography
+
+* [[[ISO860,ISO 860:2007]]],
+_Terminology work — Harmonization of concepts and terms_
+
+* [[[ISO1087,ISO 1087:2019]]],
+_Terminology work and terminology science — Vocabulary_
+
+* [[[ISO12620,ISO 12620:2019]]],
+_Management of terminology resources — Data category specifications_
+
+* [[[ISO16642,ISO 16642:2017]]],
+_Computer applications in terminology — Terminological markup framework_
+
+* [[[ISO19146,ISO 19146:2018]]],
+_Geographic information — Cross-domain vocabularies_
+
+* [[[ISO23185,ISO 23185:2009]]],
+_Assessment and benchmarking of terminological resources — General concepts, principles and requirements_
+
+* [[[ISO25964-1,ISO 25964-1:2011]]],
+_Information and documentation — Thesauri and interoperability with other vocabularies — Part 1: Thesauri for information retrieval_
+
+* [[[ISO25964-2,ISO 25964-2:2013]]],
+_Information and documentation — Thesauri and interoperability with other vocabularies — Part 2: Interoperability with other vocabularies_
+
+* [[[ISO26162-1,ISO 26162-1:2019]]],
+_Management of terminology resources — Terminology databases — Part 1: Design_
+
+* [[[ISO26162-2,ISO 26162-2:2019]]],
+_Management of terminology resources — Terminology databases — Part 2: Software_
+
+* [[[ISO29383,ISO 29383:2020]]],
+_Terminology policies — Development and implementation_
+
+* [[[ISO24613-1,ISO 24613-1:2019]]],
+_Lexical markup framework (LMF) — Part 1: Core model_
+
+* [[[W3C-SKOS,W3C-SKOS]]],
+World Wide Web Consortium. 2009. _SKOS Simple Knowledge Organization System Reference_. W3C Recommendation. https://www.w3.org/TR/skos-reference/
+
+* [[[W3C-OWL,W3C-OWL]]],
+World Wide Web Consortium. 2012. _OWL 2 Web Ontology Language Document Overview (Second Edition)_. W3C Recommendation. https://www.w3.org/TR/owl2-overview/
+
+* [[[W3C-RDF,W3C-RDF]]],
+World Wide Web Consortium. 2014. _RDF 1.1 Concepts and Abstract Syntax_. W3C Recommendation. https://www.w3.org/TR/rdf11-concepts/
+
+* [[[sager,Sager1990]]],
+Sager, J.C. 1990. _A Practical Course in Terminology Processing_. Amsterdam/Philadelphia: John Benjamins.
+
+* [[[winston,Winston1987]]],
+Winston, M.E., R. Chaffin, and D. Herrmann. 1987. "A Taxonomy of Part-Whole Relations." _Cognitive Science_ 11(4): 417-444.
+
+* [[[smith,Smith2005]]],
+Smith, B. 2005. "Relations in Biomedical Ontologies." _Genome Biology_ 6(5): R46.
+
+* [[[guarino,Guarino2009]]],
+Guarino, N. and C. Welty. 2009. "An Overview of OntoClean." In _Handbook on Ontologies_, edited by S. Staab and R. Studer, 201-220. Berlin: Springer.
+
+* [[[soergel,Soergel2004]]],
+Soergel, D. 2004. "Indexing Languages and Thesauri: Construction and Maintenance." _Information Resources Press_.
+
+* [[[miller,Miller1995]]],
+Miller, G.A. 1995. "WordNet: A Lexical Database for English." _Communications of the ACM_ 38(11): 39-41.
+
+* [[[fellbaum,Fellbaum1998]]],
+Fellbaum, C. (ed). 1998. _WordNet: An Electronic Lexical Database_. Cambridge, MA: MIT Press.
+
+* [[[murphy,Murphy2003]]],
+Murphy, M.L. 2003. _Semantic Relations and the Lexicon_. Cambridge: Cambridge University Press.
+
+* [[[cruse,Cruse1986]]],
+Cruse, D.A. 1986. _Lexical Semantics_. Cambridge: Cambridge University Press.
+
+* [[[wuster,Wüster1979]]],
+Wüster, E. 1979. _Einführung in die allgemeine Terminologielehre und terminologische Lexikographie_. Vienna: Springer.
+
+* [[[temmerman,Temmerman2000]]],
+Temmerman, R. 2000. _Towards New Ways of Terminology Description: The Sociocognitive Approach_. Amsterdam/Philadelphia: John Benjamins.
+
+* [[[faber,Faber2012]]],
+Faber, P. (ed). 2012. _A Cognitive Linguistics View of Terminology and Specialized Language_. Berlin/Boston: De Gruyter Mouton.
+
+* [[[kageura,Kageura2002]]],
+Kageura, K. 2002. _The Dynamics of Terminology: A Descriptive Theory of Term Formation and Terminological Growth_. Amsterdam/Philadelphia: John Benjamins.
+
+* [[[cabré,Cabré1999]]],
+Cabré, M.T. 1999. _Terminology: Theory, Methods, and Applications_. Amsterdam/Philadelphia: John Benjamins.
+
+* [[[wright,Wright1997]]],
+Wright, S.E. and G. Budin. 1997. _Handbook of Terminology Management_. Amsterdam/Philadelphia: John Benjamins.
+
+* [[[gruber,Gruber1993]]],
+Gruber, T.R. 1993. "A Translation Approach to Portable Ontology Specifications." _Knowledge Acquisition_ 5(2): 199-220.
+
+* [[[noy,Noy2001]]],
+Noy, N.F. and D.L. McGuinness. 2001. "Ontology Development 101: A Guide to Creating Your First Ontology." _Stanford Knowledge Systems Laboratory Technical Report KSL-01-05_.
+
+* [[[rector,Rector2004]]],
+Rector, A.L. 2004. "Modularisation of Domain Ontologies Implemented in Description Logics and Related Formalisms including OWL." _Proceedings of the 2nd International Conference on Knowledge Capture_: 121-128.
+
+* [[[aitchison,Aitchison2000]]],
+Aitchison, J., A. Gilchrist, and D. Bawden. 2000. _Thesaurus Construction and Use: A Practical Manual_. 4th ed. London: Aslib IMI.
+
+* [[[hjørland,Hjørland2007]]],
+Hjørland, B. 2007. "Semantic Relations." _Knowledge Organization_ 34(4): 207-217.
+
+* [[[khoo,Khoo2006]]],
+Khoo, C.S.G. and J.C. Na. 2006. "Semantic Relations in Information Science." _Annual Review of Information Science and Technology_ 40: 157-228.
+
+* [[[bean,Bean2010]]],
+Bean, C.A. and R. Green (eds). 2010. _Relationships in the Organization of Knowledge_. Dordrecht: Kluwer Academic Publishers.
+
+* [[[green,Green2008]]],
+Green, R., C.A. Bean, and S.H. Myaeng (eds). 2008. _The Semantics of Relationships: An Interdisciplinary Perspective_. Dordrecht: Kluwer Academic Publishers.

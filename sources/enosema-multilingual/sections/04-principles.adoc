@@ -1,0 +1,167 @@
+== Principles of multilingual terminology management
+
+=== General
+
+Multilingual terminology management is founded on a set of core principles that
+extend the fundamental principles of terminology work to address the specific
+challenges of working across multiple languages and cultures. These principles
+ensure that multilingual terminology work is systematic, consistent, and of high
+quality, serving the needs of all stakeholders regardless of their language or
+cultural background.
+
+The principles outlined in this section build upon the fundamental principles of
+terminology work established in <<ISO704>> and provide a comprehensive framework
+for multilingual terminology management activities across organizations and
+domains.
+
+=== Concept-based approach
+
+Multilingual terminology management shall be based on concepts rather than terms,
+with the understanding that concepts may have different boundaries and
+characteristics in different languages and cultures.
+
+This principle dictates that:
+
+. Concepts should be clearly defined before terms are assigned in any language
+. Each concept should be placed within its appropriate concept system, which may
+vary across cultures
+. Relationships between concepts should be explicitly documented, noting any
+cultural variations
+. One concept should correspond to one multilingual terminological entry, even
+when conceptual boundaries differ across languages
+
+[example]
+====
+The English concept of "privacy" does not have exact equivalents in many
+languages. A concept-based approach would document the English concept with its
+specific characteristics, then document the partial equivalents in other
+languages (such as "vie privée" in French or "プライバシー" in Japanese) with
+notes explaining the conceptual differences.
+====
+
+=== Cultural sensitivity
+
+Multilingual terminology management shall respect and account for cultural
+differences in conceptual systems, linguistic structures, and communication
+practices.
+
+This principle requires:
+
+. Recognition that concepts may be culture-specific or have different
+characteristics in different cultures
+. Awareness of cultural taboos, sensitivities, and preferences in term selection
+. Consideration of cultural context in definitions and examples
+. Appropriate adaptation of concepts and terms for different cultural audiences
+while maintaining conceptual integrity
+
+[example]
+====
+The concept of "family" varies significantly across cultures. In some cultures,
+it refers primarily to the nuclear family, while in others it encompasses
+extended family members. Multilingual terminology management would document
+these cultural variations in the concept description.
+====
+
+=== Language equality
+
+All languages in a multilingual terminology resource shall be treated with equal
+respect and consideration, regardless of their status as authoritative or
+informative.
+
+This principle emphasizes:
+
+. Equal attention to quality and accuracy across all language versions
+. Appropriate representation of all languages in the terminology development
+process
+. Recognition that each language has unique characteristics that must be
+respected
+. Avoidance of linguistic imperialism or the imposition of structures from one
+language onto another
+
+=== Transparency of authority
+
+The status of each language version as authoritative or informative shall be
+clearly documented and transparent to all users.
+
+This principle involves:
+
+. Explicit documentation of which language versions are authoritative
+. Clear criteria for determining authoritative status
+. Transparent processes for creating and validating informative versions
+. Documentation of the relationship between authoritative and informative
+versions
+
+[example]
+====
+A terminological entry might indicate:
+
+term: artificial intelligence
+en: artificial intelligence [AUTHORITATIVE]
+fr: intelligence artificielle [INFORMATIVE]
+de: künstliche Intelligenz [INFORMATIVE]
+ja: 人工知能 [AUTHORITATIVE]
+
+With a note explaining that both English and Japanese versions were developed
+by subject matter experts in the original concept development and serve as
+authoritative references for other language versions.
+====
+
+=== Equivalence management
+
+The degree of equivalence between terms in different languages shall be
+explicitly documented and managed.
+
+This principle requires:
+
+. Assessment and documentation of the type of equivalence (full, partial, zero)
+. Strategies for handling partial and zero equivalence
+. Clear indication of conceptual differences across languages
+. Appropriate handling of culture-specific concepts
+
+=== Collaborative development
+
+Multilingual terminology shall be developed through collaboration among experts
+with different linguistic and cultural backgrounds.
+
+This principle emphasizes:
+
+. Involvement of native speakers and subject matter experts for each language
+. Collaborative processes for resolving conceptual and terminological differences
+. Cross-cultural communication and negotiation
+. Balanced representation of different language communities
+
+=== Consistency within language versions
+
+Each language version shall maintain internal consistency in terminology use,
+style, and format.
+
+This principle involves:
+
+. Consistent application of terminological principles within each language
+. Adherence to language-specific conventions and standards
+. Consistent formatting and presentation within each language
+. Regular review and harmonization within each language version
+
+=== Adaptability to language evolution
+
+Multilingual terminology management shall accommodate the different rates and
+patterns of language evolution across languages.
+
+This principle requires:
+
+. Recognition that languages evolve at different rates and in different ways
+. Processes for updating terminology to reflect language changes
+. Documentation of obsolete or changing terms
+. Flexibility to accommodate neologisms and evolving usage
+
+=== Technical accessibility
+
+Multilingual terminology resources shall be technically accessible to users of
+all included languages.
+
+This principle involves:
+
+. Support for all required scripts and character sets
+. Appropriate handling of bidirectional text
+. Consideration of sorting and search requirements for different languages
+. Accessibility features that work across languages

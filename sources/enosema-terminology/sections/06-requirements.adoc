@@ -1,0 +1,223 @@
+== Terminology requirements
+
+=== General
+
+Terminology requirements define the technical and procedural specifications for
+establishing and maintaining effective terminology resources. These requirements
+ensure that terminology resources meet quality standards, serve their intended
+purpose, and comply with relevant international standards.
+
+The requirements outlined in this section are derived from established standards,
+including ISO 30042 for terminology data exchange and ISO 10241-1 for
+terminological entries in standards.
+
+=== Data structure requirements
+
+==== Terminological entry structure
+
+Terminological entries shall include the following core components in accordance
+with <<ISO10241-1>>:
+
+* Entry identifier
+* Subject field
+* Definition
+* Term(s)
+* Source information
+
+Additional components may include:
+
+* Grammatical information
+* Context examples
+* Notes
+* Multimedia representations
+* Cross-references to related concepts
+* Administrative information
+
+[example]
+====
+Sample terminological entry structure:
+
+Entry ID: TM-0023
+Subject field: Terminology management
+Term: terminology database
+Definition: database containing terminology data
+Source: ISO 30042:2019
+Grammatical information: noun, singular
+Context: "The terminology database should be regularly maintained to ensure
+its relevance and accuracy."
+Related concepts: terminology resource, termbase
+====
+
+==== Concept orientation
+
+Terminology resources shall be concept-oriented, meaning that:
+
+. Each entry represents one concept
+. All terms designating the same concept are included in the same entry
+. Relationships between concepts are explicitly documented
+. Each entry is assigned to at least one subject field
+
+==== Data categories
+
+Terminology resources shall use a consistent set of data categories for
+terminological information in accordance with <<ISO30042>>.
+
+Data categories should be:
+
+. Clearly defined
+. Consistently applied
+. Compatible with international standards
+. Appropriate for the intended use
+. Documented in a data category registry
+
+==== Metadata
+
+Terminology resources shall include appropriate metadata to facilitate
+management and use, including:
+
+* Resource identification information
+* Creation and modification dates
+* Version information
+* Responsibility information
+* Usage rights and permissions
+* Processing history
+
+=== Functional requirements
+
+==== Search and retrieval
+
+Terminology resources shall provide effective search and retrieval capabilities,
+including:
+
+. Multiple search criteria (term, definition, subject field, etc.)
+. Flexible matching options (exact, fuzzy, wildcard, etc.)
+. Filtering by various attributes
+. Sorting options for search results
+. Search history and saved searches
+
+==== Data import and export
+
+Terminology resources shall support data exchange through:
+
+. Import from common terminology formats
+. Export to standard exchange formats, particularly TBX (<<ISO30042>>)
+. Batch processing of multiple entries
+. Selective import and export by criteria
+. Data conversion utilities
+
+==== User management
+
+Terminology management systems shall include user management functions:
+
+. Role-based access control
+. Customizable user permissions
+. Authentication mechanisms
+. User activity tracking
+. Collaborative features
+
+==== Workflow support
+
+Terminology management systems shall support established workflows:
+
+. Task assignment and tracking
+. Status tracking for terminology entries
+. Approval processes
+. Notification mechanisms
+. Integration with content creation systems
+
+=== Quality requirements
+
+==== Data validation
+
+Terminology resources shall implement validation mechanisms to ensure data
+quality:
+
+. Format validation for specific data categories
+. Mandatory field checking
+. Consistency checking across entries
+. Duplicate detection
+. Reference integrity checking
+
+==== Revision control
+
+Terminology resources shall maintain revision history:
+
+. Change tracking at the entry level
+. Version comparison
+. Rollback capabilities
+. User attribution for changes
+. Timestamp information
+
+==== Compliance checking
+
+Terminology resources shall support compliance with terminology policies:
+
+. Automated term verification in content
+. Consistency checking against approved terminology
+. Reporting on terminology usage
+. Identification of deprecated terms
+. Detection of unapproved synonyms
+
+=== Documentation requirements
+
+==== User documentation
+
+Terminology resources shall be accompanied by comprehensive user documentation:
+
+. User guides for different user roles
+. Tutorial materials
+. FAQ documents
+. Best practice guidelines
+. Quick reference materials
+
+==== Administrative documentation
+
+Terminology resources shall include administrative documentation:
+
+. System architecture and design specifications
+. Data models and schemas
+. Configuration parameters
+. Backup and recovery procedures
+. Integration specifications
+
+==== Process documentation
+
+Terminology management processes shall be documented:
+
+. Terminology workflows and procedures
+. Decision-making processes
+. Quality assurance protocols
+. Change management procedures
+. Implementation guidelines
+
+=== Integration requirements
+
+==== Authoring system integration
+
+Terminology resources shall integrate with content authoring systems:
+
+. Real-time terminology verification
+. Term suggestion capabilities
+. Context-sensitive terminology lookup
+. Direct access to terminology resources from within authoring tools
+. Automated terminology extraction from draft content
+
+==== Translation system integration
+
+Terminology resources shall integrate with translation tools:
+
+. Compatibility with translation memory systems
+. Support for multilingual terminology management
+. Term recognition in translation interfaces
+. Terminology consistency checking during translation
+. Terminology extraction from aligned bilingual content
+
+==== Content management integration
+
+Terminology resources shall integrate with content management systems:
+
+. Shared authentication mechanisms
+. Synchronized metadata
+. Terminology status aligned with content lifecycle
+. Terminology reporting within content management analytics
+. Automated terminology updates across content repositories

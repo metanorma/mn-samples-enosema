@@ -1,0 +1,29 @@
+[bibliography]
+== Normative references
+
+* [[[ISO704,ISO 704:2022]]],
+_Terminology work — Principles and methods_
+
+* [[[ISO10241-1,ISO 10241-1:2011]]],
+_Terminological entries in standards — Part 1: General requirements and examples of presentation_
+
+* [[[ISO10241-2,ISO 10241-2:2012]]],
+_Terminological entries in standards — Part 2: Adoption of standardized terminological entries_
+
+* [[[ISO30042,ISO 30042:2019]]],
+_Management of terminology resources — TermBase eXchange (TBX)_
+
+* [[[ISO17100,ISO 17100:2015]]],
+_Translation services — Requirements for translation services_
+
+* [[[ISO5127,ISO 5127:2017]]],
+_Information and documentation — Foundation and vocabulary_
+
+* [[[ISO639-1,ISO 639-1:2002]]],
+_Codes for the representation of names of languages — Part 1: Alpha-2 code_
+
+* [[[ISO639-2,ISO 639-2:1998]]],
+_Codes for the representation of names of languages — Part 2: Alpha-3 code_
+
+* [[[ISO15924,ISO 15924:2004]]],
+_Information and documentation — Codes for the representation of names of scripts_

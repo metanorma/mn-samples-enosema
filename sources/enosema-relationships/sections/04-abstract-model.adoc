@@ -1,0 +1,235 @@
+== Abstract model for concept relationships
+
+=== General
+
+The abstract model for concept relationships provides a generic framework for
+defining, documenting, and managing relationships between concepts. This model
+is independent of specific implementation technologies and can be realized in
+various representation formats and systems.
+
+The abstract model establishes a foundation for understanding concept
+relationships at a conceptual level, focusing on their essential structure,
+properties, and behavior rather than on particular notations or formalisms.
+
+=== Core components
+
+==== Relationship structure
+
+The fundamental structure of a concept relationship consists of:
+
+. Source concept(s): The concept(s) from which the relationship originates
+. Target concept(s): The concept(s) to which the relationship points
+. Relationship type: The semantic category of the relationship
+. Relationship properties: Characteristics that define the relationship's behavior
+. Relationship metadata: Information about the relationship itself
+
+This structure can be expressed as a triple (source, relationship type, target)
+with associated properties and metadata, or in more complex forms for
+relationships involving multiple concepts.
+
+NOTE: While the basic structure resembles a triple, the abstract model does not
+mandate a specific representation format. The same relationship can be
+represented in various ways, including RDF triples, UML associations, or natural
+language statements.
+
+[example]
+====
+A generic relationship between "mammal" and "animal" could be expressed as:
+
+* Source concept: mammal
+* Relationship type: is-a (generic relationship)
+* Target concept: animal
+* Properties: transitive, asymmetric
+* Metadata: asserted by taxonomic classification systems
+
+This same relationship could be realized in different ways:
+* Natural language: "A mammal is a type of animal"
+* UML: A generalization relationship from Mammal to Animal
+* RDF: <mammal> <rdfs:subClassOf> <animal>
+* TBX: A hierarchical relationship with type="generic" between the concepts
+====
+
+==== Relationship assertion
+
+A relationship assertion is a statement that declares the existence of a specific
+relationship between two or more concepts. Each assertion includes:
+
+. The concepts involved in the relationship
+. The relationship type
+. Any qualifiers or parameters specific to this assertion
+. The context in which the assertion is valid
+. The authority for the assertion
+
+Relationship assertions can be:
+
+* Stated (explicitly declared in a terminology resource)
+* Inferred (derived from other assertions through logical rules)
+* Inherited (acquired through hierarchical relationships)
+
+==== Relationship context
+
+Every relationship exists within a context that influences its interpretation and
+validity. Context elements include:
+
+. Domain context: The subject field(s) in which the relationship is valid
+. Temporal context: The time period during which the relationship holds
+. Cultural context: Cultural factors that affect the relationship's meaning
+. Application context: The specific use case or application for which the
+relationship is relevant
+
+NOTE: The same concepts may have different relationships depending on the
+context. For example, "water" and "ice" might have a state-of-matter
+relationship in a physical science context, but a material-product relationship
+in a manufacturing context.
+
+=== Relationship properties
+
+==== Logical properties
+
+Logical properties define the mathematical behavior of relationships:
+
+. Transitivity: If A relates to B and B relates to C, then A relates to C
+. Symmetry: If A relates to B, then B relates to A
+. Reflexivity: A concept relates to itself
+. Asymmetry: If A relates to B, then B does not relate to A
+. Irreflexivity: A concept cannot relate to itself
+
+These properties have important implications for relationship inference and
+validation.
+
+[example]
+====
+* Transitive: If "sparrow" is-a "bird" and "bird" is-a "animal", then "sparrow"
+is-a "animal"
+* Symmetric: If "spouse A" is-married-to "spouse B", then "spouse B"
+is-married-to "spouse A"
+* Reflexive: Every concept is-identical-to itself
+* Asymmetric: If "child" has-parent "parent", then "parent" does not has-parent
+"child"
+* Irreflexive: A concept cannot be-parent-of itself
+====
+
+==== Cardinality
+
+Cardinality specifies the number of concept instances that can participate in a
+relationship:
+
+. One-to-one: Each source concept relates to exactly one target concept
+. One-to-many: Each source concept relates to multiple target concepts
+. Many-to-one: Multiple source concepts relate to the same target concept
+. Many-to-many: Multiple source concepts relate to multiple target concepts
+
+Cardinality constraints can be further refined with minimum and maximum values.
+
+==== Directionality
+
+Relationships can have different directional characteristics:
+
+. Unidirectional: The relationship applies in one direction only
+. Bidirectional: The relationship applies in both directions
+. Non-directional: The relationship has no inherent direction
+
+NOTE: Directionality is distinct from symmetry. A relationship can be
+bidirectional without being symmetric if the relationship type differs in each
+direction.
+
+==== Strength
+
+Relationship strength indicates the degree of connection between concepts:
+
+. Mandatory: The relationship must exist for the concepts to be valid
+. Optional: The relationship may or may not exist
+. Weighted: The relationship has a numerical value indicating its strength or
+probability
+
+=== Metarelationships
+
+Metarelationships are relationships between relationships. They enable the
+expression of complex semantic structures and constraints:
+
+. Dependency: One relationship depends on the existence of another
+. Exclusivity: If one relationship exists, another cannot
+. Composition: A relationship is composed of other relationships
+. Derivation: A relationship is derived from other relationships
+
+[example]
+====
+* Dependency: The "has-symptom" relationship between "disease" and "symptom"
+depends on the "affects" relationship between "disease" and "body-part"
+* Exclusivity: If "concept A" is-synonym-of "concept B", then "concept A"
+cannot be-antonym-of "concept B"
+* Composition: The "is-grandparent-of" relationship is composed of two
+consecutive "is-parent-of" relationships
+* Derivation: The "is-sibling-of" relationship is derived from shared
+"is-child-of" relationships to a common parent
+====
+
+=== Relationship lifecycle
+
+==== Creation and documentation
+
+Relationship creation involves:
+
+. Identifying the concepts to be related
+. Determining the appropriate relationship type
+. Documenting the relationship properties and constraints
+. Providing supporting evidence or rationale
+. Recording metadata about the creation process
+
+Documentation should include:
+
+. Clear identification of the concepts involved
+. Precise specification of the relationship type
+. Explicit statement of properties and constraints
+. Context information for proper interpretation
+. Source or authority information
+. Creation and modification timestamps
+
+==== Validation
+
+Relationship validation ensures that relationships are semantically correct and
+consistent. Validation checks include:
+
+. Type compatibility: Verifying that the concepts are valid for the relationship
+type
+. Property compliance: Ensuring the relationship satisfies its declared
+properties
+. Constraint satisfaction: Confirming that all constraints are met
+. Consistency: Checking for conflicts with existing relationships
+. Context validity: Verifying the relationship is valid in its stated context
+
+==== Evolution and maintenance
+
+Relationships evolve over time due to:
+
+. Changes in concept definitions
+. Advances in domain knowledge
+. Refinement of relationship types
+. Expansion to new contexts
+. Correction of errors or inconsistencies
+
+Effective maintenance requires:
+
+. Version control for relationship assertions
+. Change tracking and history
+. Impact analysis for relationship changes
+. Propagation of changes to dependent relationships
+. Regular review and validation
+
+=== Abstract model implementation
+
+The abstract model can be implemented in various ways, depending on the specific
+requirements and constraints of the application context. Implementation
+considerations include:
+
+. Representation format: How relationships are encoded (e.g., RDF, UML, natural
+language)
+. Storage mechanism: How relationships are stored and retrieved
+. Inference capabilities: How implicit relationships are derived from explicit ones
+. Validation mechanisms: How relationships are checked for correctness
+. User interface: How relationships are presented to and manipulated by users
+
+NOTE: The abstract model intentionally separates the conceptual understanding of
+relationships from their implementation details. This separation allows for
+flexibility in how relationships are realized in specific systems while
+maintaining semantic consistency.
